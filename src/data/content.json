@@ -269,7 +269,7 @@
       "Kafka",
       "SonarQube",
       "Git",
-      "GitHub",
+      "GitHub Actions",
       "Bitbucket"
     ]
   },
@@ -399,13 +399,33 @@
   ],
   "journals": [
     {
+      "id": 6,
+      "title": "New Article Title - Edit This",
+      "excerpt": "Brief description of your article - Edit This",
+      "content": "Full article content goes here - Edit This",
+      "publishedDate": "2025-10-01",
+      "readTime": "5 min read",
+      "tags": [
+        "DevOps",
+        "Cloud",
+        "Infrastructure"
+      ],
+      "featured": false,
+      "image": "/journal-article-6.jpg"
+    },
+    {
       "id": 1,
       "title": "Building Resilient Multi-Cloud Infrastructure: Lessons from Production",
       "excerpt": "Exploring the challenges and solutions in architecting fault-tolerant systems across AWS, Azure, GCP, and Huawei Cloud platforms.",
       "content": "In today's rapidly evolving cloud landscape, organizations are increasingly adopting multi-cloud strategies to avoid vendor lock-in, improve resilience, and optimize costs. Having architected and managed production workloads across AWS, Azure, GCP, and Huawei Cloud, I've learned valuable lessons about building truly resilient multi-cloud infrastructure...",
       "publishedDate": "2024-12-15",
       "readTime": "8 min read",
-      "tags": ["Multi-Cloud", "Infrastructure", "DevOps", "Resilience"],
+      "tags": [
+        "Multi-Cloud",
+        "Infrastructure",
+        "DevOps",
+        "Resilience"
+      ],
       "featured": true,
       "image": "/journal-multicloud.jpg"
     },
@@ -416,7 +436,12 @@
       "content": "Cost optimization in cloud environments goes far beyond simply purchasing reserved instances. Through implementing comprehensive cost control strategies across multiple organizations, I've discovered that the most significant savings come from architectural decisions, automation, and intelligent resource management...",
       "publishedDate": "2024-11-28",
       "readTime": "6 min read",
-      "tags": ["Cost Optimization", "Cloud Economics", "Automation", "FinOps"],
+      "tags": [
+        "Cost Optimization",
+        "Cloud Economics",
+        "Automation",
+        "FinOps"
+      ],
       "featured": true,
       "image": "/journal-cost-optimization.jpg"
     },
@@ -427,7 +452,12 @@
       "content": "Zero-trust security has become essential for modern containerized applications. This article explores practical implementation strategies for zero-trust architecture in Kubernetes environments, covering service mesh integration, policy enforcement, and secrets management...",
       "publishedDate": "2024-11-10",
       "readTime": "10 min read",
-      "tags": ["Security", "Kubernetes", "Zero-Trust", "DevSecOps"],
+      "tags": [
+        "Security",
+        "Kubernetes",
+        "Zero-Trust",
+        "DevSecOps"
+      ],
       "featured": false,
       "image": "/journal-zero-trust.jpg"
     },
@@ -438,7 +468,12 @@
       "content": "Managing deployments for large-scale microservices architectures presents unique challenges. This post shares insights from implementing GitOps practices across 100+ microservices, including automation strategies, rollback mechanisms, and compliance considerations...",
       "publishedDate": "2024-10-22",
       "readTime": "7 min read",
-      "tags": ["GitOps", "Microservices", "CI/CD", "Automation"],
+      "tags": [
+        "GitOps",
+        "Microservices",
+        "CI/CD",
+        "Automation"
+      ],
       "featured": false,
       "image": "/journal-gitops.jpg"
     },
@@ -449,7 +484,12 @@
       "content": "Effective observability goes beyond collecting metrics and logs. This article explores how to build observability systems that provide actionable insights, reduce MTTR, and enable proactive incident prevention in complex distributed environments...",
       "publishedDate": "2024-09-15",
       "readTime": "9 min read",
-      "tags": ["Observability", "Monitoring", "SRE", "Distributed Systems"],
+      "tags": [
+        "Observability",
+        "Monitoring",
+        "SRE",
+        "Distributed Systems"
+      ],
       "featured": false,
       "image": "/journal-observability.jpg"
     }

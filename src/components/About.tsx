@@ -12,7 +12,7 @@ export default function About() {
             About Me
           </h2>
           <p className="mt-6 text-lg leading-8 text-gray-600">
-            {personalInfo.bio}
+            {personalInfo.bio || personalInfo.summary}
           </p>
         </div>
         
@@ -47,14 +47,14 @@ export default function About() {
               </dt>
               <dd className="mt-4 flex flex-auto flex-col text-base leading-7 text-gray-600">
                 <div className="flex flex-wrap gap-2">
-                  {skills.soft.map((skill) => (
+                  {skills.soft?.map((skill) => (
                     <span 
                       key={skill}
                       className="inline-flex items-center rounded-md bg-green-50 px-2 py-1 text-xs font-medium text-green-700 ring-1 ring-inset ring-green-600/20"
                     >
                       {skill}
                     </span>
-                  ))}
+                  )) || <span className="text-gray-500">No soft skills available</span>}
                 </div>
               </dd>
             </div>
@@ -66,14 +66,14 @@ export default function About() {
               </dt>
               <dd className="mt-4 flex flex-auto flex-col text-base leading-7 text-gray-600">
                 <div className="flex flex-wrap gap-2">
-                  {skills.tools.map((tool) => (
+                  {skills.tools?.map((tool) => (
                     <span 
                       key={tool}
                       className="inline-flex items-center rounded-md bg-purple-50 px-2 py-1 text-xs font-medium text-purple-700 ring-1 ring-inset ring-purple-600/20"
                     >
                       {tool}
                     </span>
-                  ))}
+                  )) || <span className="text-gray-500">No tools available</span>}
                 </div>
               </dd>
             </div>

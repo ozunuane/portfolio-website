@@ -1,0 +1,198 @@
+{
+  "personal": {
+    "name": "Unuane Godspower Ozimede",
+    "title": "Software Engineer & Full-Stack Developer",
+    "email": "godspowerunuane@gmail.com",
+    "phone": "+234 XXX XXX XXXX",
+    "location": "Lagos, Nigeria",
+    "bio": "Passionate software engineer with expertise in full-stack development, cloud technologies, and modern web frameworks. Dedicated to delivering innovative solutions that drive business growth and enhance user experiences through clean, scalable code.",
+    "summary": "Experienced software engineer specializing in React, Node.js, and cloud technologies. Proven track record of building scalable web applications and leading development teams to deliver high-quality software solutions."
+  },
+  "social": {
+    "github": "https://github.com/ozunuane",
+    "linkedin": "https://www.linkedin.com/in/ozimede/",
+    "twitter": "",
+    "website": ""
+  },
+  "experience": [
+    {
+      "id": 1,
+      "company": "Tech Solutions Ltd",
+      "position": "Senior Software Engineer",
+      "location": "Lagos, Nigeria",
+      "startDate": "2022",
+      "endDate": "Present",
+      "description": "Lead full-stack development projects using React, Node.js, and cloud technologies. Mentor junior developers and collaborate with cross-functional teams to deliver scalable web applications.",
+      "achievements": [
+        "Led development of 3 major web applications serving 10,000+ users",
+        "Improved application performance by 40% through code optimization",
+        "Mentored 5 junior developers and established coding best practices",
+        "Implemented CI/CD pipelines reducing deployment time by 60%"
+      ],
+      "technologies": ["React", "Node.js", "TypeScript", "AWS", "Docker", "MongoDB"]
+    },
+    {
+      "id": 2,
+      "company": "Digital Innovations Inc",
+      "position": "Full-Stack Developer",
+      "location": "Lagos, Nigeria",
+      "startDate": "2020",
+      "endDate": "2022",
+      "description": "Developed and maintained web applications using modern JavaScript frameworks. Collaborated with design and product teams to implement user-friendly interfaces and robust backend systems.",
+      "achievements": [
+        "Built 5+ responsive web applications from concept to deployment",
+        "Reduced page load times by 50% through performance optimization",
+        "Integrated third-party APIs and payment systems",
+        "Maintained 99.9% uptime for production applications"
+      ],
+      "technologies": ["JavaScript", "React", "Express.js", "PostgreSQL", "Git", "Heroku"]
+    },
+    {
+      "id": 3,
+      "company": "StartupHub Nigeria",
+      "position": "Junior Developer",
+      "location": "Lagos, Nigeria",
+      "startDate": "2019",
+      "endDate": "2020",
+      "description": "Contributed to various web development projects while learning modern development practices. Worked closely with senior developers to build features and fix bugs in existing applications.",
+      "achievements": [
+        "Contributed to 10+ open-source projects",
+        "Developed responsive UI components used across multiple projects",
+        "Participated in code reviews and improved code quality",
+        "Learned and implemented test-driven development practices"
+      ],
+      "technologies": ["HTML", "CSS", "JavaScript", "React", "Node.js", "MySQL"]
+    }
+  ],
+  "skills": {
+    "technical": [
+      { "name": "JavaScript", "level": 95 },
+      { "name": "TypeScript", "level": 90 },
+      { "name": "React", "level": 95 },
+      { "name": "Node.js", "level": 90 },
+      { "name": "Next.js", "level": 85 },
+      { "name": "Python", "level": 80 },
+      { "name": "AWS", "level": 85 },
+      { "name": "Docker", "level": 80 },
+      { "name": "MongoDB", "level": 85 },
+      { "name": "PostgreSQL", "level": 80 }
+    ],
+    "soft": [
+      "Team Leadership",
+      "Project Management",
+      "Problem Solving",
+      "Communication",
+      "Agile Methodologies",
+      "Mentoring",
+      "Code Review",
+      "Technical Writing"
+    ],
+    "tools": [
+      "Git",
+      "VS Code",
+      "Docker",
+      "AWS",
+      "Figma",
+      "Postman",
+      "Jest",
+      "Webpack",
+      "Linux",
+      "Jira"
+    ]
+  },
+  "projects": [
+    {
+      "id": 1,
+      "title": "E-Commerce Platform",
+      "description": "Full-stack e-commerce solution with payment integration, inventory management, and admin dashboard.",
+      "longDescription": "Built a comprehensive e-commerce platform using React and Node.js with features including user authentication, product catalog, shopping cart, payment processing via Stripe, order management, and an admin dashboard for inventory and sales analytics.",
+      "technologies": ["React", "Node.js", "MongoDB", "Stripe API", "AWS S3"],
+      "image": "/project-ecommerce.jpg",
+      "liveUrl": "https://ecommerce-demo.vercel.app",
+      "githubUrl": "https://github.com/ozunuane/ecommerce-platform",
+      "featured": true
+    },
+    {
+      "id": 2,
+      "title": "Task Management App",
+      "description": "Collaborative task management application with real-time updates and team collaboration features.",
+      "longDescription": "Developed a real-time task management application using React and Socket.io for instant updates. Features include project creation, task assignment, progress tracking, team collaboration, file attachments, and detailed analytics dashboard.",
+      "technologies": ["React", "Socket.io", "Express.js", "PostgreSQL", "Redis"],
+      "image": "/project-taskmanager.jpg",
+      "liveUrl": "https://taskmanager-demo.netlify.app",
+      "githubUrl": "https://github.com/ozunuane/task-manager",
+      "featured": true
+    },
+    {
+      "id": 3,
+      "title": "Weather Analytics Dashboard",
+      "description": "Data visualization dashboard for weather analytics with interactive charts and forecasting.",
+      "longDescription": "Created an interactive weather analytics dashboard that aggregates data from multiple weather APIs. Features include real-time weather updates, historical data analysis, interactive charts using D3.js, weather forecasting, and location-based services.",
+      "technologies": ["React", "D3.js", "Node.js", "Weather APIs", "Chart.js"],
+      "image": "/project-weather.jpg",
+      "liveUrl": "https://weather-analytics.herokuapp.com",
+      "githubUrl": "https://github.com/ozunuane/weather-dashboard",
+      "featured": true
+    }
+  ],
+  "education": [
+    {
+      "institution": "University of Lagos",
+      "degree": "Bachelor of Science",
+      "field": "Computer Science",
+      "year": "2019",
+      "location": "Lagos, Nigeria"
+    },
+    {
+      "institution": "Lagos State Polytechnic",
+      "degree": "National Diploma",
+      "field": "Computer Science",
+      "year": "2016",
+      "location": "Lagos, Nigeria"
+    }
+  ],
+  "certifications": [
+    {
+      "name": "AWS Certified Solutions Architect",
+      "issuer": "Amazon Web Services",
+      "date": "2023",
+      "credentialId": "AWS-SAA-2023-001"
+    },
+    {
+      "name": "React Developer Certification",
+      "issuer": "Meta",
+      "date": "2022",
+      "credentialId": "META-REACT-2022"
+    },
+    {
+      "name": "Full Stack Web Development",
+      "issuer": "freeCodeCamp",
+      "date": "2021",
+      "credentialId": "FCC-FSWD-2021"
+    },
+    {
+      "name": "JavaScript Algorithms and Data Structures",
+      "issuer": "freeCodeCamp",
+      "date": "2020",
+      "credentialId": "FCC-JSADS-2020"
+    }
+  ],
+  "testimonials": [
+    {
+      "id": 1,
+      "name": "Sarah Johnson",
+      "position": "Product Manager",
+      "company": "Tech Solutions Ltd",
+      "content": "Godspower is an exceptional developer who consistently delivers high-quality code. His ability to understand complex requirements and translate them into elegant solutions is remarkable.",
+      "rating": 5
+    },
+    {
+      "id": 2,
+      "name": "Michael Chen",
+      "position": "CTO",
+      "company": "Digital Innovations Inc",
+      "content": "Working with Godspower was a pleasure. He's not only technically skilled but also a great team player who mentors others and contributes to a positive work environment.",
+      "rating": 5
+    }
+  ]
+}

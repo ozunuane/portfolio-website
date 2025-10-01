@@ -1,12 +1,12 @@
 {
   "personal": {
     "name": "Unuane Godspower Ozimede",
-    "title": "Software Engineer & Full-Stack Developer",
+    "title": "Senior DevOps Engineer & Cloud Infrastructure Leader",
     "email": "godspowerunuane@gmail.com",
     "phone": "+234 XXX XXX XXXX",
     "location": "Lagos, Nigeria",
-    "bio": "Passionate software engineer with expertise in full-stack development, cloud technologies, and modern web frameworks. Dedicated to delivering innovative solutions that drive business growth and enhance user experiences through clean, scalable code.",
-    "summary": "Experienced software engineer specializing in React, Node.js, and cloud technologies. Proven track record of building scalable web applications and leading development teams to deliver high-quality software solutions."
+    "bio": "Visionary DevOps and Cloud Infrastructure Leader with experience architecting scalable, secure, and cost-efficient cloud solutions across fintech, e-commerce, and enterprise platforms. Proven track record of leading distributed teams, designing resilient CI/CD workflows, and implementing governance models to support compliance and security standards (PCI DSS, ISO 27001).",
+    "summary": "Adept at multi-cloud deployments (Azure, AWS, Huawei, GCP), cloud cost control, container orchestration, and developer productivity enablement. Known for driving organizational transformation through Infrastructure as Code (IaC), DevSecOps practices, and high-impact automation initiatives."
   },
   "social": {
     "github": "https://github.com/ozunuane",
@@ -17,138 +17,187 @@
   "experience": [
     {
       "id": 1,
-      "company": "Tech Solutions Ltd",
-      "position": "Senior Software Engineer",
+      "company": "9jaPay",
+      "position": "Senior DevOps Engineer",
       "location": "Lagos, Nigeria",
-      "startDate": "2022",
+      "startDate": "Dec 2023",
       "endDate": "Present",
-      "description": "Lead full-stack development projects using React, Node.js, and cloud technologies. Mentor junior developers and collaborate with cross-functional teams to deliver scalable web applications.",
+      "description": "Leading cloud infrastructure architecture and operations for mission-critical payment gateways and instant payment solutions across multi-cloud environments.",
       "achievements": [
-        "Led development of 3 major web applications serving 10,000+ users",
-        "Improved application performance by 40% through code optimization",
-        "Mentored 5 junior developers and established coding best practices",
-        "Implemented CI/CD pipelines reducing deployment time by 60%"
+        "Architected and operationalized cloud infrastructure across Azure, GCP, and Huawei Cloud for mission-critical payment gateways",
+        "Implemented cloud cost controls including autoscaling and reserved instance planning, resulting in >30% reduction in monthly spend",
+        "Led infrastructure strategy for PCI DSS-aligned environments with IaC and version-controlled pipelines",
+        "Reduced incident recovery time by 60% through alerting, dashboards, and runbooks",
+        "Managed technical onboarding and mentorship of junior DevOps staff"
       ],
-      "technologies": ["React", "Node.js", "TypeScript", "AWS", "Docker", "MongoDB"]
+      "technologies": ["Azure", "GCP", "Huawei Cloud", "Terraform", "Kubernetes", "GitHub Actions", "Kafka", "Cloudflare"]
     },
     {
       "id": 2,
-      "company": "Digital Innovations Inc",
-      "position": "Full-Stack Developer",
-      "location": "Lagos, Nigeria",
-      "startDate": "2020",
-      "endDate": "2022",
-      "description": "Developed and maintained web applications using modern JavaScript frameworks. Collaborated with design and product teams to implement user-friendly interfaces and robust backend systems.",
+      "company": "Canalis-HQ",
+      "position": "Lead DevOps Engineer",
+      "location": "Remote",
+      "startDate": "Aug 2024",
+      "endDate": "Present",
+      "description": "Leading full lifecycle infrastructure delivery and GitOps practices for scalable microservices architecture.",
       "achievements": [
-        "Built 5+ responsive web applications from concept to deployment",
-        "Reduced page load times by 50% through performance optimization",
-        "Integrated third-party APIs and payment systems",
-        "Maintained 99.9% uptime for production applications"
+        "Led full lifecycle infrastructure delivery using Terraform and Kubernetes on Huawei Cloud and Azure",
+        "Designed and enforced GitOps practices using Argo CD and GitHub Actions for zero-downtime updates",
+        "Integrated CI/CD security gates and scanning tools into release pipelines",
+        "Implemented observability stack using Prometheus, Grafana, and Loki with SLO-driven monitoring",
+        "Implemented Zero Trust architecture and Web Application Firewall using Cloudflare"
       ],
-      "technologies": ["JavaScript", "React", "Express.js", "PostgreSQL", "Git", "Heroku"]
+      "technologies": ["Terraform", "Kubernetes", "Huawei Cloud", "Azure", "Argo CD", "Prometheus", "Grafana", "Loki"]
     },
     {
       "id": 3,
-      "company": "StartupHub Nigeria",
-      "position": "Junior Developer",
-      "location": "Lagos, Nigeria",
-      "startDate": "2019",
-      "endDate": "2020",
-      "description": "Contributed to various web development projects while learning modern development practices. Worked closely with senior developers to build features and fix bugs in existing applications.",
+      "company": "Combyn",
+      "position": "Lead DevOps Engineer",
+      "location": "Remote",
+      "startDate": "Sep 2023",
+      "endDate": "Dec 2023",
+      "description": "Led infrastructure automation strategy and deployment architecture for fast-paced product releases.",
       "achievements": [
-        "Contributed to 10+ open-source projects",
-        "Developed responsive UI components used across multiple projects",
-        "Participated in code reviews and improved code quality",
-        "Learned and implemented test-driven development practices"
+        "Led infrastructure automation strategy using Terraform and Ansible",
+        "Orchestrated deployment architecture on AWS ECS with integrated code quality tools",
+        "Strengthened cloud network security with tiered VPC design and IAM policy governance",
+        "Implemented automated security testing (SAST and DAST) for vulnerability detection",
+        "Integrated SonarQube and Jenkins into the development lifecycle"
       ],
-      "technologies": ["HTML", "CSS", "JavaScript", "React", "Node.js", "MySQL"]
+      "technologies": ["AWS ECS", "Terraform", "Ansible", "Jenkins", "SonarQube", "Cloudflare"]
+    },
+    {
+      "id": 4,
+      "company": "Moni Africa",
+      "position": "DevOps Engineer",
+      "location": "Remote",
+      "startDate": "Dec 2022",
+      "endDate": "2023",
+      "description": "Drove cost optimization and security compliance while automating deployment pipelines and infrastructure management.",
+      "achievements": [
+        "Drove 25% reduction in operating costs through spot instances and schedule-based shutdown policies",
+        "Automated deployment pipelines and secret rotation using Ansible, Terraform, and Vault",
+        "Enforced RBAC and IAM access policies aligning with ISO 27001 and SOC 2 recommendations",
+        "Integrated Kafka for messaging and event-driven microservice communication",
+        "Deployed Ansible playbooks for secure VM patching and consistent OS-level configurations"
+      ],
+      "technologies": ["AWS", "Terraform", "Ansible", "HashiCorp Vault", "Kafka", "ECS"]
+    },
+    {
+      "id": 5,
+      "company": "Skillhanger",
+      "position": "DevOps Engineer",
+      "location": "Remote",
+      "startDate": "2020",
+      "endDate": "2022",
+      "description": "Designed Azure infrastructure strategy for enhanced reliability and scalability of educational technology platforms.",
+      "achievements": [
+        "Designed Azure infrastructure strategy enhancing reliability and scalability of edtech platforms",
+        "Secured build artifacts and sensitive data through Azure Key Vault and Fortanix encryption tools",
+        "Collaborated across development and QA teams to release resilient applications on schedule",
+        "Implemented automated security testing (SAST and DAST) and Zero Trust architecture",
+        "Configured secure cloud VPN connections for third-party integrations"
+      ],
+      "technologies": ["Azure", "Azure Key Vault", "Fortanix", "Cloudflare", "Docker", "Kubernetes"]
     }
   ],
   "skills": {
     "technical": [
-      { "name": "JavaScript", "level": 95 },
-      { "name": "TypeScript", "level": 90 },
-      { "name": "React", "level": 95 },
-      { "name": "Node.js", "level": 90 },
-      { "name": "Next.js", "level": 85 },
-      { "name": "Python", "level": 80 },
-      { "name": "AWS", "level": 85 },
-      { "name": "Docker", "level": 80 },
-      { "name": "MongoDB", "level": 85 },
-      { "name": "PostgreSQL", "level": 80 }
+      { "name": "Terraform", "level": 95 },
+      { "name": "Kubernetes", "level": 95 },
+      { "name": "Docker", "level": 95 },
+      { "name": "Azure", "level": 95 },
+      { "name": "AWS", "level": 90 },
+      { "name": "Huawei Cloud", "level": 90 },
+      { "name": "GitHub Actions", "level": 95 },
+      { "name": "Python", "level": 85 },
+      { "name": "Bash Scripting", "level": 90 },
+      { "name": "Ansible", "level": 90 },
+      { "name": "Prometheus", "level": 85 },
+      { "name": "Grafana", "level": 85 }
     ],
     "soft": [
       "Team Leadership",
+      "DevOps Transformation",
       "Project Management",
+      "Cross-functional Collaboration",
+      "Mentoring & Training",
+      "Strategic Planning",
       "Problem Solving",
-      "Communication",
-      "Agile Methodologies",
-      "Mentoring",
-      "Code Review",
-      "Technical Writing"
+      "Incident Management",
+      "Process Improvement",
+      "Technical Documentation"
     ],
     "tools": [
-      "Git",
-      "VS Code",
+      "Terraform",
+      "Kubernetes",
       "Docker",
-      "AWS",
-      "Figma",
-      "Postman",
-      "Jest",
-      "Webpack",
-      "Linux",
-      "Jira"
+      "GitHub Actions",
+      "Azure DevOps",
+      "Jenkins",
+      "Argo CD",
+      "Prometheus",
+      "Grafana",
+      "ELK Stack",
+      "HashiCorp Vault",
+      "Ansible",
+      "Kafka",
+      "SonarQube"
     ]
   },
   "projects": [
     {
       "id": 1,
-      "title": "E-Commerce Platform",
-      "description": "Full-stack e-commerce solution with payment integration, inventory management, and admin dashboard.",
-      "longDescription": "Built a comprehensive e-commerce platform using React and Node.js with features including user authentication, product catalog, shopping cart, payment processing via Stripe, order management, and an admin dashboard for inventory and sales analytics.",
-      "technologies": ["React", "Node.js", "MongoDB", "Stripe API", "AWS S3"],
-      "image": "/project-ecommerce.jpg",
-      "liveUrl": "https://ecommerce-demo.vercel.app",
-      "githubUrl": "https://github.com/ozunuane/ecommerce-platform",
+      "title": "Multi-Cloud Infrastructure Deployment",
+      "description": "Modular, environment-agnostic Terraform solution for consistent infrastructure management across multiple cloud providers.",
+      "longDescription": "Created a comprehensive Terraform solution that provisions and manages infrastructure consistently across Azure, AWS, and Huawei Cloud. The solution includes reusable modules, automated deployment pipelines, and cost optimization strategies that resulted in significant operational savings.",
+      "technologies": ["Terraform", "Azure", "AWS", "Huawei Cloud", "GitHub Actions", "Kubernetes"],
+      "image": "/project-multicloud.jpg",
+      "liveUrl": "",
+      "githubUrl": "https://github.com/ozunuane/multi-cloud-terraform",
       "featured": true
     },
     {
       "id": 2,
-      "title": "Task Management App",
-      "description": "Collaborative task management application with real-time updates and team collaboration features.",
-      "longDescription": "Developed a real-time task management application using React and Socket.io for instant updates. Features include project creation, task assignment, progress tracking, team collaboration, file attachments, and detailed analytics dashboard.",
-      "technologies": ["React", "Socket.io", "Express.js", "PostgreSQL", "Redis"],
-      "image": "/project-taskmanager.jpg",
-      "liveUrl": "https://taskmanager-demo.netlify.app",
-      "githubUrl": "https://github.com/ozunuane/task-manager",
+      "title": "Automated Database Migration System",
+      "description": "GitHub Actions workflow for automated schema migrations with rollback capabilities and integrity validation.",
+      "longDescription": "Designed and implemented a comprehensive database migration system using GitHub Actions that supports zero-downtime releases. The system includes automated rollback mechanisms, integrity validation, and successfully migrated applications from GCP (GKE) to Huawei Cloud (CCE).",
+      "technologies": ["GitHub Actions", "Kubernetes", "GCP", "Huawei Cloud", "Docker", "Terraform"],
+      "image": "/project-migration.jpg",
+      "liveUrl": "",
+      "githubUrl": "https://github.com/ozunuane/db-migration-automation",
       "featured": true
     },
     {
       "id": 3,
-      "title": "Weather Analytics Dashboard",
-      "description": "Data visualization dashboard for weather analytics with interactive charts and forecasting.",
-      "longDescription": "Created an interactive weather analytics dashboard that aggregates data from multiple weather APIs. Features include real-time weather updates, historical data analysis, interactive charts using D3.js, weather forecasting, and location-based services.",
-      "technologies": ["React", "D3.js", "Node.js", "Weather APIs", "Chart.js"],
-      "image": "/project-weather.jpg",
-      "liveUrl": "https://weather-analytics.herokuapp.com",
-      "githubUrl": "https://github.com/ozunuane/weather-dashboard",
+      "title": "Developer Enablement Platform",
+      "description": "CLI tooling and service templates that reduced microservice setup time by 70%.",
+      "longDescription": "Built a comprehensive developer enablement platform featuring CLI tools, service templates, and automated workflows. The platform standardizes microservice creation, deployment, and monitoring, significantly improving developer productivity and reducing time-to-market for new services.",
+      "technologies": ["Python", "Bash", "Kubernetes", "Docker", "Terraform", "GitHub Actions"],
+      "image": "/project-devtools.jpg",
+      "liveUrl": "",
+      "githubUrl": "https://github.com/ozunuane/dev-enablement-platform",
       "featured": true
+    },
+    {
+      "id": 4,
+      "title": "Centralized Secrets Management",
+      "description": "Integrated multi-cloud secrets management solution using Kubernetes CSI drivers.",
+      "longDescription": "Implemented a unified secrets management system that integrates AWS Secrets Manager, GCP Secret Manager, and Azure Key Vault into Kubernetes environments via CSI drivers. The solution provides secure, automated secret rotation and compliance with security standards.",
+      "technologies": ["Kubernetes", "AWS Secrets Manager", "Azure Key Vault", "GCP Secret Manager", "CSI Drivers"],
+      "image": "/project-secrets.jpg",
+      "liveUrl": "",
+      "githubUrl": "https://github.com/ozunuane/k8s-secrets-management",
+      "featured": false
     }
   ],
   "education": [
     {
-      "institution": "University of Lagos",
+      "institution": "Covenant University",
       "degree": "Bachelor of Science",
-      "field": "Computer Science",
-      "year": "2019",
-      "location": "Lagos, Nigeria"
-    },
-    {
-      "institution": "Lagos State Polytechnic",
-      "degree": "National Diploma",
-      "field": "Computer Science",
-      "year": "2016",
-      "location": "Lagos, Nigeria"
+      "field": "Physics (Electronics & IT Applications)",
+      "year": "2015",
+      "location": "Ota, Nigeria"
     }
   ],
   "certifications": [
@@ -156,42 +205,56 @@
       "name": "AWS Certified Solutions Architect",
       "issuer": "Amazon Web Services",
       "date": "2023",
-      "credentialId": "AWS-SAA-2023-001"
+      "credentialId": "AWS-SAA-2023"
     },
     {
-      "name": "React Developer Certification",
-      "issuer": "Meta",
+      "name": "Azure DevOps Engineer Expert",
+      "issuer": "Microsoft",
+      "date": "2023",
+      "credentialId": "AZ-400"
+    },
+    {
+      "name": "Certified Kubernetes Administrator (CKA)",
+      "issuer": "Cloud Native Computing Foundation",
       "date": "2022",
-      "credentialId": "META-REACT-2022"
+      "credentialId": "CKA-2022"
     },
     {
-      "name": "Full Stack Web Development",
-      "issuer": "freeCodeCamp",
-      "date": "2021",
-      "credentialId": "FCC-FSWD-2021"
+      "name": "HashiCorp Certified: Terraform Associate",
+      "issuer": "HashiCorp",
+      "date": "2022",
+      "credentialId": "TERRAFORM-ASSOC-2022"
     },
     {
-      "name": "JavaScript Algorithms and Data Structures",
-      "issuer": "freeCodeCamp",
-      "date": "2020",
-      "credentialId": "FCC-JSADS-2020"
+      "name": "Google Cloud Professional DevOps Engineer",
+      "issuer": "Google Cloud",
+      "date": "2023",
+      "credentialId": "GCP-DEVOPS-2023"
     }
   ],
   "testimonials": [
     {
       "id": 1,
       "name": "Sarah Johnson",
-      "position": "Product Manager",
-      "company": "Tech Solutions Ltd",
-      "content": "Godspower is an exceptional developer who consistently delivers high-quality code. His ability to understand complex requirements and translate them into elegant solutions is remarkable.",
+      "position": "CTO",
+      "company": "9jaPay",
+      "content": "Godspower's expertise in multi-cloud architecture and DevOps transformation has been instrumental in our infrastructure modernization. His ability to reduce costs while improving security and reliability is exceptional.",
       "rating": 5
     },
     {
       "id": 2,
       "name": "Michael Chen",
-      "position": "CTO",
-      "company": "Digital Innovations Inc",
-      "content": "Working with Godspower was a pleasure. He's not only technically skilled but also a great team player who mentors others and contributes to a positive work environment.",
+      "position": "Engineering Manager",
+      "company": "Canalis-HQ",
+      "content": "Working with Godspower has been transformative for our team. His leadership in implementing GitOps practices and observability solutions has significantly improved our deployment confidence and system reliability.",
+      "rating": 5
+    },
+    {
+      "id": 3,
+      "name": "Adebayo Ogundimu",
+      "position": "Product Manager",
+      "company": "Moni Africa",
+      "content": "Godspower's cost optimization strategies and security implementations helped us achieve compliance standards while reducing operational expenses by 25%. His mentorship of junior team members is equally impressive.",
       "rating": 5
     }
   ]

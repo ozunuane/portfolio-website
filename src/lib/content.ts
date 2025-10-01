@@ -135,11 +135,11 @@ export function getCertifications(): Certification[] {
 }
 
 export function getJournals(): Journal[] {
-  return contentData.journals
+  return contentData.journals || []
 }
 
 export function getFeaturedJournals(): Journal[] {
-  return contentData.journals.filter(journal => journal.featured)
+  return contentData.journals?.filter(journal => journal.featured) || []
 }
 
 export function getTestimonials(): Testimonial[] {

@@ -170,25 +170,25 @@
     },
     {
       "id": 3,
-      "title": "Developer Enablement Platform",
-      "description": "CLI tooling and service templates that reduced microservice setup time by 70%.",
-      "longDescription": "Built a comprehensive developer enablement platform featuring CLI tools, service templates, and automated workflows. The platform standardizes microservice creation, deployment, and monitoring, significantly improving developer productivity and reducing time-to-market for new services.",
-      "technologies": ["Python", "Bash", "Kubernetes", "Docker", "Terraform", "GitHub Actions"],
-      "image": "/project-devtools.jpg",
+      "title": "Azure DevOps Infrastructure Pipeline",
+      "description": "Enterprise-grade Azure infrastructure deployment using Terraform with automated CI/CD pipelines and multi-environment management.",
+      "longDescription": "Comprehensive Azure infrastructure solution featuring Terraform modules for AKS, Azure SQL, Key Vault, and Application Gateway. Includes automated deployment pipelines using Azure DevOps with environment-specific configurations, security scanning, and compliance validation. Demonstrates enterprise-scale Azure architecture with Infrastructure as Code best practices.",
+      "technologies": ["Azure DevOps", "Terraform", "Azure AKS", "Azure SQL", "Key Vault", "Application Gateway", "ARM Templates"],
+      "image": "/project-azure-devops.jpg",
       "liveUrl": "",
-      "githubUrl": "https://github.com/ozunuane/dev-enablement-platform",
+      "githubUrl": "https://github.com/ozunuane/azure-devops-infrastructure",
       "featured": true
     },
     {
       "id": 4,
-      "title": "Centralized Secrets Management",
-      "description": "Integrated multi-cloud secrets management solution using Kubernetes CSI drivers.",
-      "longDescription": "Implemented a unified secrets management system that integrates AWS Secrets Manager, GCP Secret Manager, and Azure Key Vault into Kubernetes environments via CSI drivers. The solution provides secure, automated secret rotation and compliance with security standards.",
-      "technologies": ["Kubernetes", "AWS Secrets Manager", "Azure Key Vault", "GCP Secret Manager", "CSI Drivers"],
-      "image": "/project-secrets.jpg",
+      "title": "Huawei Cloud Container Engine (CCE) Migration",
+      "description": "Production workload migration from GCP GKE to Huawei Cloud CCE with zero-downtime deployment and automated rollback capabilities.",
+      "longDescription": "Successfully migrated enterprise applications from Google Kubernetes Engine to Huawei Cloud Container Engine, implementing blue-green deployment strategies, automated database migration scripts, and comprehensive monitoring solutions. Features Terraform infrastructure provisioning, Helm chart management, and CI/CD pipeline integration with Huawei DevCloud.",
+      "technologies": ["Huawei Cloud CCE", "Terraform", "Kubernetes", "Helm", "DevCloud", "RDS", "OBS", "ELB"],
+      "image": "/project-huawei-cce.jpg",
       "liveUrl": "",
-      "githubUrl": "https://github.com/ozunuane/k8s-secrets-management",
-      "featured": false
+      "githubUrl": "https://github.com/ozunuane/huawei-cloud-migration",
+      "featured": true
     }
   ],
   "education": [

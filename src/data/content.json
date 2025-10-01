@@ -148,13 +148,13 @@
   "projects": [
     {
       "id": 1,
-      "title": "Multi-Cloud Infrastructure Deployment",
-      "description": "Modular, environment-agnostic Terraform solution for consistent infrastructure management across multiple cloud providers.",
-      "longDescription": "Created a comprehensive Terraform solution that provisions and manages infrastructure consistently across Azure, AWS, and Huawei Cloud. The solution includes reusable modules, automated deployment pipelines, and cost optimization strategies that resulted in significant operational savings.",
-      "technologies": ["Terraform", "Azure", "AWS", "Huawei Cloud", "GitHub Actions", "Kubernetes"],
-      "image": "/project-multicloud.jpg",
+      "title": "GCP Portfolio Project",
+      "description": "Comprehensive Google Cloud Platform portfolio showcasing cloud infrastructure, DevOps practices, and scalable application deployment.",
+      "longDescription": "A complete GCP-based portfolio project demonstrating cloud-native architecture, infrastructure as code, CI/CD pipelines, and modern DevOps practices. Features automated deployment, monitoring, and security best practices on Google Cloud Platform.",
+      "technologies": ["Google Cloud Platform", "Terraform", "Kubernetes", "Docker", "Cloud Build", "Cloud Run", "Monitoring"],
+      "image": "/project-gcp-portfolio.jpg",
       "liveUrl": "",
-      "githubUrl": "https://github.com/ozunuane/multi-cloud-terraform",
+      "githubUrl": "https://github.com/ozunuane/gcp_portfolio_project",
       "featured": true
     },
     {

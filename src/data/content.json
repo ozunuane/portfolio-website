@@ -170,13 +170,13 @@
     },
     {
       "id": 3,
-      "title": "Azure DevOps Infrastructure Pipeline",
-      "description": "Enterprise-grade Azure infrastructure deployment using Terraform with automated CI/CD pipelines and multi-environment management.",
-      "longDescription": "Comprehensive Azure infrastructure solution featuring Terraform modules for AKS, Azure SQL, Key Vault, and Application Gateway. Includes automated deployment pipelines using Azure DevOps with environment-specific configurations, security scanning, and compliance validation. Demonstrates enterprise-scale Azure architecture with Infrastructure as Code best practices.",
-      "technologies": ["Azure DevOps", "Terraform", "Azure AKS", "Azure SQL", "Key Vault", "Application Gateway", "ARM Templates"],
-      "image": "/project-azure-devops.jpg",
+      "title": "Azure Multi-Tier Insurance Platform",
+      "description": "A comprehensive Azure infrastructure deployment using Terraform that implements a secure, scalable multi-tier architecture for an insurance platform.",
+      "longDescription": "Production-ready Azure infrastructure following best practices with hub-and-spoke network topology, private AKS clusters, and environment-specific configurations. Features Application Gateway with AGIC, PostgreSQL Flexible Server, Azure Key Vault, Blob Storage, and Workload Identity for secure pod-to-Azure resource authentication. Includes both production and staging environments with auto-scaling capabilities.",
+      "technologies": ["Azure", "Terraform", "AKS", "Application Gateway", "PostgreSQL", "Key Vault", "Blob Storage", "Workload Identity"],
+      "image": "/project-azure-multi-tier.jpg",
       "liveUrl": "",
-      "githubUrl": "https://github.com/ozunuane/azure-devops-infrastructure",
+      "githubUrl": "https://github.com/ozunuane/azure-multi-tier-project",
       "featured": true
     },
     {

@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body {
+            margin: 0;
+            padding: 40px;
+            font-family: 'Google Sans', Arial, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            width: 800px;
+            height: 600px;
+            box-sizing: border-box;
+            color: white;
+        }
+        .container {
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 20px;
+            padding: 40px;
+            height: 100%;
+            box-sizing: border-box;
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+        .title {
+            font-size: 48px;
+            font-weight: 700;
+            margin-bottom: 20px;
+            text-align: center;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+        .subtitle {
+            font-size: 24px;
+            font-weight: 400;
+            margin-bottom: 40px;
+            text-align: center;
+            opacity: 0.9;
+        }
+        .features {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 30px;
+            margin-top: 40px;
+        }
+        .feature {
+            background: rgba(255, 255, 255, 0.15);
+            padding: 20px;
+            border-radius: 15px;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+        .feature-title {
+            font-size: 18px;
+            font-weight: 600;
+            margin-bottom: 10px;
+            color: #FFD700;
+        }
+        .feature-desc {
+            font-size: 14px;
+            line-height: 1.4;
+            opacity: 0.9;
+        }
+        .tech-stack {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-top: 30px;
+            justify-content: center;
+        }
+        .tech {
+            background: rgba(255, 255, 255, 0.2);
+            padding: 8px 16px;
+            border-radius: 20px;
+            font-size: 12px;
+            font-weight: 500;
+            border: 1px solid rgba(255, 255, 255, 0.3);
+        }
+        .gcp-logo {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            width: 60px;
+            height: 60px;
+            background: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            color: #4285f4;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <div class="gcp-logo">GCP</div>
+    <div class="container">
+        <div class="title">GCP Portfolio Project</div>
+        <div class="subtitle">Cloud-Native Infrastructure & DevOps Excellence</div>
+        
+        <div class="features">
+            <div class="feature">
+                <div class="feature-title">🚀 Kubernetes Orchestration</div>
+                <div class="feature-desc">Scalable GKE clusters with auto-scaling, load balancing, and high availability</div>
+            </div>
+            <div class="feature">
+                <div class="feature-title">🔧 Infrastructure as Code</div>
+                <div class="feature-desc">Terraform-managed infrastructure with version control and automated deployments</div>
+            </div>
+            <div class="feature">
+                <div class="feature-title">📊 Monitoring & Observability</div>
+                <div class="feature-desc">Cloud Monitoring, Logging, and custom dashboards for full visibility</div>
+            </div>
+            <div class="feature">
+                <div class="feature-title">🔒 Security & Compliance</div>
+                <div class="feature-desc">IAM policies, VPC security, and automated security scanning</div>
+            </div>
+        </div>
+        
+        <div class="tech-stack">
+            <div class="tech">Google Cloud Platform</div>
+            <div class="tech">Kubernetes (GKE)</div>
+            <div class="tech">Terraform</div>
+            <div class="tech">Docker</div>
+            <div class="tech">Cloud Build</div>
+            <div class="tech">Cloud Run</div>
+            <div class="tech">Cloud SQL</div>
+            <div class="tech">Cloud Storage</div>
+            <div class="tech">Cloud Monitoring</div>
+        </div>
+    </div>
+</body>
+</html>

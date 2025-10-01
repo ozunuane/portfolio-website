@@ -1,10 +1,6 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  // Fix workspace root warning
-  turbopack: {
-    root: __dirname,
-  },
   // Allow cross-origin requests in development
   allowedDevOrigins: ['127.0.0.1', 'localhost'],
   // Optimize images

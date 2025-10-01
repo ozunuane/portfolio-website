@@ -71,6 +71,7 @@ export interface Journal {
   tags: string[]
   featured: boolean
   image: string
+  active: boolean
 }
 
 export interface Speaking {
@@ -153,11 +154,15 @@ export function getCertifications(): Certification[] {
 }
 
 export function getJournals(): Journal[] {
-  return contentData.journals || []
+  return contentData.journals?.filter(journal => journal.active) || []
 }
 
 export function getFeaturedJournals(): Journal[] {
-  return contentData.journals?.filter(journal => journal.featured) || []
+  return contentData.journals?.filter(journal => journal.featured && journal.active) || []
+}
+
+export function getAllJournals(): Journal[] {
+  return contentData.journals || []
 }
 
 export function getSpeaking(): Speaking[] {

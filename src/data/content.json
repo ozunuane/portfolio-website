@@ -70,8 +70,8 @@
     },
     {
       "id": 3,
-      "company": "Combyn Contractor",
-      "position": "Lead DevOps Engineer",
+      "company": "Combyn ",
+      "position": "Lead DevOps Engineer |Contract",
       "location": "Remote",
       "startDate": "Sep 2023",
       "endDate": "Dec 2023",
@@ -90,7 +90,6 @@
         "Jenkins",
         "SonarQube",
         "Cloudflare",
-        "Docker Compose",
         "AWS RDS",
         "AWS Secrets Manager",
         "Docker",
@@ -175,7 +174,6 @@
       ],
       "technologies": [
         "Azure",
-        "Azure Key Vault",
         "Fortanix",
         "Docker",
         "Kubernetes",
@@ -192,6 +190,11 @@
       ]
     }
   ],
+
+
+
+
+  
   "skills": {
     "technical": [
       {
@@ -295,6 +298,14 @@
         "level": 85
       }
     ],
+
+
+
+
+
+
+
+
     "soft": [
       "Team Leadership",
       "DevOps Transformation",
@@ -327,6 +338,13 @@
       "Bitbucket"
     ]
   },
+
+
+
+
+
+
+  
   "projects": [
     {
       "id": 1,
@@ -411,6 +429,13 @@
       "featured": true
     }
   ],
+
+
+
+
+
+
+  
   "education": [
     {
       "institution": "Covenant University",
@@ -452,6 +477,11 @@
       "credentialId": "GCP-DEVOPS-2023"
     }
   ],
+
+
+
+
+  
   "journals": [
     {
       "id": 6,
@@ -484,7 +514,7 @@
       ],
       "featured": true,
       "image": "/journal-multicloud.jpg",
-      "active": true
+      "active": false
     },
     {
       "id": 2,
@@ -501,7 +531,7 @@
       ],
       "featured": true,
       "image": "/journal-cost-optimization.jpg",
-      "active": true
+      "active": false
     },
     {
       "id": 3,
@@ -518,7 +548,7 @@
       ],
       "featured": false,
       "image": "/journal-zero-trust.jpg",
-      "active": true
+      "active": false
     },
     {
       "id": 4,
@@ -535,7 +565,7 @@
       ],
       "featured": false,
       "image": "/journal-gitops.jpg",
-      "active": true
+      "active": false
     },
     {
       "id": 5,
@@ -555,6 +585,9 @@
       "active": false
     }
   ],
+
+
+
   "speaking": [
     {
       "id": 1,
@@ -586,7 +619,7 @@
       "slides": "https://slideshare.net/ozimede/cost-optimization",
       "video": "https://youtube.com/watch?v=example2",
       "featured": true,
-      "active": true
+      "active": false
     },
     {
       "id": 3,
@@ -602,7 +635,7 @@
       "slides": "https://slideshare.net/ozimede/zero-trust-k8s",
       "video": "https://youtube.com/watch?v=example3",
       "featured": false,
-      "active": true
+      "active": false
     },
     {
       "id": 4,
@@ -634,9 +667,14 @@
       "slides": "https://slideshare.net/ozimede/gitops-scale",
       "video": "https://youtube.com/watch?v=example5",
       "featured": false,
-      "active": true
+      "active": false
     }
   ],
+
+
+
+
+  
   "testimonials": [
     {
       "id": 1,

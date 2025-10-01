@@ -61,6 +61,18 @@ export interface Certification {
   credentialId: string
 }
 
+export interface Journal {
+  id: number
+  title: string
+  excerpt: string
+  content: string
+  publishedDate: string
+  readTime: string
+  tags: string[]
+  featured: boolean
+  image: string
+}
+
 export interface Testimonial {
   id: number
   name: string
@@ -82,6 +94,7 @@ export interface ContentData {
   projects: Project[]
   education: Education[]
   certifications: Certification[]
+  journals: Journal[]
   testimonials: Testimonial[]
 }
 
@@ -119,6 +132,14 @@ export function getEducation(): Education[] {
 
 export function getCertifications(): Certification[] {
   return contentData.certifications
+}
+
+export function getJournals(): Journal[] {
+  return contentData.journals
+}
+
+export function getFeaturedJournals(): Journal[] {
+  return contentData.journals.filter(journal => journal.featured)
 }
 
 export function getTestimonials(): Testimonial[] {

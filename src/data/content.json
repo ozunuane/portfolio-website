@@ -3,7 +3,7 @@
     "name": "Unuane Godspower Ozimede",
     "title": "Senior DevOps Engineer & Cloud Infrastructure Leader",
     "email": "godspowerunuane@gmail.com",
-    "phone": "+234 XXX XXX XXXX",
+    "phone": "+234 81 5904 6233",
     "location": "Lagos, Nigeria",
     "bio": "Visionary DevOps and Cloud Infrastructure Leader with experience architecting scalable, secure, and cost-efficient cloud solutions across fintech, e-commerce, and enterprise platforms. Proven track record of leading distributed teams, designing resilient CI/CD workflows, and implementing governance models to support compliance and security standards (PCI DSS, ISO 27001).",
     "summary": "Adept at multi-cloud deployments (Azure, AWS, Huawei, GCP), cloud cost control, container orchestration, and developer productivity enablement. Known for driving organizational transformation through Infrastructure as Code (IaC), DevSecOps practices, and high-impact automation initiatives."
@@ -12,7 +12,8 @@
     "github": "https://github.com/ozunuane",
     "linkedin": "https://www.linkedin.com/in/ozimede/",
     "twitter": "",
-    "website": ""
+    "website": "",
+    "medium": "https://medium.com/@ozidevops"
   },
   "experience": [
     {
@@ -30,7 +31,16 @@
         "Reduced incident recovery time by 60% through alerting, dashboards, and runbooks",
         "Managed technical onboarding and mentorship of junior DevOps staff"
       ],
-      "technologies": ["Azure", "GCP", "Huawei Cloud", "Terraform", "Kubernetes", "GitHub Actions", "Kafka", "Cloudflare"]
+      "technologies": [
+        "Azure",
+        "GCP",
+        "Huawei Cloud",
+        "Terraform",
+        "Kubernetes",
+        "GitHub Actions",
+        "Kafka",
+        "Cloudflare"
+      ]
     },
     {
       "id": 2,
@@ -47,7 +57,16 @@
         "Implemented observability stack using Prometheus, Grafana, and Loki with SLO-driven monitoring",
         "Implemented Zero Trust architecture and Web Application Firewall using Cloudflare"
       ],
-      "technologies": ["Terraform", "Kubernetes", "Huawei Cloud", "Azure", "Argo CD", "Prometheus", "Grafana", "Loki"]
+      "technologies": [
+        "Terraform",
+        "Kubernetes",
+        "Huawei Cloud",
+        "Azure",
+        "Argo CD",
+        "Prometheus",
+        "Grafana",
+        "Loki"
+      ]
     },
     {
       "id": 3,
@@ -64,7 +83,14 @@
         "Implemented automated security testing (SAST and DAST) for vulnerability detection",
         "Integrated SonarQube and Jenkins into the development lifecycle"
       ],
-      "technologies": ["AWS ECS", "Terraform", "Ansible", "Jenkins", "SonarQube", "Cloudflare"]
+      "technologies": [
+        "AWS ECS",
+        "Terraform",
+        "Ansible",
+        "Jenkins",
+        "SonarQube",
+        "Cloudflare"
+      ]
     },
     {
       "id": 4,
@@ -81,7 +107,14 @@
         "Integrated Kafka for messaging and event-driven microservice communication",
         "Deployed Ansible playbooks for secure VM patching and consistent OS-level configurations"
       ],
-      "technologies": ["AWS", "Terraform", "Ansible", "HashiCorp Vault", "Kafka", "ECS"]
+      "technologies": [
+        "AWS",
+        "Terraform",
+        "Ansible",
+        "HashiCorp Vault",
+        "Kafka",
+        "ECS"
+      ]
     },
     {
       "id": 5,
@@ -98,23 +131,114 @@
         "Implemented automated security testing (SAST and DAST) and Zero Trust architecture",
         "Configured secure cloud VPN connections for third-party integrations"
       ],
-      "technologies": ["Azure", "Azure Key Vault", "Fortanix", "Cloudflare", "Docker", "Kubernetes"]
+      "technologies": [
+        "Azure",
+        "Azure Key Vault",
+        "Fortanix",
+        "Cloudflare",
+        "Docker",
+        "Kubernetes"
+      ]
     }
   ],
   "skills": {
     "technical": [
-      { "name": "Terraform", "level": 95 },
-      { "name": "Kubernetes", "level": 95 },
-      { "name": "Docker", "level": 95 },
-      { "name": "Azure", "level": 95 },
-      { "name": "AWS", "level": 90 },
-      { "name": "Huawei Cloud", "level": 90 },
-      { "name": "GitHub Actions", "level": 95 },
-      { "name": "Python", "level": 85 },
-      { "name": "Bash Scripting", "level": 90 },
-      { "name": "Ansible", "level": 90 },
-      { "name": "Prometheus", "level": 85 },
-      { "name": "Grafana", "level": 85 }
+      {
+        "name": "Terraform",
+        "level": 95
+      },
+      {
+        "name": "Kubernetes",
+        "level": 95
+      },
+      {
+        "name": "Docker",
+        "level": 95
+      },
+      {
+        "name": "Azure",
+        "level": 95
+      },
+      {
+        "name": "AWS",
+        "level": 95
+      },
+      {
+        "name": "Huawei Cloud",
+        "level": 95
+      },
+      {
+        "name": "GitHub Actions",
+        "level": 95
+      },
+      {
+        "name": "Python",
+        "level": 85
+      },
+      {
+        "name": "Bash Scripting",
+        "level": 90
+      },
+      {
+        "name": "Ansible",
+        "level": 90
+      },
+      {
+        "name": "Prometheus",
+        "level": 85
+      },
+      {
+        "name": "Grafana",
+        "level": 85
+      },
+      {
+        "name": "ELK Stack",
+        "level": 85
+      },
+      {
+        "name": "Loki",
+        "level": 85
+      },
+      {
+        "name": "HashiCorp Vault",
+        "level": 85
+      },
+      {
+        "name": "CSI Secrets Store",
+        "level": 85
+      },
+      {
+        "name": "Git",
+        "level": 90
+      },
+      {
+        "name": "GitHub",
+        "level": 90
+      },
+      {
+        "name": "Bitbucket",
+        "level": 85
+      },
+      {
+        "name": "Azure DevOps",
+        "level": 85
+      },
+      {
+        "name": "Jenkins",
+        "level": 85
+      },
+      {
+        "name": "Argo CD",
+        "level": 85
+      },
+      {
+        "name": "Bitbucket Pipelines",
+        "level": 85
+      },
+      {
+        "name": "Kafka",
+        "level": 85
+      }
     ],
     "soft": [
       "Team Leadership",
@@ -140,9 +264,13 @@
       "Grafana",
       "ELK Stack",
       "HashiCorp Vault",
+      "CSI Secrets Store",
       "Ansible",
       "Kafka",
-      "SonarQube"
+      "SonarQube",
+      "Git",
+      "GitHub",
+      "Bitbucket"
     ]
   },
   "projects": [
@@ -151,7 +279,15 @@
       "title": "GCP Portfolio Project",
       "description": "Comprehensive Google Cloud Platform portfolio showcasing cloud infrastructure, DevOps practices, and scalable application deployment.",
       "longDescription": "A complete GCP-based portfolio project demonstrating cloud-native architecture, infrastructure as code, CI/CD pipelines, and modern DevOps practices. Features automated deployment, monitoring, and security best practices on Google Cloud Platform.",
-      "technologies": ["Google Cloud Platform", "Terraform", "Kubernetes", "Docker", "Cloud Build", "Cloud Run", "Monitoring"],
+      "technologies": [
+        "Google Cloud Platform",
+        "Terraform",
+        "Kubernetes",
+        "Docker",
+        "Cloud Build",
+        "Cloud Run",
+        "Monitoring"
+      ],
       "image": "/project-gcp-portfolio.jpg",
       "liveUrl": "",
       "githubUrl": "https://github.com/ozunuane/gcp_portfolio_project",
@@ -162,7 +298,17 @@
       "title": "AWS ECS Microservices Platform - Comyno",
       "description": "A comprehensive AWS ECS-based microservices platform built with Terraform implementing scalable, secure, and highly available architecture for expense management.",
       "longDescription": "Production-ready microservices platform featuring AWS ECS Fargate for serverless container orchestration, multi-tier load balancing with ALB/NLB, AWS Cloud Map service discovery, Apache Pulsar message broker, and Jenkins CI/CD integration. Includes comprehensive monitoring with CloudWatch, Grafana, and Loki across multi-AZ deployment in VPC with optimized subnet architecture.",
-      "technologies": ["AWS ECS Fargate", "Terraform", "ALB/NLB", "Cloud Map", "Apache Pulsar", "Jenkins", "CloudWatch", "Grafana"],
+      "technologies": [
+        "AWS ECS Fargate",
+        "Terraform",
+        "ALB/NLB",
+        "Cloud Map",
+        "Apache Pulsar",
+        "Bitbucket",
+        "Jenkins",
+        "CloudWatch",
+        "Grafana"
+      ],
       "image": "/project-aws-ecs.jpg",
       "liveUrl": "",
       "githubUrl": "https://github.com/ozunuane/aws-ecs-portfolio",
@@ -173,7 +319,17 @@
       "title": "Azure Multi-Tier Insurance Platform",
       "description": "A comprehensive Azure infrastructure deployment using Terraform that implements a secure, scalable multi-tier architecture for an insurance platform.",
       "longDescription": "Production-ready Azure infrastructure following best practices with hub-and-spoke network topology, private AKS clusters, and environment-specific configurations. Features Application Gateway with AGIC, PostgreSQL Flexible Server, Azure Key Vault, Blob Storage, and Workload Identity for secure pod-to-Azure resource authentication. Includes both production and staging environments with auto-scaling capabilities.",
-      "technologies": ["Azure", "Terraform", "AKS", "Application Gateway", "PostgreSQL", "Key Vault", "Blob Storage", "Workload Identity"],
+      "technologies": [
+        "Azure",
+        "Terraform",
+        "AKS",
+        "Application Gateway",
+        "GitHub Actions",
+        "PostgreSQL",
+        "Key Vault",
+        "Blob Storage",
+        "Workload Identity"
+      ],
       "image": "/project-azure-multi-tier.jpg",
       "liveUrl": "",
       "githubUrl": "https://github.com/ozunuane/azure-multi-tier-project",
@@ -184,7 +340,16 @@
       "title": "Huawei Cloud Container Engine (CCE) Migration",
       "description": "Production workload migration from GCP GKE to Huawei Cloud CCE with zero-downtime deployment and automated rollback capabilities.",
       "longDescription": "Successfully migrated enterprise applications from Google Kubernetes Engine to Huawei Cloud Container Engine, implementing blue-green deployment strategies, automated database migration scripts, and comprehensive monitoring solutions. Features Terraform infrastructure provisioning, Helm chart management, and CI/CD pipeline integration with Huawei DevCloud.",
-      "technologies": ["Huawei Cloud CCE", "Terraform", "Kubernetes", "Helm", "DevCloud", "RDS", "OBS", "ELB"],
+      "technologies": [
+        "Huawei Cloud CCE",
+        "Terraform",
+        "Kubernetes",
+        "Helm",
+        "DevCloud",
+        "RDS",
+        "OBS",
+        "ELB"
+      ],
       "image": "/project-huawei-cce.jpg",
       "liveUrl": "",
       "githubUrl": "https://github.com/ozunuane/huawei-cloud-migration",
@@ -230,6 +395,63 @@
       "issuer": "Google Cloud",
       "date": "2023",
       "credentialId": "GCP-DEVOPS-2023"
+    }
+  ],
+  "journals": [
+    {
+      "id": 1,
+      "title": "Building Resilient Multi-Cloud Infrastructure: Lessons from Production",
+      "excerpt": "Exploring the challenges and solutions in architecting fault-tolerant systems across AWS, Azure, GCP, and Huawei Cloud platforms.",
+      "content": "In today's rapidly evolving cloud landscape, organizations are increasingly adopting multi-cloud strategies to avoid vendor lock-in, improve resilience, and optimize costs. Having architected and managed production workloads across AWS, Azure, GCP, and Huawei Cloud, I've learned valuable lessons about building truly resilient multi-cloud infrastructure...",
+      "publishedDate": "2024-12-15",
+      "readTime": "8 min read",
+      "tags": ["Multi-Cloud", "Infrastructure", "DevOps", "Resilience"],
+      "featured": true,
+      "image": "/journal-multicloud.jpg"
+    },
+    {
+      "id": 2,
+      "title": "Cost Optimization in Cloud: Beyond Reserved Instances",
+      "excerpt": "Advanced strategies for reducing cloud costs by 30%+ through intelligent resource management, automation, and architectural decisions.",
+      "content": "Cost optimization in cloud environments goes far beyond simply purchasing reserved instances. Through implementing comprehensive cost control strategies across multiple organizations, I've discovered that the most significant savings come from architectural decisions, automation, and intelligent resource management...",
+      "publishedDate": "2024-11-28",
+      "readTime": "6 min read",
+      "tags": ["Cost Optimization", "Cloud Economics", "Automation", "FinOps"],
+      "featured": true,
+      "image": "/journal-cost-optimization.jpg"
+    },
+    {
+      "id": 3,
+      "title": "Implementing Zero-Trust Security in Kubernetes",
+      "excerpt": "A practical guide to securing containerized workloads with zero-trust principles, service mesh, and policy-as-code.",
+      "content": "Zero-trust security has become essential for modern containerized applications. This article explores practical implementation strategies for zero-trust architecture in Kubernetes environments, covering service mesh integration, policy enforcement, and secrets management...",
+      "publishedDate": "2024-11-10",
+      "readTime": "10 min read",
+      "tags": ["Security", "Kubernetes", "Zero-Trust", "DevSecOps"],
+      "featured": false,
+      "image": "/journal-zero-trust.jpg"
+    },
+    {
+      "id": 4,
+      "title": "GitOps at Scale: Managing 100+ Microservices",
+      "excerpt": "Scaling GitOps practices for large microservices architectures with automated deployments, rollbacks, and compliance.",
+      "content": "Managing deployments for large-scale microservices architectures presents unique challenges. This post shares insights from implementing GitOps practices across 100+ microservices, including automation strategies, rollback mechanisms, and compliance considerations...",
+      "publishedDate": "2024-10-22",
+      "readTime": "7 min read",
+      "tags": ["GitOps", "Microservices", "CI/CD", "Automation"],
+      "featured": false,
+      "image": "/journal-gitops.jpg"
+    },
+    {
+      "id": 5,
+      "title": "Observability Engineering: From Metrics to Insights",
+      "excerpt": "Building comprehensive observability systems that provide actionable insights for complex distributed systems.",
+      "content": "Effective observability goes beyond collecting metrics and logs. This article explores how to build observability systems that provide actionable insights, reduce MTTR, and enable proactive incident prevention in complex distributed environments...",
+      "publishedDate": "2024-09-15",
+      "readTime": "9 min read",
+      "tags": ["Observability", "Monitoring", "SRE", "Distributed Systems"],
+      "featured": false,
+      "image": "/journal-observability.jpg"
     }
   ],
   "testimonials": [

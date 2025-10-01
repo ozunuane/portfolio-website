@@ -73,6 +73,22 @@ export interface Journal {
   image: string
 }
 
+export interface Speaking {
+  id: number
+  title: string
+  event: string
+  date: string
+  location: string
+  type: string
+  duration: string
+  audience: string
+  description: string
+  topics: string[]
+  slides: string
+  video: string
+  featured: boolean
+}
+
 export interface Testimonial {
   id: number
   name: string
@@ -95,6 +111,7 @@ export interface ContentData {
   education: Education[]
   certifications: Certification[]
   journals: Journal[]
+  speaking: Speaking[]
   testimonials: Testimonial[]
 }
 
@@ -140,6 +157,14 @@ export function getJournals(): Journal[] {
 
 export function getFeaturedJournals(): Journal[] {
   return contentData.journals?.filter(journal => journal.featured) || []
+}
+
+export function getSpeaking(): Speaking[] {
+  return contentData.speaking || []
+}
+
+export function getFeaturedSpeaking(): Speaking[] {
+  return contentData.speaking?.filter(speaking => speaking.featured) || []
 }
 
 export function getTestimonials(): Testimonial[] {

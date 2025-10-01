@@ -498,6 +498,83 @@
       "image": "/journal-observability.jpg"
     }
   ],
+  "speaking": [
+    {
+      "id": 1,
+      "title": "Multi-Cloud DevOps: Best Practices for Enterprise Scale",
+      "event": "DevOps Days Lagos 2024",
+      "date": "2024-11-15",
+      "location": "Lagos, Nigeria",
+      "type": "Conference Talk",
+      "duration": "45 minutes",
+      "audience": "200+ DevOps Engineers",
+      "description": "Shared insights on implementing multi-cloud strategies using Terraform, Kubernetes, and GitOps practices for enterprise-scale applications.",
+      "topics": ["Multi-Cloud", "Terraform", "Kubernetes", "GitOps", "Enterprise DevOps"],
+      "slides": "https://slideshare.net/ozimede/multi-cloud-devops",
+      "video": "https://youtube.com/watch?v=example1",
+      "featured": true
+    },
+    {
+      "id": 2,
+      "title": "Cost Optimization in Cloud Infrastructure",
+      "event": "AWS User Group Nigeria",
+      "date": "2024-10-20",
+      "location": "Lagos, Nigeria",
+      "type": "Meetup Talk",
+      "duration": "30 minutes",
+      "audience": "150+ Cloud Engineers",
+      "description": "Presented strategies for reducing cloud costs by 30%+ through intelligent resource management, automation, and architectural decisions.",
+      "topics": ["Cost Optimization", "AWS", "FinOps", "Automation", "Cloud Economics"],
+      "slides": "https://slideshare.net/ozimede/cost-optimization",
+      "video": "https://youtube.com/watch?v=example2",
+      "featured": true
+    },
+    {
+      "id": 3,
+      "title": "Zero-Trust Security in Kubernetes Environments",
+      "event": "Kubernetes Community Days Nigeria",
+      "date": "2024-09-10",
+      "location": "Abuja, Nigeria",
+      "type": "Workshop",
+      "duration": "2 hours",
+      "audience": "80+ Platform Engineers",
+      "description": "Hands-on workshop covering zero-trust principles, service mesh implementation, and policy-as-code for securing containerized workloads.",
+      "topics": ["Security", "Kubernetes", "Zero-Trust", "Service Mesh", "Policy-as-Code"],
+      "slides": "https://slideshare.net/ozimede/zero-trust-k8s",
+      "video": "https://youtube.com/watch?v=example3",
+      "featured": false
+    },
+    {
+      "id": 4,
+      "title": "Observability Engineering: From Metrics to Insights",
+      "event": "SRE Nigeria Conference",
+      "date": "2024-08-25",
+      "location": "Lagos, Nigeria",
+      "type": "Conference Talk",
+      "duration": "40 minutes",
+      "audience": "300+ SREs and DevOps Engineers",
+      "description": "Explored building comprehensive observability systems using Prometheus, Grafana, and Loki for actionable insights in distributed systems.",
+      "topics": ["Observability", "Prometheus", "Grafana", "Loki", "SRE", "Monitoring"],
+      "slides": "https://slideshare.net/ozimede/observability-engineering",
+      "video": "https://youtube.com/watch?v=example4",
+      "featured": true
+    },
+    {
+      "id": 5,
+      "title": "GitOps at Scale: Managing 100+ Microservices",
+      "event": "CNCF Nigeria Meetup",
+      "date": "2024-07-15",
+      "location": "Lagos, Nigeria",
+      "type": "Meetup Talk",
+      "duration": "35 minutes",
+      "audience": "120+ Platform Engineers",
+      "description": "Shared experiences scaling GitOps practices for large microservices architectures with automated deployments and compliance.",
+      "topics": ["GitOps", "Microservices", "Argo CD", "CI/CD", "Automation"],
+      "slides": "https://slideshare.net/ozimede/gitops-scale",
+      "video": "https://youtube.com/watch?v=example5",
+      "featured": false
+    }
+  ],
   "testimonials": [
     {
       "id": 1,

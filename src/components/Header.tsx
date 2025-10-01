@@ -11,6 +11,7 @@ const navigation = [
   { name: 'Education', href: '#education' },
   { name: 'Portfolio', href: '#portfolio' },
   { name: 'Journals', href: '#journals' },
+  { name: 'Speaking', href: '#speaking' },
   { name: 'Contact', href: '#contact' },
 ]
 

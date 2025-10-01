@@ -6,6 +6,7 @@ import Experience from '@/components/Experience'
 import Education from '@/components/Education'
 import Portfolio from '@/components/Portfolio'
 import Journals from '@/components/Journals'
+import Speaking from '@/components/Speaking'
 import Contact from '@/components/Contact'
 import Footer from '@/components/Footer'
 
@@ -20,6 +21,7 @@ export default function Home() {
       <Education />
       <Portfolio />
       <Journals />
+      <Speaking />
       <Contact />
       <Footer />
     </main>

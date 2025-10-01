@@ -159,13 +159,13 @@
     },
     {
       "id": 2,
-      "title": "Automated Database Migration System",
-      "description": "GitHub Actions workflow for automated schema migrations with rollback capabilities and integrity validation.",
-      "longDescription": "Designed and implemented a comprehensive database migration system using GitHub Actions that supports zero-downtime releases. The system includes automated rollback mechanisms, integrity validation, and successfully migrated applications from GCP (GKE) to Huawei Cloud (CCE).",
-      "technologies": ["GitHub Actions", "Kubernetes", "GCP", "Huawei Cloud", "Docker", "Terraform"],
-      "image": "/project-migration.jpg",
+      "title": "AWS ECS Portfolio Infrastructure",
+      "description": "Production-ready AWS ECS infrastructure deployment using Terraform with modular architecture and automated provisioning.",
+      "longDescription": "Complete Infrastructure as Code solution for AWS ECS deployment featuring modular Terraform architecture, automated database setup, and secure access management. Includes comprehensive shell scripts for installation, database creation, and access configuration, demonstrating enterprise-grade AWS infrastructure management.",
+      "technologies": ["AWS ECS", "Terraform", "AWS RDS", "VPC", "IAM", "Shell Scripting", "Infrastructure as Code"],
+      "image": "/project-aws-ecs.jpg",
       "liveUrl": "",
-      "githubUrl": "https://github.com/ozunuane/db-migration-automation",
+      "githubUrl": "https://github.com/ozunuane/aws-ecs-portfolio",
       "featured": true
     },
     {

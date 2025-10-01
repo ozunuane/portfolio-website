@@ -337,22 +337,23 @@
     },
     {
       "id": 4,
-      "title": "Huawei Cloud Container Engine (CCE) Migration",
-      "description": "Production workload migration from GCP GKE to Huawei Cloud CCE with zero-downtime deployment and automated rollback capabilities.",
-      "longDescription": "Successfully migrated enterprise applications from Google Kubernetes Engine to Huawei Cloud Container Engine, implementing blue-green deployment strategies, automated database migration scripts, and comprehensive monitoring solutions. Features Terraform infrastructure provisioning, Helm chart management, and CI/CD pipeline integration with Huawei DevCloud.",
+      "title": "Huawei Cloud Multi-Tier Insurance Platform",
+      "description": "Enterprise-grade multi-tier architecture on Huawei Cloud featuring CCE clusters, PostgreSQL RDS, Redis cache, and comprehensive security with Cloudflare integration.",
+      "longDescription": "Production-ready multi-tier insurance platform deployed on Huawei Cloud with Container Engine (CCE), implementing secure network architecture, auto-scaling node pools, and comprehensive service mesh. Features Terraform Infrastructure as Code, Ansible automation, multi-environment support (dev/prod), and integrated CI/CD with GitHub Actions. Includes PostgreSQL RDS, Redis cache, ELB load balancing, and Cloudflare DNS management with SSL certificates.",
       "technologies": [
         "Huawei Cloud CCE",
         "Terraform",
         "Kubernetes",
-        "Helm",
-        "DevCloud",
-        "RDS",
-        "OBS",
-        "ELB"
+        "PostgreSQL RDS",
+        "Redis",
+        "ELB",
+        "Cloudflare",
+        "Ansible",
+        "GitHub Actions"
       ],
       "image": "/project-huawei-cce.jpg",
       "liveUrl": "",
-      "githubUrl": "https://github.com/ozunuane/huawei-cloud-migration",
+      "githubUrl": "https://github.com/ozunuane/huawei-multi-tier-poject",
       "featured": true
     }
   ],

@@ -8,10 +8,10 @@ export default function Skills() {
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="mx-auto max-w-2xl lg:mx-0">
           <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
-            Skills & Expertise
+            Core Competencies
           </h2>
           <p className="mt-6 text-lg leading-8 text-gray-600">
-            A comprehensive overview of my technical skills, soft skills, and the tools I use to deliver exceptional results.
+            Technical expertise, leadership capabilities, and tools that drive successful DevOps transformations and cloud infrastructure solutions.
           </p>
         </div>
         
@@ -23,14 +23,14 @@ export default function Skills() {
                 <div className="h-8 w-8 rounded-lg bg-blue-100 flex items-center justify-center">
                   <div className="h-4 w-4 rounded bg-blue-600"></div>
                 </div>
-                <h3 className="text-xl font-semibold text-gray-900">Technical Skills</h3>
+                <h3 className="text-lg font-semibold text-gray-800">Technical Expertise</h3>
               </div>
               <div className="space-y-4">
                 {skills.technical.map((skill) => (
                   <div key={skill.name} className="space-y-2">
                     <div className="flex items-center justify-between">
-                      <span className="text-sm font-medium text-gray-700">{skill.name}</span>
-                      <span className="text-sm text-gray-500">{skill.level}%</span>
+                      <span className="text-sm font-medium text-gray-800">{skill.name}</span>
+                      <span className="text-sm font-medium text-blue-600">{skill.level}%</span>
                     </div>
                     <div className="w-full bg-gray-200 rounded-full h-2">
                       <div 
@@ -49,7 +49,7 @@ export default function Skills() {
                 <div className="h-8 w-8 rounded-lg bg-green-100 flex items-center justify-center">
                   <div className="h-4 w-4 rounded bg-green-600"></div>
                 </div>
-                <h3 className="text-xl font-semibold text-gray-900">Soft Skills</h3>
+                <h3 className="text-lg font-semibold text-gray-800">Leadership & Collaboration</h3>
               </div>
               <div className="space-y-3">
                 {skills.soft.map((skill) => (
@@ -69,7 +69,7 @@ export default function Skills() {
                 <div className="h-8 w-8 rounded-lg bg-purple-100 flex items-center justify-center">
                   <div className="h-4 w-4 rounded bg-purple-600"></div>
                 </div>
-                <h3 className="text-xl font-semibold text-gray-900">Tools & Technologies</h3>
+                <h3 className="text-lg font-semibold text-gray-800">DevOps Toolchain</h3>
               </div>
               <div className="space-y-3">
                 {skills.tools.map((tool) => (

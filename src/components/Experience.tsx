@@ -9,10 +9,10 @@ export default function Experience() {
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="mx-auto max-w-2xl lg:mx-0">
           <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
-            Professional Experience
+            Career Journey
           </h2>
           <p className="mt-6 text-lg leading-8 text-gray-600">
-            A journey of growth, learning, and impactful contributions across various roles and organizations.
+            Leading DevOps transformations and cloud infrastructure initiatives across fintech, e-commerce, and enterprise platforms.
           </p>
         </div>
         
@@ -33,8 +33,8 @@ export default function Experience() {
                 <div className="bg-white rounded-lg shadow-sm border border-gray-200 p-6">
                   <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between mb-4">
                     <div>
-                      <h3 className="text-xl font-semibold text-gray-900">{job.position}</h3>
-                      <p className="text-lg text-blue-600 font-medium">{job.company}</p>
+                      <h3 className="text-lg font-semibold text-gray-800">{job.position}</h3>
+                      <p className="text-base text-blue-600 font-medium">{job.company}</p>
                     </div>
                     <div className="flex items-center gap-4 mt-2 sm:mt-0 text-sm text-gray-500">
                       <div className="flex items-center gap-1">
@@ -48,12 +48,12 @@ export default function Experience() {
                     </div>
                   </div>
                   
-                  <p className="text-gray-600 mb-4">{job.description}</p>
+                  <p className="text-gray-700 mb-4 leading-relaxed">{job.description}</p>
                   
                   {job.achievements && job.achievements.length > 0 && (
                     <div className="mb-4">
-                      <h4 className="text-sm font-semibold text-gray-900 mb-2">Key Achievements:</h4>
-                      <ul className="list-disc list-inside space-y-1 text-sm text-gray-600">
+                      <h4 className="text-sm font-semibold text-gray-800 mb-2">Key Achievements:</h4>
+                      <ul className="list-disc list-inside space-y-1 text-sm text-gray-700">
                         {job.achievements.map((achievement, idx) => (
                           <li key={idx}>{achievement}</li>
                         ))}
@@ -63,7 +63,7 @@ export default function Experience() {
                   
                   {job.technologies && job.technologies.length > 0 && (
                     <div>
-                      <h4 className="text-sm font-semibold text-gray-900 mb-2">Technologies Used:</h4>
+                      <h4 className="text-sm font-semibold text-gray-800 mb-2">Technologies Used:</h4>
                       <div className="flex flex-wrap gap-2">
                         {job.technologies.map((tech) => (
                           <span 

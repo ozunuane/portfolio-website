@@ -512,7 +512,8 @@
       "topics": ["Multi-Cloud", "Terraform", "Kubernetes", "GitOps", "Enterprise DevOps"],
       "slides": "https://slideshare.net/ozimede/multi-cloud-devops",
       "video": "https://youtube.com/watch?v=example1",
-      "featured": true
+      "featured": true,
+      "active": true
     },
     {
       "id": 2,
@@ -527,7 +528,8 @@
       "topics": ["Cost Optimization", "AWS", "FinOps", "Automation", "Cloud Economics"],
       "slides": "https://slideshare.net/ozimede/cost-optimization",
       "video": "https://youtube.com/watch?v=example2",
-      "featured": true
+      "featured": true,
+      "active": true
     },
     {
       "id": 3,
@@ -542,7 +544,8 @@
       "topics": ["Security", "Kubernetes", "Zero-Trust", "Service Mesh", "Policy-as-Code"],
       "slides": "https://slideshare.net/ozimede/zero-trust-k8s",
       "video": "https://youtube.com/watch?v=example3",
-      "featured": false
+      "featured": false,
+      "active": true
     },
     {
       "id": 4,
@@ -557,7 +560,8 @@
       "topics": ["Observability", "Prometheus", "Grafana", "Loki", "SRE", "Monitoring"],
       "slides": "https://slideshare.net/ozimede/observability-engineering",
       "video": "https://youtube.com/watch?v=example4",
-      "featured": true
+      "featured": true,
+      "active": false
     },
     {
       "id": 5,
@@ -572,7 +576,8 @@
       "topics": ["GitOps", "Microservices", "Argo CD", "CI/CD", "Automation"],
       "slides": "https://slideshare.net/ozimede/gitops-scale",
       "video": "https://youtube.com/watch?v=example5",
-      "featured": false
+      "featured": false,
+      "active": true
     }
   ],
   "testimonials": [

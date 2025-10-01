@@ -87,6 +87,7 @@ export interface Speaking {
   slides: string
   video: string
   featured: boolean
+  active: boolean
 }
 
 export interface Testimonial {
@@ -160,11 +161,15 @@ export function getFeaturedJournals(): Journal[] {
 }
 
 export function getSpeaking(): Speaking[] {
-  return contentData.speaking || []
+  return contentData.speaking?.filter(speaking => speaking.active) || []
 }
 
 export function getFeaturedSpeaking(): Speaking[] {
-  return contentData.speaking?.filter(speaking => speaking.featured) || []
+  return contentData.speaking?.filter(speaking => speaking.featured && speaking.active) || []
+}
+
+export function getAllSpeaking(): Speaking[] {
+  return contentData.speaking || []
 }
 
 export function getTestimonials(): Testimonial[] {

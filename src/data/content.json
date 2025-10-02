@@ -475,7 +475,14 @@
       "issuer": "Google Cloud",
       "date": "2023",
       "credentialId": "GCP-DEVOPS-2023"
+    },
+    {
+      "name": "    Oracle Cloud Infrastructure Multicloud Architect Professional (2025)",
+      "issuer": "Oracle Cloud Infrastructure",
+      "date": "2025",
+      "credentialId": "OCI-MULTICLOUD-2025"
     }
+
   ],
 
 
@@ -485,7 +492,7 @@
   "journals": [
     {
       "id": 6,
-      "title": "New Article Title - Edit This",
+      "title": "Cost Optimization in Cloud Infrastructure: Factors Influencing the Nigerian Market and Organizational Strategies for Effective Management",
       "excerpt": "Brief description of your article - Edit This",
       "content": "Full article content goes here - Edit This",
       "publishedDate": "2025-10-01",
@@ -592,7 +599,7 @@
     {
       "id": 1,
       "title": "Multi-Cloud DevOps: Best Practices for Enterprise Scale",
-      "event": "DevOps Days Lagos 2024",
+      "event": "Skillhanger DevOps Days Lagos 2024",
       "date": "2024-11-15",
       "location": "Lagos, Nigeria",
       "type": "Conference Talk",
@@ -608,7 +615,7 @@
     {
       "id": 2,
       "title": "Cost Optimization in Cloud Infrastructure",
-      "event": "AWS User Group Nigeria",
+      "event": "Cloud User Group Nigeria",
       "date": "2024-10-20",
       "location": "Lagos, Nigeria",
       "type": "Meetup Talk",

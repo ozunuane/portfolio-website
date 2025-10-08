@@ -1,5 +1,5 @@
 import { getEducation, getCertifications } from '@/lib/content'
-import { GraduationCap, Award, MapPin, Calendar } from 'lucide-react'
+import { GraduationCap, Award, MapPin, Calendar, ExternalLink } from 'lucide-react'
 
 export default function Education() {
   const education = getEducation()
@@ -74,6 +74,17 @@ export default function Education() {
                             </div>
                           )}
                         </div>
+                        {cert.credentialUrl && (
+                          <a
+                            href={cert.credentialUrl}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="inline-flex items-center gap-1.5 mt-3 px-3 py-1.5 text-sm font-medium text-green-700 bg-green-50 hover:bg-green-100 border border-green-200 rounded-lg transition-colors duration-200"
+                          >
+                            <ExternalLink className="h-3.5 w-3.5" />
+                            View Credential
+                          </a>
+                        )}
                       </div>
                     </div>
                   </div>

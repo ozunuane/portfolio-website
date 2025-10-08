@@ -450,37 +450,43 @@
       "name": "AWS Certified Solutions Architect",
       "issuer": "Amazon Web Services",
       "date": "2023",
-      "credentialId": "AWS-SAA-2023"
+      "credentialId": "AWS-SAA-2023",
+      "credentialUrl": "https://www.credly.com/badges/aws-saa-2023"
     },
     {
       "name": "Azure DevOps Engineer Expert",
       "issuer": "Microsoft",
       "date": "2023",
-      "credentialId": "AZ-400"
+      "credentialId": "AZ-400",
+      "credentialUrl": "https://learn.microsoft.com/en-us/users/credentials/az-400"
     },
     {
       "name": "Certified Kubernetes Administrator (CKA)",
       "issuer": "Cloud Native Computing Foundation",
       "date": "2022",
-      "credentialId": "CKA-2022"
+      "credentialId": "CKA-2022",
+      "credentialUrl": "https://www.credly.com/badges/cka-2022"
     },
     {
       "name": "HashiCorp Certified: Terraform Associate",
       "issuer": "HashiCorp",
       "date": "2022",
-      "credentialId": "TERRAFORM-ASSOC-2022"
+      "credentialId": "TERRAFORM-ASSOC-2022",
+      "credentialUrl": "https://www.credly.com/badges/terraform-assoc-2022"
     },
     {
       "name": "Google Cloud Professional DevOps Engineer",
       "issuer": "Google Cloud",
       "date": "2023",
-      "credentialId": "GCP-DEVOPS-2023"
+      "credentialId": "GCP-DEVOPS-2023",
+      "credentialUrl": "https://www.credential.net/gcp-devops-2023"
     },
     {
       "name": "    Oracle Cloud Infrastructure Multicloud Architect Professional (2025)",
       "issuer": "Oracle Cloud Infrastructure",
       "date": "2025",
-      "credentialId": "OCI-MULTICLOUD-2025"
+      "credentialId": "9460055186645004DCD7472D8CB1C0C59886DA55C8A398CE7991772933176036",
+      "credentialUrl": "https://www.credly.com/badges/9460055186645004DCD7472D8CB1C0C59886DA55C8A398CE7991772933176036/public_url"
     }
 
   ],

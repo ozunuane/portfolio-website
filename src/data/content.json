@@ -475,11 +475,11 @@
       "credentialUrl": "https://www.credly.com/badges/terraform-assoc-2022"
     },
     {
-      "name": "Google Cloud Professional DevOps Engineer",
+      "name": "Google Certified Professional Cloud Architect",
       "issuer": "Google Cloud",
-      "date": "2023",
-      "credentialId": "GCP-DEVOPS-2023",
-      "credentialUrl": "https://www.credential.net/gcp-devops-2023"
+      "date": "2025",
+      "credentialId": "GCP-DEVOPS-2025",
+      "credentialUrl": "https://www.credential.net/gcp-devops-2025"
     },
     {
       "name": "Oracle Cloud Infrastructure 2025 Certified Multicloud Architect Professional",
@@ -487,6 +487,13 @@
       "date": "2025",
       "credentialId": "9460055186645004DCD7472D8CB1C0C59886DA55C8A398CE7991772933176036",
       "credentialUrl": "https://catalog-education.oracle.com/ords/certview/sharebadge?id=9460055186645004DCD7472D8CB1C0C59886DA55C8A398CE7991772933176036"
+    },
+    {
+      "name": "Oracle Cloud Infrastructure 2025 Certified Architect Associate",
+      "issuer": "Oracle",
+      "date": "2025",
+      "credentialId": "9460055186645004DCD7472D8CB1C0C59886DA55C8A398CE7991772933176036",
+      "credentialUrl": "https://catalog-education.oracle.com/ords/certview/sharebadge?id=00381D8E14FAAE89DBDF167C67D048687B6AE7B907B8F9C16CE15F08FC87A984"
     }
 
   ],

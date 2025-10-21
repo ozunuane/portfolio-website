@@ -34,7 +34,7 @@ export default function Hero() {
               Get in Touch
             </a>
             <a
-              href="/UNUANE GODSPOWER OZIMEDE_CV_25 (1).pdf"
+              href="/GODSPOWER UNUANE_LD.pdf"
               target="_blank"
               rel="noopener noreferrer"
               className="text-sm font-semibold leading-6 text-gray-900 hover:text-blue-600 transition-colors flex items-center gap-2"

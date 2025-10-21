@@ -447,7 +447,7 @@
   ],
   "certifications": [
     {
-      "name": "AWS Certified Solutions Architect",
+      "name": "AWS Certified Solutions Architect In-View",
       "issuer": "Amazon Web Services",
       "date": "2023",
       "credentialId": "AWS-SAA-2023",
@@ -461,21 +461,21 @@
       "credentialUrl": "https://learn.microsoft.com/en-us/users/credentials/az-400"
     },
     {
-      "name": "Certified Kubernetes Administrator (CKA)",
+      "name": "Certified Kubernetes Administrator (CKA) In-View",
       "issuer": "Cloud Native Computing Foundation",
       "date": "2022",
       "credentialId": "CKA-2022",
       "credentialUrl": "https://www.credly.com/badges/cka-2022"
     },
     {
-      "name": "HashiCorp Certified: Terraform Associate",
+      "name": "HashiCorp Certified: Terraform Associate In-View",
       "issuer": "HashiCorp",
       "date": "2022",
       "credentialId": "TERRAFORM-ASSOC-2022",
       "credentialUrl": "https://www.credly.com/badges/terraform-assoc-2022"
     },
     {
-      "name": "Google Certified Professional Cloud Architect",
+      "name": "Google Certified Professional Cloud Architect | In-View",
       "issuer": "Google Cloud",
       "date": "2025",
       "credentialId": "GCP-DEVOPS-2025",

@@ -15,6 +15,7 @@
     "website": "",
     "medium": "https://medium.com/@ozidevops"
   },
+  
   "experience": [
     {
       "id": 1,
@@ -41,154 +42,154 @@
         "Kafka",
         "Cloudflare"
       ]
-    }
-    // {
-    //   "id": 2,
-    //   "company": "Canalis-HQ Contractor",
-    //   "position": "Lead DevOps Engineer",
-    //   "location": "Remote",
-    //   "startDate": "Aug 2024",
-    //   "endDate": "Present",
-    //   "description": "Leading full lifecycle infrastructure delivery and GitOps practices for scalable microservices architecture.",
-    //   "achievements": [
-    //     "Led full lifecycle infrastructure delivery using Terraform and Kubernetes on Huawei Cloud and Azure",
-    //     "Designed and enforced GitOps practices using for zero-downtime updates",
-    //     "Integrated CI/CD security gates and scanning tools into release pipelines",
-    //     "Implemented observability stack using Prometheus, Grafana, and Loki with SLO-driven monitoring",
-    //     "Implemented Zero Trust architecture and Web Application Firewall using Cloudflare"
-    //   ],
-    //   "technologies": [
-    //     "Terraform",
-    //     "Kubernetes",
-    //     "Huawei Cloud",
-    //     "Azure",
-    //     "GitOps",
-    //     "Prometheus",
-    //     "Grafana",
-    //     "Loki"
-    //   ]
-    // },
-    // {
-    //   "id": 3,
-    //   "company": "Combyn ",
-    //   "position": "Lead DevOps Engineer |Contract",
-    //   "location": "Remote",
-    //   "startDate": "Sep 2023",
-    //   "endDate": "Dec 2023",
-    //   "description": "Led infrastructure automation strategy and deployment architecture for fast-paced product releases.",
-    //   "achievements": [
-    //     "Led infrastructure automation strategy using Terraform and Ansible",
-    //     "Orchestrated deployment architecture on AWS ECS with integrated code quality tools",
-    //     "Strengthened cloud network security with tiered VPC design and IAM policy governance",
-    //     "Implemented automated security testing (SAST and DAST) for vulnerability detection",
-    //     "Integrated SonarQube and Jenkins into the development lifecycle"
-    //   ],
-    //   "technologies": [
-    //     "AWS ECS Fargate",
-    //     "Terraform",
-    //     "Ansible",
-    //     "Jenkins",
-    //     "SonarQube",
-    //     "Cloudflare",
-    //     "AWS RDS",
-    //     "AWS Secrets Manager",
-    //     "Docker",
-    //     "Docker Compose"
-    //   ]
-    // },
-    // {
-    //   "id": 4,
-    //   "company": "Bluebulb",
-    //   "position": "DevOps Engineer | Contractor",
-    //   "location": "Remote",
-    //   "startDate": "Sept 2023",
-    //   "endDate": "Jan 2024",
-    //   "description": "Drove cost optimization and security compliance while automating deployment pipelines and infrastructure management.",
-    //   "achievements": [
-    //     "Built containerized microservices architecture using Docker and ECS",
-    //     "Deployed CI/CD pipelines using GitHub Actions and IaC",
-    //     "Strengthened cloud network security with tiered VPC design",
-    //     "Enabled high-availability logging with ELK stack integration",
-    //     "Implemented Zero Trust architecture and WAF",
-    //     "Built infrastructure as code using Terraform"
-    //   ],
-    //   "technologies": [
-    //     "Terraform",
-    //     "Ansible",
-    //     "HashiCorp Vault",
-    //     "RabbitMQ",
-    //     "Redis",
-    //     "PostgreSQL",
-    //     "GitHub Actions",
-    //     "AWS ECS Fargate",
-    //     "AWS RDS",
-    //     "AWS Secrets Manager",
-    //     "Docker",
-    //     "Docker Compose"
-    //   ]
-    // },
-    // {
-    //   "id": 5,
-    //   "company": "Moni Africa",
-    //   "position": "DevOps Engineer",
-    //   "location": "Remote",
-    //   "startDate": "Dec 2022",
-    //   "endDate": "2023",
-    //   "description": "Drove cost optimization and security compliance while automating deployment pipelines and infrastructure management.",
-    //   "achievements": [
-    //     "Drove 25% reduction in operating costs through spot instances and schedule-based shutdown policies",
-    //     "Automated deployment pipelines and secret rotation using Ansible, Terraform, and Vault",
-    //     "Enforced RBAC and IAM access policies aligning with ISO 27001 and SOC 2 recommendations",
-    //     "Integrated Kafka for messaging and event-driven microservice communication",
-    //     "Deployed Ansible playbooks for secure VM patching and consistent OS-level configurations"
-    //   ],
-    //   "technologies": [
-    //     "AWS",
-    //     "Terraform",
-    //     "Ansible",
-    //     "HashiCorp Vault",
-    //     "Kafka",
-    //     "ECS",
-    //     "Redis",
-    //     "PostgreSQL",
-    //     "Bitbucket Pipelines",
-    //     "AWS Secrets Manager",
-    //     "AWS RDS"
+    },
+    {
+      "id": 2,
+      "company": "Canalis-HQ Contractor",
+      "position": "Lead DevOps Engineer",
+      "location": "Remote",
+      "startDate": "Aug 2024",
+      "endDate": "Present",
+      "description": "Leading full lifecycle infrastructure delivery and GitOps practices for scalable microservices architecture.",
+      "achievements": [
+        "Led full lifecycle infrastructure delivery using Terraform and Kubernetes on Huawei Cloud and Azure",
+        "Designed and enforced GitOps practices using for zero-downtime updates",
+        "Integrated CI/CD security gates and scanning tools into release pipelines",
+        "Implemented observability stack using Prometheus, Grafana, and Loki with SLO-driven monitoring",
+        "Implemented Zero Trust architecture and Web Application Firewall using Cloudflare"
+      ],
+      "technologies": [
+        "Terraform",
+        "Kubernetes",
+        "Huawei Cloud",
+        "Azure",
+        "GitOps",
+        "Prometheus",
+        "Grafana",
+        "Loki"
+      ]
+    },
+    {
+      "id": 3,
+      "company": "Combyn ",
+      "position": "Lead DevOps Engineer |Contract",
+      "location": "Remote",
+      "startDate": "Sep 2023",
+      "endDate": "Dec 2023",
+      "description": "Led infrastructure automation strategy and deployment architecture for fast-paced product releases.",
+      "achievements": [
+        "Led infrastructure automation strategy using Terraform and Ansible",
+        "Orchestrated deployment architecture on AWS ECS with integrated code quality tools",
+        "Strengthened cloud network security with tiered VPC design and IAM policy governance",
+        "Implemented automated security testing (SAST and DAST) for vulnerability detection",
+        "Integrated SonarQube and Jenkins into the development lifecycle"
+      ],
+      "technologies": [
+        "AWS ECS Fargate",
+        "Terraform",
+        "Ansible",
+        "Jenkins",
+        "SonarQube",
+        "Cloudflare",
+        "AWS RDS",
+        "AWS Secrets Manager",
+        "Docker",
+        "Docker Compose"
+      ]
+    },
+    {
+      "id": 4,
+      "company": "Bluebulb",
+      "position": "DevOps Engineer | Contractor",
+      "location": "Remote",
+      "startDate": "Sept 2023",
+      "endDate": "Jan 2024",
+      "description": "Drove cost optimization and security compliance while automating deployment pipelines and infrastructure management.",
+      "achievements": [
+        "Built containerized microservices architecture using Docker and ECS",
+        "Deployed CI/CD pipelines using GitHub Actions and IaC",
+        "Strengthened cloud network security with tiered VPC design",
+        "Enabled high-availability logging with ELK stack integration",
+        "Implemented Zero Trust architecture and WAF",
+        "Built infrastructure as code using Terraform"
+      ],
+      "technologies": [
+        "Terraform",
+        "Ansible",
+        "HashiCorp Vault",
+        "RabbitMQ",
+        "Redis",
+        "PostgreSQL",
+        "GitHub Actions",
+        "AWS ECS Fargate",
+        "AWS RDS",
+        "AWS Secrets Manager",
+        "Docker",
+        "Docker Compose"
+      ]
+    },
+    {
+      "id": 5,
+      "company": "Moni Africa",
+      "position": "DevOps Engineer",
+      "location": "Remote",
+      "startDate": "Dec 2022",
+      "endDate": "2023",
+      "description": "Drove cost optimization and security compliance while automating deployment pipelines and infrastructure management.",
+      "achievements": [
+        "Drove 25% reduction in operating costs through spot instances and schedule-based shutdown policies",
+        "Automated deployment pipelines and secret rotation using Ansible, Terraform, and Vault",
+        "Enforced RBAC and IAM access policies aligning with ISO 27001 and SOC 2 recommendations",
+        "Integrated Kafka for messaging and event-driven microservice communication",
+        "Deployed Ansible playbooks for secure VM patching and consistent OS-level configurations"
+      ],
+      "technologies": [
+        "AWS",
+        "Terraform",
+        "Ansible",
+        "HashiCorp Vault",
+        "Kafka",
+        "ECS",
+        "Redis",
+        "PostgreSQL",
+        "Bitbucket Pipelines",
+        "AWS Secrets Manager",
+        "AWS RDS"
 
-    //   ]
-    // },
-    // {
-    //   "id": 6,
-    //   "company": "Skillhanger",
-    //   "position": "DevOps Engineer",
-    //   "location": "Remote",
-    //   "startDate": "2020",
-    //   "endDate": "2022",
-    //   "description": "Designed Azure infrastructure strategy for enhanced reliability and scalability of educational technology platforms.",
-    //   "achievements": [
-    //     "Designed Azure infrastructure strategy enhancing reliability and scalability of edtech platforms",
-    //     "Secured build artifacts and sensitive data through Azure Key Vault and Fortanix encryption tools",
-    //     "Collaborated across development and QA teams to release resilient applications on schedule",
-    //     "Implemented automated security testing (SAST and DAST) and Zero Trust architecture",
-    //     "Configured secure cloud VPN connections for third-party integrations"
-    //   ],
-    //   "technologies": [
-    //     "Azure",
-    //     "Fortanix",
-    //     "Docker",
-    //     "Kubernetes",
-    //     "Azure DevOps",
-    //     "Azure Key Vault",
-    //     "Azure Storage",
-    //     "Azure SQL",
-    //     "Azure Cosmos DB",
-    //     "Azure API Management",
-    //     "Azure Application Insights",
-    //     "Azure DevOps Pipelines",
-    //     "Azure Apps Service",
-    //     "Azure Functions"
-    //   ]
-    // }
+      ]
+    },
+    {
+      "id": 6,
+      "company": "Skillhanger",
+      "position": "DevOps Engineer",
+      "location": "Remote",
+      "startDate": "2020",
+      "endDate": "2022",
+      "description": "Designed Azure infrastructure strategy for enhanced reliability and scalability of educational technology platforms.",
+      "achievements": [
+        "Designed Azure infrastructure strategy enhancing reliability and scalability of edtech platforms",
+        "Secured build artifacts and sensitive data through Azure Key Vault and Fortanix encryption tools",
+        "Collaborated across development and QA teams to release resilient applications on schedule",
+        "Implemented automated security testing (SAST and DAST) and Zero Trust architecture",
+        "Configured secure cloud VPN connections for third-party integrations"
+      ],
+      "technologies": [
+        "Azure",
+        "Fortanix",
+        "Docker",
+        "Kubernetes",
+        "Azure DevOps",
+        "Azure Key Vault",
+        "Azure Storage",
+        "Azure SQL",
+        "Azure Cosmos DB",
+        "Azure API Management",
+        "Azure Application Insights",
+        "Azure DevOps Pipelines",
+        "Azure Apps Service",
+        "Azure Functions"
+      ]
+    }
   ],
 
 

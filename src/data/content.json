@@ -16,32 +16,32 @@
     "medium": "https://medium.com/@ozidevops"
   },
   "experience": [
-    {
-      "id": 1,
-      "company": "9jaPay",
-      "position": "Senior Associate DevOps Engineer",
-      "location": "Lagos, Nigeria",
-      "startDate": "Dec 2023",
-      "endDate": "Present",
-      "description": "Leading cloud infrastructure architecture and operations for mission-critical payment gateways and instant payment solutions across multi-cloud environments.",
-      "achievements": [
-        "Architected and operationalized cloud infrastructure across Azure, GCP, and Huawei Cloud for mission-critical payment gateways",
-        "Implemented cloud cost controls including autoscaling and reserved instance planning, resulting in >30% reduction in monthly spend",
-        "Led infrastructure strategy for PCI DSS-aligned environments with IaC and version-controlled pipelines",
-        "Reduced incident recovery time by 60% through alerting, dashboards, and runbooks",
-        "Managed technical onboarding and mentorship of junior DevOps staff"
-      ],
-      "technologies": [
-        "Azure",
-        "GCP",
-        "Huawei Cloud",
-        "Terraform",
-        "Kubernetes",
-        "GitHub Actions",
-        "Kafka",
-        "Cloudflare"
-      ]
-    }
+    // {
+    //   "id": 1,
+    //   "company": "9jaPay",
+    //   "position": "Senior Associate DevOps Engineer",
+    //   "location": "Lagos, Nigeria",
+    //   "startDate": "Dec 2023",
+    //   "endDate": "Present",
+    //   "description": "Leading cloud infrastructure architecture and operations for mission-critical payment gateways and instant payment solutions across multi-cloud environments.",
+    //   "achievements": [
+    //     "Architected and operationalized cloud infrastructure across Azure, GCP, and Huawei Cloud for mission-critical payment gateways",
+    //     "Implemented cloud cost controls including autoscaling and reserved instance planning, resulting in >30% reduction in monthly spend",
+    //     "Led infrastructure strategy for PCI DSS-aligned environments with IaC and version-controlled pipelines",
+    //     "Reduced incident recovery time by 60% through alerting, dashboards, and runbooks",
+    //     "Managed technical onboarding and mentorship of junior DevOps staff"
+    //   ],
+    //   "technologies": [
+    //     "Azure",
+    //     "GCP",
+    //     "Huawei Cloud",
+    //     "Terraform",
+    //     "Kubernetes",
+    //     "GitHub Actions",
+    //     "Kafka",
+    //     "Cloudflare"
+    //   ]
+    // }
     // {
     //   "id": 2,
     //   "company": "Canalis-HQ Contractor",

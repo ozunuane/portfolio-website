@@ -11,7 +11,7 @@ export default function About() {
           <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
             About Me
           </h2>
-          <p className="mt-6 text-lg leading-8 text-gray-600">
+          <p className="mt-6 text-lg leading-8 text-gray-700">
             {personalInfo.bio || personalInfo.summary}
           </p>
         </div>
@@ -23,7 +23,7 @@ export default function About() {
                 <div className="h-5 w-5 flex-none rounded-full bg-blue-600"></div>
                 Technical Skills
               </dt>
-              <dd className="mt-4 flex flex-auto flex-col text-base leading-7 text-gray-600">
+              <dd className="mt-4 flex flex-auto flex-col text-base leading-7 text-gray-700">
                 <div className="space-y-2">
                   {skills.technical.slice(0, 6).map((skill) => (
                     <div key={skill.name} className="flex items-center justify-between">
@@ -45,7 +45,7 @@ export default function About() {
                 <div className="h-5 w-5 flex-none rounded-full bg-green-600"></div>
                 Soft Skills
               </dt>
-              <dd className="mt-4 flex flex-auto flex-col text-base leading-7 text-gray-600">
+              <dd className="mt-4 flex flex-auto flex-col text-base leading-7 text-gray-700">
                 <div className="flex flex-wrap gap-2">
                   {skills.soft?.map((skill) => (
                     <span 
@@ -54,7 +54,7 @@ export default function About() {
                     >
                       {skill}
                     </span>
-                  )) || <span className="text-gray-500">No soft skills available</span>}
+                  )) || <span className="text-gray-700">No soft skills available</span>}
                 </div>
               </dd>
             </div>
@@ -64,7 +64,7 @@ export default function About() {
                 <div className="h-5 w-5 flex-none rounded-full bg-purple-600"></div>
                 Tools & Technologies
               </dt>
-              <dd className="mt-4 flex flex-auto flex-col text-base leading-7 text-gray-600">
+              <dd className="mt-4 flex flex-auto flex-col text-base leading-7 text-gray-700">
                 <div className="flex flex-wrap gap-2">
                   {skills.tools?.map((tool) => (
                     <span 
@@ -73,7 +73,7 @@ export default function About() {
                     >
                       {tool}
                     </span>
-                  )) || <span className="text-gray-500">No tools available</span>}
+                  )) || <span className="text-gray-700">No tools available</span>}
                 </div>
               </dd>
             </div>

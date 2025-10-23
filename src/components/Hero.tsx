@@ -22,7 +22,7 @@ export default function Hero() {
             Unuane GP Ozimede
           </h1>
           
-          <p className="mt-6 text-lg leading-8 text-gray-600">
+          <p className="mt-6 text-lg leading-8 text-gray-700">
             Passionate professional dedicated to delivering exceptional results through innovative solutions and collaborative teamwork.
           </p>
           
@@ -48,7 +48,7 @@ export default function Hero() {
       
       {/* Scroll indicator */}
       <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
-        <ChevronDown className="h-6 w-6 text-gray-500" />
+        <ChevronDown className="h-6 w-6 text-gray-700" />
       </div>
     </section>
   )

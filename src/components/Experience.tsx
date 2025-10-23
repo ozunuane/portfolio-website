@@ -11,7 +11,7 @@ export default function Experience() {
           <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
             Career Journey
           </h2>
-          <p className="mt-6 text-lg leading-8 text-gray-600">
+          <p className="mt-6 text-lg leading-8 text-gray-700">
             Leading DevOps transformations and cloud infrastructure initiatives across fintech, e-commerce, and enterprise platforms.
           </p>
         </div>
@@ -36,7 +36,7 @@ export default function Experience() {
                       <h3 className="text-lg font-semibold text-gray-800">{job.position}</h3>
                       <p className="text-base text-blue-600 font-medium">{job.company}</p>
                     </div>
-                    <div className="flex items-center gap-4 mt-2 sm:mt-0 text-sm text-gray-500">
+                    <div className="flex items-center gap-4 mt-2 sm:mt-0 text-sm text-gray-700">
                       <div className="flex items-center gap-1">
                         <CalendarDays className="h-4 w-4" />
                         <span>{job.startDate} - {job.endDate}</span>

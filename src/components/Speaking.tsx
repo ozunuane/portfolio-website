@@ -44,7 +44,7 @@ export default function Speaking() {
           <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
             Speaking Engagements
           </h2>
-          <p className="mt-6 text-lg leading-8 text-gray-600">
+          <p className="mt-6 text-lg leading-8 text-gray-700">
             Sharing knowledge and insights on DevOps, cloud infrastructure, and modern software engineering practices at conferences, meetups, and workshops.
           </p>
         </div>
@@ -76,20 +76,20 @@ export default function Speaking() {
                     </p>
 
                     <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 mb-4">
-                      <div className="flex items-center gap-2 text-sm text-gray-600">
-                        <Calendar className="h-4 w-4 text-gray-400" />
+                      <div className="flex items-center gap-2 text-sm text-gray-700">
+                        <Calendar className="h-4 w-4 text-gray-500" />
                         <span>{formatDate(engagement.date)}</span>
                       </div>
-                      <div className="flex items-center gap-2 text-sm text-gray-600">
-                        <MapPin className="h-4 w-4 text-gray-400" />
+                      <div className="flex items-center gap-2 text-sm text-gray-700">
+                        <MapPin className="h-4 w-4 text-gray-500" />
                         <span>{engagement.location}</span>
                       </div>
-                      <div className="flex items-center gap-2 text-sm text-gray-600">
-                        <Clock className="h-4 w-4 text-gray-400" />
+                      <div className="flex items-center gap-2 text-sm text-gray-700">
+                        <Clock className="h-4 w-4 text-gray-500" />
                         <span>{engagement.duration}</span>
                       </div>
-                      <div className="flex items-center gap-2 text-sm text-gray-600">
-                        <Users className="h-4 w-4 text-gray-400" />
+                      <div className="flex items-center gap-2 text-sm text-gray-700">
+                        <Users className="h-4 w-4 text-gray-500" />
                         <span>{engagement.audience}</span>
                       </div>
                     </div>
@@ -142,7 +142,7 @@ export default function Speaking() {
         </div>
 
         <div className="mt-16 text-center">
-          <p className="text-sm text-gray-600 mb-4">Interested in having me speak at your event?</p>
+          <p className="text-sm text-gray-700 mb-4">Interested in having me speak at your event?</p>
           <a
             href="mailto:godspowerunuane@gmail.com?subject=Speaking%20Engagement%20Inquiry"
             className="inline-flex items-center rounded-md bg-blue-600 px-6 py-3 text-sm font-medium text-white shadow-sm hover:bg-blue-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-600 transition-colors"

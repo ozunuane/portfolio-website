@@ -10,7 +10,7 @@ export default function Skills() {
           <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
             Core Competencies
           </h2>
-          <p className="mt-6 text-lg leading-8 text-gray-600">
+          <p className="mt-6 text-lg leading-8 text-gray-700">
             Technical expertise, leadership capabilities, and tools that drive successful DevOps transformations and cloud infrastructure solutions.
           </p>
         </div>

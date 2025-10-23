@@ -12,7 +12,7 @@ export default function Education() {
           <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
             Education & Certifications
           </h2>
-          <p className="mt-6 text-lg leading-8 text-gray-600">
+          <p className="mt-6 text-lg leading-8 text-gray-700">
             My educational background and professional certifications that demonstrate my commitment to continuous learning.
           </p>
         </div>
@@ -32,8 +32,8 @@ export default function Education() {
                       <div className="flex-1">
                         <h4 className="text-lg font-semibold text-gray-900">{edu.degree}</h4>
                         <p className="text-blue-600 font-medium">{edu.field}</p>
-                        <p className="text-gray-600 font-medium">{edu.institution}</p>
-                        <div className="flex items-center gap-4 mt-2 text-sm text-gray-500">
+                        <p className="text-gray-700 font-medium">{edu.institution}</p>
+                        <div className="flex items-center gap-4 mt-2 text-sm text-gray-700">
                           <div className="flex items-center gap-1">
                             <Calendar className="h-4 w-4" />
                             <span>{edu.year}</span>
@@ -63,7 +63,7 @@ export default function Education() {
                       <div className="flex-1">
                         <h4 className="text-lg font-semibold text-gray-900">{cert.name}</h4>
                         <p className="text-green-600 font-medium">{cert.issuer}</p>
-                        <div className="flex items-center gap-4 mt-2 text-sm text-gray-500">
+                        <div className="flex items-center gap-4 mt-2 text-sm text-gray-700">
                           <div className="flex items-center gap-1">
                             <Calendar className="h-4 w-4" />
                             <span>{cert.date}</span>

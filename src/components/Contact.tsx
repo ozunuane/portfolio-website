@@ -46,7 +46,7 @@ export default function Contact() {
           <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
             Get In Touch
           </h2>
-          <p className="mt-6 text-lg leading-8 text-gray-600">
+          <p className="mt-6 text-lg leading-8 text-gray-700">
             I&apos;m always interested in new opportunities and exciting projects. Let&apos;s connect!
           </p>
         </div>
@@ -61,7 +61,7 @@ export default function Contact() {
                   <Mail className="h-5 w-5 text-blue-600" />
                   <a 
                     href={`mailto:${personalInfo.email}`}
-                    className="text-gray-600 hover:text-blue-600 transition-colors"
+                    className="text-gray-700 hover:text-blue-600 transition-colors"
                   >
                     {personalInfo.email}
                   </a>
@@ -72,7 +72,7 @@ export default function Contact() {
                     <Phone className="h-5 w-5 text-blue-600" />
                     <a 
                       href={`tel:${personalInfo.phone}`}
-                      className="text-gray-600 hover:text-blue-600 transition-colors"
+                      className="text-gray-700 hover:text-blue-600 transition-colors"
                     >
                       {personalInfo.phone}
                     </a>
@@ -81,7 +81,7 @@ export default function Contact() {
                 
                 <div className="flex items-center gap-3">
                   <MapPin className="h-5 w-5 text-blue-600" />
-                  <span className="text-gray-600">{personalInfo.location}</span>
+                  <span className="text-gray-700">{personalInfo.location}</span>
                 </div>
               </div>
             </div>
@@ -94,7 +94,7 @@ export default function Contact() {
                     href={socialLinks.github}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-gray-500 hover:text-gray-700 transition-colors"
+                    className="text-gray-700 hover:text-gray-900 transition-colors"
                   >
                     <Github className="h-6 w-6" />
                   </a>
@@ -104,7 +104,7 @@ export default function Contact() {
                     href={socialLinks.linkedin}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-gray-500 hover:text-gray-700 transition-colors"
+                    className="text-gray-700 hover:text-gray-900 transition-colors"
                   >
                     <Linkedin className="h-6 w-6" />
                   </a>

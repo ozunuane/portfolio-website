@@ -15,7 +15,7 @@
     "website": "",
     "medium": "https://medium.com/@ozidevops"
   },
-  
+
   "experience": [
     {
       "id": 1,
@@ -510,14 +510,30 @@
       "excerpt": "Brief description of your article - Edit This",
       "content": "Full article content goes here - Edit This",
       "publishedDate": "2025-10-01",
+      "url": "https://zenodo.org/records/17426108?token=eyJhbGciOiJIUzUxMiJ9.eyJpZCI6ImQyMmFkOWQ5LTJlNzktNGQwOC1hNzU0LTU5ZjU2MDExMjk1OCIsImRhdGEiOnt9LCJyYW5kb20iOiJjMjc4OTU2MzIyY2NkMmI0YWZkMDgzOWI2MWYzMzk3ZCJ9.pOGYWr7RCsfD9h62g8FfAoH6_pLQHb3LWj6CslK7Vbs0Y6v56-HmAIcSQgMbmgZ0SjTS7E6fygzP5nvR5GOX_w",
       "readTime": "5 min read",
       "tags": [
         "DevOps",
         "Cloud",
-        "Infrastructure"
+        "Infrastructure",
+        "Cost Optimization",
+        "Nigeria",
+        "Cloud Economics",
+        "FinOps",
+        "Nigeria",
+        "Organizational Strategies",
+        "Effective Management",
+        "Cloud Infrastructure",
+        "Cloud Computing",
+        "Cloud Services",
+        "Cloud Providers",
+        "Cloud Provider Selection",
+        "Cloud Provider Comparison",
+        "Cloud Provider Features",
+        "Cloud Policy"
       ],
       "featured": false,
-      "image": "/journal-article-6.jpg",
+      "image": "/cost-optimization-nigeria.png",
       "active": true
     },
     {

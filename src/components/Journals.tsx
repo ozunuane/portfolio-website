@@ -30,7 +30,7 @@ export default function Journals() {
           <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
             Technical Journals
           </h2>
-          <p className="mt-6 text-lg leading-8 text-gray-600">
+          <p className="mt-6 text-lg leading-8 text-gray-700">
             Insights, experiences, and lessons learned from architecting and managing cloud infrastructure at scale.
           </p>
         </div>
@@ -59,20 +59,20 @@ export default function Journals() {
 
               <div className="max-w-xl">
                 <div className="mt-8 flex items-center gap-x-4 text-xs">
-                  <div className="flex items-center gap-1 text-gray-500">
+                  <div className="flex items-center gap-1 text-gray-700">
                     <Calendar className="h-4 w-4" />
                     <time dateTime={journal.publishedDate}>
                       {formatDate(journal.publishedDate)}
                     </time>
                   </div>
-                  <div className="flex items-center gap-1 text-gray-500">
+                  <div className="flex items-center gap-1 text-gray-700">
                     <Clock className="h-4 w-4" />
                     <span>{journal.readTime}</span>
                   </div>
                 </div>
 
                 <div className="group relative">
-                  <h3 className="mt-3 text-lg font-semibold leading-6 text-gray-900 group-hover:text-gray-600">
+                  <h3 className="mt-3 text-lg font-semibold leading-6 text-gray-900 group-hover:text-gray-700">
                     {journal.url ? (
                       <a href={journal.url} target="_blank" rel="noopener noreferrer">
                         <span className="absolute inset-0" />
@@ -82,7 +82,7 @@ export default function Journals() {
                       <span>{journal.title}</span>
                     )}
                   </h3>
-                  <p className="mt-5 line-clamp-3 text-sm leading-6 text-gray-600">
+                  <p className="mt-5 line-clamp-3 text-sm leading-6 text-gray-800">
                     {journal.excerpt}
                   </p>
                 </div>
@@ -91,7 +91,7 @@ export default function Journals() {
                   {journal.tags.map((tag) => (
                     <span
                       key={tag}
-                      className="inline-flex items-center gap-1 rounded-full bg-gray-100 px-3 py-1 text-xs font-medium text-gray-700 hover:bg-gray-200 transition-colors"
+                      className="inline-flex items-center gap-1 rounded-full bg-gray-100 px-3 py-1 text-xs font-medium text-gray-800 hover:bg-gray-200 transition-colors"
                     >
                       <Tag className="h-3 w-3" />
                       {tag}
@@ -134,7 +134,7 @@ export default function Journals() {
         </div>
 
         <div className="mt-16 text-center">
-          <p className="text-sm text-gray-600 mb-4">
+          <p className="text-sm text-gray-700 mb-4">
             Want to read more technical insights and DevOps experiences?
           </p>
           <a

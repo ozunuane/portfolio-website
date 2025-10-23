@@ -12,7 +12,7 @@ export default function Portfolio() {
           <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
             Featured Projects
           </h2>
-          <p className="mt-6 text-lg leading-8 text-gray-600">
+          <p className="mt-6 text-lg leading-8 text-gray-700">
             A showcase of my recent work, highlighting technical skills, problem-solving abilities, and creative solutions.
           </p>
         </div>
@@ -34,19 +34,19 @@ export default function Portfolio() {
               
               <div className="max-w-xl">
                 <div className="mt-8 flex items-center gap-x-4 text-xs">
-                  <div className="text-gray-500">
+                  <div className="text-gray-700">
                     {project.technologies.join(' • ')}
                   </div>
                 </div>
                 
                 <div className="group relative">
-                  <h3 className="mt-3 text-lg font-semibold leading-6 text-gray-900 group-hover:text-gray-600">
+                  <h3 className="mt-3 text-lg font-semibold leading-6 text-gray-900 group-hover:text-gray-700">
                     <a href={project.liveUrl} target="_blank" rel="noopener noreferrer">
                       <span className="absolute inset-0"></span>
                       {project.title}
                     </a>
                   </h3>
-                  <p className="mt-5 line-clamp-3 text-sm leading-6 text-gray-600">
+                  <p className="mt-5 line-clamp-3 text-sm leading-6 text-gray-800">
                     {project.description}
                   </p>
                 </div>
@@ -68,7 +68,7 @@ export default function Portfolio() {
                       href={project.githubUrl}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="inline-flex items-center gap-2 text-sm font-medium text-gray-600 hover:text-gray-500"
+                      className="inline-flex items-center gap-2 text-sm font-medium text-gray-700 hover:text-gray-900"
                     >
                       <Github className="h-4 w-4" />
                       Source Code

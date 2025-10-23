@@ -68,6 +68,7 @@ export interface Journal {
   excerpt: string
   content: string
   publishedDate: string
+  url?: string
   readTime: string
   tags: string[]
   featured: boolean

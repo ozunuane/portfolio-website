@@ -73,10 +73,14 @@ export default function Journals() {
 
                 <div className="group relative">
                   <h3 className="mt-3 text-lg font-semibold leading-6 text-gray-900 group-hover:text-gray-600">
-                    <a href={`#journal-${journal.id}`}>
-                      <span className="absolute inset-0" />
-                      {journal.title}
-                    </a>
+                    {journal.url ? (
+                      <a href={journal.url} target="_blank" rel="noopener noreferrer">
+                        <span className="absolute inset-0" />
+                        {journal.title}
+                      </a>
+                    ) : (
+                      <span>{journal.title}</span>
+                    )}
                   </h3>
                   <p className="mt-5 line-clamp-3 text-sm leading-6 text-gray-600">
                     {journal.excerpt}
@@ -96,25 +100,33 @@ export default function Journals() {
                 </div>
 
                 <div className="mt-6">
-                  <a
-                    href={`#journal-${journal.id}`}
-                    className="inline-flex items-center text-sm font-medium text-blue-600 hover:text-blue-500 transition-colors"
-                  >
-                    Read full article
-                    <svg
-                      className="ml-1 h-4 w-4"
-                      fill="none"
-                      stroke="currentColor"
-                      viewBox="0 0 24 24"
+                  {journal.url ? (
+                    <a
+                      href={journal.url}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center text-sm font-medium text-blue-600 hover:text-blue-500 transition-colors"
                     >
-                      <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        strokeWidth={2}
-                        d="M9 5l7 7-7 7"
-                      />
-                    </svg>
-                  </a>
+                      Read full article
+                      <svg
+                        className="ml-1 h-4 w-4"
+                        fill="none"
+                        stroke="currentColor"
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          strokeWidth={2}
+                          d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"
+                        />
+                      </svg>
+                    </a>
+                  ) : (
+                    <span className="inline-flex items-center text-sm font-medium text-gray-400">
+                      Coming soon
+                    </span>
+                  )}
                 </div>
               </div>
             </article>

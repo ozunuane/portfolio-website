@@ -1,12 +1,12 @@
 {
   "personal": {
     "name": "Unuane Godspower Ozimede",
-    "title": "Senior DevOps Engineer | Cloud Infrastructure Architect | Multi-Cloud Solutions Expert",
+    "title": "Lead DevOps Engineer | Cloud Operations & Platform | CI/CD · AWS · Kubernetes · GitOps",
     "email": "godspowerunuane@gmail.com",
     "phone": "+234 81 5904 6233",
     "location": "Lagos, Nigeria",
     "bio": "Passionate DevOps professional dedicated to delivering exceptional results through innovative cloud solutions and collaborative teamwork. With over 8 years of experience architecting and managing enterprise-grade infrastructure across AWS, Azure, GCP, and Huawei Cloud, I specialize in transforming complex technical challenges into scalable, automated solutions.",
-    "summary": "Expert in Kubernetes orchestration, Infrastructure as Code (Terraform), CI/CD pipeline optimization, and building resilient multi-cloud architectures that drive operational excellence and business growth. Proven track record of leading distributed teams, implementing DevSecOps practices, and delivering cost-efficient solutions for fintech, e-commerce, and enterprise platforms."
+    "summary": "Lead DevOps engineer focused on cloud operations, platform reliability, and CI/CD at scale. Deep expertise in Kubernetes, Infrastructure as Code (Terraform), secure pipelines, and GitOps. Proven track record leading platform and delivery initiatives, DevSecOps practices, and cost-efficient architectures for fintech, e-commerce, and enterprise platforms."
   },
   "social": {
     "github": "https://github.com/ozunuane",

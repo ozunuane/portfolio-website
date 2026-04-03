@@ -1,12 +1,12 @@
 {
   "personal": {
     "name": "Unuane Godspower Ozimede",
-    "title": "Senior DevOps Engineer | Cloud Infrastructure Architect | Multi-Cloud Solutions Expert",
+    "title": "Lead DevOps Engineer | Cloud Operations & Platform | CI/CD · AWS · Kubernetes · GitOps",
     "email": "godspowerunuane@gmail.com",
     "phone": "+234 81 5904 6233",
     "location": "Lagos, Nigeria",
     "bio": "Passionate DevOps professional dedicated to delivering exceptional results through innovative cloud solutions and collaborative teamwork. With over 8 years of experience architecting and managing enterprise-grade infrastructure across AWS, Azure, GCP, and Huawei Cloud, I specialize in transforming complex technical challenges into scalable, automated solutions.",
-    "summary": "Expert in Kubernetes orchestration, Infrastructure as Code (Terraform), CI/CD pipeline optimization, and building resilient multi-cloud architectures that drive operational excellence and business growth. Proven track record of leading distributed teams, implementing DevSecOps practices, and delivering cost-efficient solutions for fintech, e-commerce, and enterprise platforms."
+    "summary": "Lead DevOps engineer focused on cloud operations, platform reliability, and CI/CD at scale. Deep expertise in Kubernetes, Infrastructure as Code (Terraform), secure pipelines, and GitOps. Proven track record leading platform and delivery initiatives, DevSecOps practices, and cost-efficient architectures for fintech, e-commerce, and enterprise platforms."
   },
   "social": {
     "github": "https://github.com/ozunuane",
@@ -17,6 +17,34 @@
   },
 
   "experience": [
+    {
+      "id": 7,
+      "company": "InsomniaLabs",
+      "position": "Lead DevOps Engineer — Cloud Operations & CI/CD",
+      "location": "Remote",
+      "startDate": "Mar 2026",
+      "endDate": "Present",
+      "description": "Lead ownership of cloud operations, platform engineering, and end-to-end CI/CD for AWS EKS and supporting services: incident response, infrastructure as code, GitOps, observability, and secure automation for engineering teams.",
+      "achievements": [
+        "Own cloud operations and release engineering: CI/CD pipelines (GitHub Actions), Terraform plan/apply workflows, EKS access and IAM patterns so delivery stays auditable and safe",
+        "Led EKS remediation after a cluster-wide outage from node disk exhaustion: zero-downtime node group strategy, right-sized disks, kubelet image garbage collection, and SSM on workers for production support",
+        "Defined observability and reliability standards: Prometheus/Grafana alerting, metrics-server strategy, and Terraform-driven EKS addon governance with controlled upgrades",
+        "Drove GitOps and delivery consistency: PriorityClasses and shared Helm patterns (Argo CD), phased rollouts via chart versioning, aligning platform defaults with application teams"
+      ],
+      "technologies": [
+        "AWS EKS",
+        "CI/CD",
+        "GitHub Actions",
+        "Terraform",
+        "Argo CD",
+        "GitOps",
+        "Helm",
+        "Prometheus",
+        "Grafana",
+        "Kubernetes",
+        "AWS IAM"
+      ]
+    },
     {
       "id": 1,
       "company": "9jaPay",

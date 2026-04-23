@@ -24,7 +24,7 @@
       "location": "Remote",
       "startDate": "Mar 2025",
       "endDate": "Present",
-      "description": "Led remediation and hardening of a production EKS cluster after a cluster-wide outage caused by node disk exhaustion. Designed and implemented a zero-downtime migration (new node groups, larger disks, kubelet image GC, SSM on nodes) using Terraform, aligned monitoring and alerting with Prometheus/Grafana, and moved cluster-wide scheduling policy (PriorityClasses) into GitOps with Argo CD.",
+      "description": "Led remediation and hardening of a production EKS cluster after a cluster-wide outage caused by node disk exhaustion. Designed and implemented a zero-downtime migration (new node groups, larger disks, kubelet image GC, SSM on nodes) using Terraform, aligned monitoring and alerting with Prometheus/Grafana, and moved cluster-wide scheduling policy (PriorityClasses) into GitOps with Argo CD. Delivered the AWS data-analytics path for production Metabase: IRSA to Athena and S3, a dedicated Athena workgroup, Glue catalog and crawlers over curated S3 data, and Terraform + GitHub Actions for the global aws/athena module stack.",
       "achievements": [
         "Owned end-to-end EKS remediation: root-cause analysis (small disks, missing image GC, no disk alerts), Terraform design for additive node groups and safe cutover, and operational runbooks",
         "Implemented kubelet image garbage collection thresholds and SSM on worker nodes for supportability; sized disks and node groups for real image footprints",
@@ -32,7 +32,10 @@
         "Standardized EKS addon strategy (pinned vs. latest) and removed duplicate metrics-server installs (EKS addon vs. Helm) to avoid conflicts",
         "Enabled GitHub Actions Terraform plan/apply against the cluster via EKS access entries and IAM, with workflow patterns for branch-based plans",
         "Introduced scheduling isolation: Kubernetes PriorityClasses and optional priorityClassName in a shared Helm chart; documented Chart.lock-based rollout so production changes are opt-in per app",
-        "Migrated PriorityClass management from Terraform to GitOps (Argo CD Application, automated sync) for drift visibility and alignment with cluster management apps"
+        "Migrated PriorityClass management from Terraform to GitOps (Argo CD Application, automated sync) for drift visibility and alignment with cluster management apps",
+        "Built the Metabase + Amazon Athena integration on EKS: IRSA (OIDC) roles for the Metabase and backup service accounts, least-privilege IAM for Athena query execution, Glue Data Catalog read, and S3 data-lake paths; wired Metabase UI to a dedicated workgroup in us-east-2 with enforced query result location to the Athena results bucket",
+        "Implemented Glue Data Catalog (database, per-vertical crawlers over Hive-partitioned curated metrics in S3) and operator-friendly crawler schedules; separated Metabase from the default primary Athena workgroup and applied bytes-scanned guardrails to control query cost",
+        "Managed global Terraform for the athena stack (S3 remote state, dev/stage backend configs), refactored module layout to `aws/athena`, and ran migration/cutover of state buckets; supported troubleshooting JDBC/credential issues between Metabase and Athena (IRSA vs static keys, region and catalog alignment)"
       ],
       "technologies": [
         "AWS EKS",
@@ -44,7 +47,12 @@
         "GitHub Actions",
         "Helm",
         "SSM",
-        "IAM"
+        "IAM",
+        "Amazon Athena",
+        "AWS Glue",
+        "Amazon S3",
+        "Metabase",
+        "IRSA / OIDC"
       ]
     },
     {
@@ -327,6 +335,18 @@
       {
         "name": "Kafka",
         "level": 85
+      },
+      {
+        "name": "Amazon Athena",
+        "level": 82
+      },
+      {
+        "name": "AWS Glue",
+        "level": 80
+      },
+      {
+        "name": "Metabase",
+        "level": 78
       }
     ],
 
@@ -366,7 +386,10 @@
       "Kafka",
       "SonarQube",
       "Git",
-      "Bitbucket"
+      "Bitbucket",
+      "Amazon Athena",
+      "AWS Glue",
+      "Metabase"
     ]
   },
 

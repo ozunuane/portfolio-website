@@ -1,18 +1,18 @@
 {
   "personal": {
     "name": "Unuane Godspower Ozimede",
-    "title": "Lead DevOps Engineer | Cloud Operations & Platform | CI/CD · AWS · Kubernetes · GitOps",
+    "title": "Senior DevOps Engineer | DeFi · Kubernetes · 24/7 Operations · Cloud Security",
     "email": "godspowerunuane@gmail.com",
-    "phone": "+234 81 5904 6233",
-    "location": "Lagos, Nigeria",
-    "bio": "Passionate DevOps professional dedicated to delivering exceptional results through innovative cloud solutions and collaborative teamwork. With over 8 years of experience architecting and managing enterprise-grade infrastructure across AWS, Azure, GCP, and Huawei Cloud, I specialize in transforming complex technical challenges into scalable, automated solutions.",
-    "summary": "Lead DevOps engineer focused on cloud operations, platform reliability, and CI/CD at scale. Deep expertise in Kubernetes, Infrastructure as Code (Terraform), secure pipelines, and GitOps. Proven track record leading platform and delivery initiatives, DevSecOps practices, and cost-efficient architectures for fintech, e-commerce, and enterprise platforms."
+    "phone": "+234 815 904 6233",
+    "location": "Lagos, Nigeria (EMEA Remote)",
+    "bio": "Senior DevOps Engineer with 8+ years architecting high-reliability infrastructure for DeFi protocols (e.g. CreatorFi) and traditional fintech. Deep expertise in 24/7 operations, container orchestration (Kubernetes), CI/CD, and cloud security. Mission-critical systems where downtime impacts users and TVL. Published research on cloud cost optimization; experience across AWS, Azure, GCP, and Huawei Cloud.",
+    "summary": "Senior DevOps engineer focused on DeFi, payment-grade infrastructure, and always-on operations. Proven in Kubernetes, GitOps, observability, and cloud security for regulated and high-stakes environments. FinOps and cost efficiency with a published research background; strong CI/CD, incident response, and platform reliability."
   },
   "social": {
     "github": "https://github.com/ozunuane",
     "linkedin": "https://www.linkedin.com/in/ozimede/",
     "twitter": "",
-    "website": "",
+    "website": "https://ozimede.dev",
     "medium": "https://medium.com/@ozidevops"
   },
 
@@ -21,38 +21,39 @@
       "id": 0,
       "company": "Insomnia-Labs",
       "position": "Senior Platform / DevOps Engineer",
-      "location": "Remote",
+      "location": "Remote (USD) · Part-time",
       "startDate": "Mar 2025",
       "endDate": "Present",
-      "description": "Led remediation and hardening of a production EKS cluster after a cluster-wide outage caused by node disk exhaustion. Designed and implemented a zero-downtime migration (new node groups, larger disks, kubelet image GC, SSM on nodes) using Terraform, aligned monitoring and alerting with Prometheus/Grafana, and moved cluster-wide scheduling policy (PriorityClasses) into GitOps with Argo CD. Delivered the AWS data-analytics path for production Metabase: IRSA to Athena and S3, a dedicated Athena workgroup, Glue catalog and crawlers over curated S3 data, and Terraform + GitHub Actions for the global aws/athena module stack.",
+      "description": "Platform and DevOps for DeFi and Web3: CreatorFi (DeFi protocol), Chubby (Web3), and core shared infrastructure. Drives GitOps delivery on EKS, 24/7 operations, and secure analytics. Combines Argo CD, Terraform, and AWS services (including Metabase, Amazon Athena, and Glue) with a focus on reliability, observability, and cost-aware runbooks.",
       "achievements": [
-        "Owned end-to-end EKS remediation: root-cause analysis (small disks, missing image GC, no disk alerts), Terraform design for additive node groups and safe cutover, and operational runbooks",
-        "Implemented kubelet image garbage collection thresholds and SSM on worker nodes for supportability; sized disks and node groups for real image footprints",
-        "Delivered Prometheus/Grafana disk-usage alerts with clear severities and links to runbooks (betastack / kube-prometheus stack)",
-        "Standardized EKS addon strategy (pinned vs. latest) and removed duplicate metrics-server installs (EKS addon vs. Helm) to avoid conflicts",
-        "Enabled GitHub Actions Terraform plan/apply against the cluster via EKS access entries and IAM, with workflow patterns for branch-based plans",
-        "Introduced scheduling isolation: Kubernetes PriorityClasses and optional priorityClassName in a shared Helm chart; documented Chart.lock-based rollout so production changes are opt-in per app",
-        "Migrated PriorityClass management from Terraform to GitOps (Argo CD Application, automated sync) for drift visibility and alignment with cluster management apps",
-        "Built the Metabase + Amazon Athena integration on EKS: IRSA (OIDC) roles for the Metabase and backup service accounts, least-privilege IAM for Athena query execution, Glue Data Catalog read, and S3 data-lake paths; wired Metabase UI to a dedicated workgroup in us-east-2 with enforced query result location to the Athena results bucket",
-        "Implemented Glue Data Catalog (database, per-vertical crawlers over Hive-partitioned curated metrics in S3) and operator-friendly crawler schedules; separated Metabase from the default primary Athena workgroup and applied bytes-scanned guardrails to control query cost",
-        "Managed global Terraform for the athena stack (S3 remote state, dev/stage backend configs), refactored module layout to `aws/athena`, and ran migration/cutover of state buckets; supported troubleshooting JDBC/credential issues between Metabase and Athena (IRSA vs static keys, region and catalog alignment)"
+        "Architected a GitOps delivery model evolving from Terraform-only toward Argo CD–driven deployments, including PriorityClasses, drift awareness, and audit-friendly change paths across DeFi and Web3 workloads",
+        "Implemented production EKS autoscaling with Karpenter: EC2NodeClass and node lifecycle policies, with a 70% image garbage collection threshold to optimize cost while meeting SLA expectations",
+        "Built the observability stack: Prometheus, Grafana, and Alertmanager; Uptime Kuma for incident-style monitoring with Slack notifications and Argo CD deployment status integration",
+        "Designed data and analytics on EKS: Metabase with persistent storage, Amazon Athena for S3-based analytics, automated pg_dump cron backups to S3, and isolated dev with PV/PVC boundaries; plain manifests and External Secrets, aligned with IRSA and Terraform in aws/athena (Athena workgroup, Glue catalog, crawlers, remote state, GitHub Actions plan/apply)",
+        "Established reliability patterns: Pod Disruption Budgets for production and Argo CD, HPA and startup/readiness probes for slow-starting services, and PriorityClass protection for monitoring and observability stacks",
+        "Solved a critical production outage from node disk exhaustion: ECR lifecycle policies, automated node cleanup, stronger logging and alerting, and zero-downtime cluster remediation; extended work included kubelet image GC, SSM on nodes, and additive node groups with operational runbooks",
+        "Migrated cluster-wide concerns where appropriate from Terraform to GitOps (e.g. PriorityClasses) for visibility in Argo CD; enabled GitHub Actions Terraform against the cluster via EKS access entries and IAM; standardized EKS add-ons to avoid duplicate components (e.g. metrics-server)"
       ],
       "technologies": [
         "AWS EKS",
+        "Karpenter",
         "Terraform",
         "Kubernetes",
         "Argo CD",
         "Prometheus",
         "Grafana",
+        "Alertmanager",
+        "Uptime Kuma",
         "GitHub Actions",
         "Helm",
+        "Amazon ECR",
         "SSM",
         "IAM",
+        "IRSA / OIDC",
+        "Metabase",
         "Amazon Athena",
         "AWS Glue",
-        "Amazon S3",
-        "Metabase",
-        "IRSA / OIDC"
+        "Amazon S3"
       ]
     },
     {

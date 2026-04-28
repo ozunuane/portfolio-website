@@ -60,6 +60,7 @@ export interface Certification {
   date: string
   credentialId: string
   credentialUrl?: string
+  verificationUrl?: string
 }
 
 export interface Journal {

@@ -482,6 +482,29 @@
       "liveUrl": "",
       "githubUrl": "https://github.com/ozunuane/huawei-multi-tier-poject",
       "featured": true
+    },
+    {
+      "id": 5,
+      "title": "AWS SES Inbound Email Router — Serverless Data Pipeline",
+      "description": "A config-driven AWS Lambda and Terraform module that ingests inbound email via Amazon SES, archives every message, routes attachments to per-client S3 destinations, and delivers HMAC-signed webhooks.",
+      "longDescription": "Production serverless pipeline for inbound-email ingestion. Amazon SES receives mail on a verified domain; an S3 ObjectCreated event triggers a Python 3.12 Lambda that archives the raw message for compliance, matches it against a JSON routing table in S3 (new clients and streams are added by editing config — no code change), validates the attachment, extracts the CSV, and writes it to the data lake. It then POSTs an HMAC-SHA256-signed webhook to the per-client backend and sends Slack notifications; unmatched or invalid mail is quarantined. Delivered as full Terraform IaC — SES domain/DKIM/receipt rules, three S3 buckets with lifecycle policies and KMS encryption, least-privilege IAM, Secrets Manager, an SQS dead-letter queue, and CloudWatch metric-filter alarms — with structured JSON logging, unit-tested pure functions, and a local fixture harness.",
+      "technologies": [
+        "AWS Lambda",
+        "Amazon SES",
+        "Terraform",
+        "Python",
+        "Amazon S3",
+        "AWS Secrets Manager",
+        "Amazon SQS",
+        "CloudWatch",
+        "IAM",
+        "Route 53",
+        "GitHub Actions"
+      ],
+      "image": "/project-email-router.jpg",
+      "liveUrl": "",
+      "githubUrl": "",
+      "featured": true
     }
   ],
 

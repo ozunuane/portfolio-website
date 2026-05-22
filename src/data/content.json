@@ -33,7 +33,8 @@
         "Established reliability patterns: Pod Disruption Budgets for production and Argo CD, HPA and startup/readiness probes for slow-starting services, and PriorityClass protection for monitoring and observability stacks",
         "Solved a critical production outage from node disk exhaustion: ECR lifecycle policies, automated node cleanup, stronger logging and alerting, and zero-downtime cluster remediation; extended work included kubelet image GC, SSM on nodes, and additive node groups with operational runbooks",
         "Migrated cluster-wide concerns where appropriate from Terraform to GitOps (e.g. PriorityClasses) for visibility in Argo CD; enabled GitHub Actions Terraform against the cluster via EKS access entries and IAM; standardized EKS add-ons to avoid duplicate components (e.g. metrics-server)",
-      "Built a serverless, config-driven email-to-data-lake pipeline as a reusable Terraform module: AWS SES receives inbound mail, an S3 event triggers a Python 3.12 Lambda that archives every message, routes attachments to per-client data-lake prefixes via a JSON routing table (new clients onboarded by config, not code), extracts the CSV, and delivers HMAC-SHA256-signed webhooks with Slack notifications; provisioned SES/DKIM/receipt rules, KMS-encrypted S3 with lifecycle policies, least-privilege IAM, Secrets Manager, an SQS dead-letter queue, and CloudWatch metric-filter alarms, with quarantine and long-term archive for forensics and replay"
+      "Built a serverless, config-driven email-to-data-lake pipeline as a reusable Terraform module: AWS SES receives inbound mail, an S3 event triggers a Python 3.12 Lambda that archives every message, routes attachments to per-client data-lake prefixes via a JSON routing table (new clients onboarded by config, not code), extracts the CSV, and delivers HMAC-SHA256-signed webhooks with Slack notifications; provisioned SES/DKIM/receipt rules, KMS-encrypted S3 with lifecycle policies, least-privilege IAM, Secrets Manager, an SQS dead-letter queue, and CloudWatch metric-filter alarms, with quarantine and long-term archive for forensics and replay",
+      "Hardened the cluster against a software supply-chain attack: built and deployed a Route 53 Resolver DNS Firewall as a reusable Terraform module that blocks known malicious command-and-control domains at the VPC resolver (NXDOMAIN responses, a data-driven IOC blocklist, and CloudWatch query logging for incident investigation), so a compromised dependency cannot reach attacker infrastructure; and ran security audits across the cluster and cloud infrastructure to assess exposure and harden the environment"
       ],
       "technologies": [
         "AWS EKS",
@@ -60,7 +61,8 @@
         "AWS Secrets Manager",
         "Amazon SQS",
         "CloudWatch",
-        "Python"
+        "Python",
+        "Amazon Route 53"
       ]
     },
     {

@@ -32,7 +32,8 @@
         "Designed data and analytics on EKS: Metabase with persistent storage, Amazon Athena for S3-based analytics, automated pg_dump cron backups to S3, and isolated dev with PV/PVC boundaries; plain manifests and External Secrets, aligned with IRSA and Terraform in aws/athena (Athena workgroup, Glue catalog, crawlers, remote state, GitHub Actions plan/apply)",
         "Established reliability patterns: Pod Disruption Budgets for production and Argo CD, HPA and startup/readiness probes for slow-starting services, and PriorityClass protection for monitoring and observability stacks",
         "Solved a critical production outage from node disk exhaustion: ECR lifecycle policies, automated node cleanup, stronger logging and alerting, and zero-downtime cluster remediation; extended work included kubelet image GC, SSM on nodes, and additive node groups with operational runbooks",
-        "Migrated cluster-wide concerns where appropriate from Terraform to GitOps (e.g. PriorityClasses) for visibility in Argo CD; enabled GitHub Actions Terraform against the cluster via EKS access entries and IAM; standardized EKS add-ons to avoid duplicate components (e.g. metrics-server)"
+        "Migrated cluster-wide concerns where appropriate from Terraform to GitOps (e.g. PriorityClasses) for visibility in Argo CD; enabled GitHub Actions Terraform against the cluster via EKS access entries and IAM; standardized EKS add-ons to avoid duplicate components (e.g. metrics-server)",
+      "Built a serverless, config-driven email-to-data-lake pipeline as a reusable Terraform module: AWS SES receives inbound mail, an S3 event triggers a Python 3.12 Lambda that archives every message, routes attachments to per-client data-lake prefixes via a JSON routing table (new clients onboarded by config, not code), extracts the CSV, and delivers HMAC-SHA256-signed webhooks with Slack notifications; provisioned SES/DKIM/receipt rules, KMS-encrypted S3 with lifecycle policies, least-privilege IAM, Secrets Manager, an SQS dead-letter queue, and CloudWatch metric-filter alarms, with quarantine and long-term archive for forensics and replay"
       ],
       "technologies": [
         "AWS EKS",
@@ -53,7 +54,13 @@
         "Metabase",
         "Amazon Athena",
         "AWS Glue",
-        "Amazon S3"
+        "Amazon S3",
+        "AWS Lambda",
+        "Amazon SES",
+        "AWS Secrets Manager",
+        "Amazon SQS",
+        "CloudWatch",
+        "Python"
       ]
     },
     {

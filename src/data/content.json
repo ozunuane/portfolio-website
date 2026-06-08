@@ -74,9 +74,10 @@
       "endDate": "Present",
       "description": "Leading cloud infrastructure architecture and operations for mission-critical payment gateways and instant payment solutions across multi-cloud environments.",
       "achievements": [
+        "Led design and implementation of end-to-end QA automation for 9jaPay's business banking platform, covering API (Newman/Postman) and web (Playwright/Cucumber) test suites. Built a deploy-triggered pipeline that runs tests after Huawei Cloud releases, publishes HTML reports to a custom domain, and notifies teams via Google Chat — cutting manual QA effort by ~70% while improving release confidence and defect detection before production.",
         "Architected and operationalized cloud infrastructure across Azure, GCP, and Huawei Cloud for mission-critical payment gateways",
         "Implemented cloud cost controls including autoscaling and reserved instance planning, resulting in >30% reduction in monthly spend",
-        "Led infrastructure strategy for PCI DSS-aligned environments with IaC and version-controlled pipelines",
+        "Co-Led infrastructure strategy for PCI DSS-aligned environments with IaC and version-controlled pipelines",
         "Reduced incident recovery time by 60% through alerting, dashboards, and runbooks",
         "Managed technical onboarding and mentorship of junior DevOps staff"
       ],
@@ -88,7 +89,12 @@
         "Kubernetes",
         "GitHub Actions",
         "Kafka",
-        "Cloudflare"
+        "Cloudflare",
+        "Playwright",
+        "Cucumber",
+        "Postman",
+        "Newman",
+        "Google Chat"
       ]
     },
     {

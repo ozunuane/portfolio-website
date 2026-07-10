@@ -26,15 +26,17 @@
       "endDate": "Present",
       "description": "Platform and DevOps for DeFi and Web3: CreatorFi (DeFi protocol), Chubby (Web3), and core shared infrastructure. Drives GitOps delivery on EKS, 24/7 operations, and secure analytics. Combines Argo CD, Terraform, and AWS services (including Metabase, Amazon Athena, and Glue) with a focus on reliability, observability, and cost-aware runbooks.",
       "achievements": [
-        "Architected a GitOps delivery model evolving from Terraform-only toward Argo CD–driven deployments, including PriorityClasses, drift awareness, and audit-friendly change paths across DeFi and Web3 workloads",
-        "Implemented production EKS autoscaling with Karpenter: EC2NodeClass and node lifecycle policies, with a 70% image garbage collection threshold to optimize cost while meeting SLA expectations",
-        "Built the observability stack: Prometheus, Grafana, and Alertmanager; Uptime Kuma for incident-style monitoring with Slack notifications and Argo CD deployment status integration",
-        "Designed data and analytics on EKS: Metabase with persistent storage, Amazon Athena for S3-based analytics, automated pg_dump cron backups to S3, and isolated dev with PV/PVC boundaries; plain manifests and External Secrets, aligned with IRSA and Terraform in aws/athena (Athena workgroup, Glue catalog, crawlers, remote state, GitHub Actions plan/apply)",
-        "Established reliability patterns: Pod Disruption Budgets for production and Argo CD, HPA and startup/readiness probes for slow-starting services, and PriorityClass protection for monitoring and observability stacks",
-        "Solved a critical production outage from node disk exhaustion: ECR lifecycle policies, automated node cleanup, stronger logging and alerting, and zero-downtime cluster remediation; extended work included kubelet image GC, SSM on nodes, and additive node groups with operational runbooks",
-        "Migrated cluster-wide concerns where appropriate from Terraform to GitOps (e.g. PriorityClasses) for visibility in Argo CD; enabled GitHub Actions Terraform against the cluster via EKS access entries and IAM; standardized EKS add-ons to avoid duplicate components (e.g. metrics-server)",
-      "Built a serverless, config-driven email-to-data-lake pipeline as a reusable Terraform module: AWS SES receives inbound mail, an S3 event triggers a Python 3.12 Lambda that archives every message, routes attachments to per-client data-lake prefixes via a JSON routing table (new clients onboarded by config, not code), extracts the CSV, and delivers HMAC-SHA256-signed webhooks with Slack notifications; provisioned SES/DKIM/receipt rules, KMS-encrypted S3 with lifecycle policies, least-privilege IAM, Secrets Manager, an SQS dead-letter queue, and CloudWatch metric-filter alarms, with quarantine and long-term archive for forensics and replay",
-      "Hardened the cluster against a software supply-chain attack: built and deployed a Route 53 Resolver DNS Firewall as a reusable Terraform module that blocks known malicious command-and-control domains at the VPC resolver (NXDOMAIN responses, a data-driven IOC blocklist, and CloudWatch query logging for incident investigation), so a compromised dependency cannot reach attacker infrastructure; and ran security audits across the cluster and cloud infrastructure to assess exposure and harden the environment"
+        "Redesigned the EKS cluster for production workloads after a cluster-wide outage — implemented PodDisruptionBudgets, HorizontalPodAutoscalers, NetworkPolicies, and resource quotas. Deployed Karpenter for intelligent node provisioning, reducing compute costs by 40% and cluster instability by 95%.",
+        "Led root-cause analysis of the original outage (undersized disks, missing kubelet image GC, absent disk-pressure alerting) and designed zero-downtime cutover using additive Terraform-managed node groups. Each gap became a documented preventative pattern.",
+        "Deployed OpenCost for granular cluster expenditure tracking — per-namespace and per-container cost visibility, enabling data-driven resource optimization decisions.",
+        "Managed secrets using External Secrets Operator integrated with AWS Secrets Manager, eliminating hardcoded credentials across all workloads.",
+        "Established SLO-driven alerting with Prometheus, Grafana, and Alertmanager tied to incident runbooks, reducing alert fatigue and accelerating on-call triage.",
+        "Stood up GitHub Actions Terraform plan/apply workflows with EKS access entries, IAM scopes, branch-based approval gates, and automated rollback — enabling safe self-service infrastructure changes.",
+        "Migrated cluster management to GitOps via Argo CD with automated sync, improving drift detection and operational predictability.",
+        "Hardened cluster security: IRSA for least-privilege IAM, NetworkPolicies for pod isolation, Pod Security Standards, and Route 53 DNS Firewall blocking malicious C&C domains.",
+        "Collaborated with DBA on database management activities including incident resolution, backup strategies, and point-in-time recovery (PITR) configurations.",
+        "Resolved daily developer issues across application and platform layers, unblocking engineering teams on deployment, environment, and infrastructure problems.",
+        "Applied AI-assisted operations using Claude to accelerate daily issue resolution, infrastructure troubleshooting, and incident triage."
       ],
       "technologies": [
         "AWS EKS",
@@ -74,12 +76,17 @@
       "endDate": "Present",
       "description": "Leading cloud infrastructure architecture and operations for mission-critical payment gateways and instant payment solutions across multi-cloud environments.",
       "achievements": [
-        "Led design and implementation of end-to-end QA automation for 9jaPay's business banking platform, covering API (Newman/Postman) and web (Playwright/Cucumber) test suites. Built a deploy-triggered pipeline that runs tests after Huawei Cloud releases, publishes HTML reports to a custom domain, and notifies teams via Google Chat — cutting manual QA effort by ~70% while improving release confidence and defect detection before production.",
-        "Architected and operationalized cloud infrastructure across Azure, GCP, and Huawei Cloud for mission-critical payment gateways",
-        "Implemented cloud cost controls including autoscaling and reserved instance planning, resulting in >30% reduction in monthly spend",
-        "Co-Led infrastructure strategy for PCI DSS-aligned environments with IaC and version-controlled pipelines",
-        "Reduced incident recovery time by 60% through alerting, dashboards, and runbooks",
-        "Managed technical onboarding and mentorship of junior DevOps staff"
+        "Championed Terraform IaC for the core banking infrastructure — reusable modules for networking, compute, CloudSQL and Huawei RDS databases, encryption, and identity — deployed through automated GitHub Actions CI/CD workflows across GCP and Huawei Cloud.",
+        "Championed reusable CI/CD pipelines (GitHub Actions) for GKE and Huawei CCE clusters, deploying Node.js and .NET microservices for retail and business banking with Artifact Registry, Trivy container scanning, and automated rollback.",
+        "Championed CI/CD pipelines to deploy core banking Node.js and .NET microservices to Cloud Run v2 — image build, migration jobs, health checks, and zero-downtime rolling deployments.",
+        "Championed Terraform CI/CD workflows for Huawei Kubernetes (CCE) environment provisioning and lifecycle management via GitHub Actions.",
+        "Championed structured alerting and observability dashboards (Prometheus/Grafana) with documented runbooks, reducing incident recovery time by 60%.",
+        "Championed cloud cost controls (autoscaling, reserved instances, schedule-based shutdowns) achieving >30% monthly spend reduction.",
+        "Championed end-to-end QA automation (Playwright/Cucumber + Newman/Postman) cutting manual QA effort by ~70%.",
+        "Championed Zero Trust access with Cloudflare, automated secrets rotation via Cloud Functions and Google Secret Manager, least-privilege IAM with per-service grants, and Workload Identity Federation for keyless CI/CD across the core banking platform.",
+        "Championed VPN networks for third-party fintech payment partners, enabling secure connectivity across the payment processing ecosystem.",
+        "Championed daily developer issue resolution across application and platform layers, unblocking engineering teams on deployment, environment, and infrastructure problems.",
+        "Championed IaC security gates (Checkov, Terrascan, TruffleHog) and daily drift detection to support PCI DSS and ISO 27001 compliance."
       ],
       "technologies": [
         "Azure",
@@ -106,11 +113,16 @@
       "endDate": "Present",
       "description": "Leading full lifecycle infrastructure delivery and GitOps practices for scalable microservices architecture.",
       "achievements": [
-        "Led full lifecycle infrastructure delivery using Terraform and Kubernetes on Huawei Cloud and Azure",
-        "Designed and enforced GitOps practices using for zero-downtime updates",
-        "Integrated CI/CD security gates and scanning tools into release pipelines",
-        "Implemented observability stack using Prometheus, Grafana, and Loki with SLO-driven monitoring",
-        "Implemented Zero Trust architecture and Web Application Firewall using Cloudflare"
+        "Built and maintained multi-cloud infrastructure using Terraform IaC — Huawei Cloud for development, Azure for staging and production — provisioning networks, Azure Flexible Server databases, and AKS clusters through automated CI/CD pipelines.",
+        "Built and maintained GitHub Actions pipelines to deploy Node.js microservices across development, staging, and production environments with promotion gates between stages.",
+        "Led remediation for production incidents across microservices and databases on production, staging, and development environments.",
+        "Built self-managed Kubernetes on Hetzner Cloud — application deployments via GitOps with Argo CD, containerized databases and Redis managed with persistent volume claims.",
+        "Hardened container and Kubernetes security — optimized Dockerfiles for minimal attack surface, enforced NetworkPolicies for pod-to-pod isolation, implemented least-privilege IAM and RBAC policies, and configured Zero Trust remote access with Azure VPN Client.",
+        "Implemented Zero Trust network architecture and WAF using Cloudflare across client environments.",
+        "Implemented observability stack with Prometheus, Grafana, and Loki with SLO-driven monitoring tied to incident runbooks.",
+        "Collaborated with DBA on database management activities including incident resolution, backup strategies, and point-in-time recovery (PITR) configurations.",
+        "Resolved daily developer issues across application and platform layers, unblocking engineering teams on deployment, environment, and infrastructure problems.",
+        "Applied AI-assisted operations using Claude to accelerate daily issue resolution, infrastructure troubleshooting, and incident triage."
       ],
       "technologies": [
         "Terraform",
@@ -184,18 +196,23 @@
     },
     {
       "id": 5,
-      "company": "Moni Africa",
+      "company": "Rank Africa",
       "position": "DevOps Engineer",
       "location": "Remote",
       "startDate": "Dec 2022",
       "endDate": "2023",
       "description": "Drove cost optimization and security compliance while automating deployment pipelines and infrastructure management.",
       "achievements": [
-        "Drove 25% reduction in operating costs through spot instances and schedule-based shutdown policies",
-        "Automated deployment pipelines and secret rotation using Ansible, Terraform, and Vault",
-        "Enforced RBAC and IAM access policies aligning with ISO 27001 and SOC 2 recommendations",
-        "Integrated Kafka for messaging and event-driven microservice communication",
-        "Deployed Ansible playbooks for secure VM patching and consistent OS-level configurations"
+        "Built and managed AWS cloud infrastructure — VPC networking, RDS databases, ECS clusters deploying multiple microservices, provisioned through reusable Terraform modules and automated CI/CD pipelines.",
+        "Built CI/CD pipelines to deploy Golang, Node.js, and React microservices with automated rollback and health checks at each deployment stage.",
+        "Led a gradual monolith-to-microservices migration using the strangler-fig pattern — per-service CI/CD pipelines, IaC, and observability instrumentation across both paths during cutover.",
+        "Set up VPN networks to third-party providers (NIBSS and Mifos core banking provider) for secure payment and banking integrations.",
+        "Deployed ELK stack for centralized log management and tracing service-to-service communications across the microservices architecture.",
+        "Enforced RBAC and IAM access policies aligned with ISO 27001 and SOC 2 controls.",
+        "Automated deployment pipelines and secret rotation using Ansible, Terraform, and HashiCorp Vault.",
+        "Collaborated with QA and development teams using Jira for ticket management and agile workflow coordination.",
+        "Collaborated with DBA on database management activities including incident resolution, backup strategies, and point-in-time recovery (PITR) configurations.",
+        "Drove 25% reduction in operating costs through spot instances and schedule-based shutdown automation."
       ],
       "technologies": [
         "AWS",
@@ -252,118 +269,35 @@
   
   "skills": {
     "technical": [
-      {
-        "name": "Terraform",
-        "level": 95
-      },
-      {
-        "name": "Kubernetes",
-        "level": 95
-      },
-      {
-        "name": "Docker",
-        "level": 95
-      },
-      {
-        "name": "Azure",
-        "level": 95
-      },
-      {
-        "name": "AWS",
-        "level": 95
-      },
-      {
-        "name": "GCP",
-        "level": 95
-      },
-      {
-        "name": "Huawei Cloud",
-        "level": 95
-      },
-      {
-        "name": "GitHub Actions",
-        "level": 95
-      },
-      {
-        "name": "Python",
-        "level": 85
-      },
-      {
-        "name": "Bash Scripting",
-        "level": 90
-      },
-      {
-        "name": "Ansible",
-        "level": 90
-      },
-      {
-        "name": "Prometheus",
-        "level": 85
-      },
-      {
-        "name": "Grafana",
-        "level": 85
-      },
-      {
-        "name": "ELK Stack",
-        "level": 85
-      },
-      {
-        "name": "Loki",
-        "level": 85
-      },
-      {
-        "name": "HashiCorp Vault",
-        "level": 85
-      },
-      {
-        "name": "CSI Secrets Store",
-        "level": 85
-      },
-      {
-        "name": "Git",
-        "level": 90
-      },
-      {
-        "name": "GitHub",
-        "level": 90
-      },
-      {
-        "name": "Bitbucket",
-        "level": 85
-      },
-      {
-        "name": "Azure DevOps",
-        "level": 85
-      },
-      {
-        "name": "Jenkins",
-        "level": 85
-      },
-      {
-        "name": "Argo CD",
-        "level": 85
-      },
-      {
-        "name": "Bitbucket Pipelines",
-        "level": 85
-      },
-      {
-        "name": "Kafka",
-        "level": 85
-      },
-      {
-        "name": "Amazon Athena",
-        "level": 82
-      },
-      {
-        "name": "AWS Glue",
-        "level": 80
-      },
-      {
-        "name": "Metabase",
-        "level": 78
-      }
+      { "name": "AWS", "level": 95 },
+      { "name": "GCP", "level": 95 },
+      { "name": "Azure", "level": 92 },
+      { "name": "Huawei Cloud", "level": 90 },
+      { "name": "Kubernetes (EKS, GKE, AKS, CCE)", "level": 95 },
+      { "name": "ECS Fargate / Cloud Run", "level": 90 },
+      { "name": "Terraform / IaC", "level": 95 },
+      { "name": "GitHub Actions CI/CD", "level": 95 },
+      { "name": "Argo CD / GitOps", "level": 90 },
+      { "name": "Karpenter / HPA / PDB", "level": 88 },
+      { "name": "Helm / Kustomize", "level": 88 },
+      { "name": "Docker / Container Security", "level": 92 },
+      { "name": "RDS / CloudSQL / Azure Flexible Server / Huawei RDS", "level": 85 },
+      { "name": "AWS Secrets Manager / Google Secret Manager / Kubeseal", "level": 88 },
+      { "name": "HashiCorp Vault", "level": 85 },
+      { "name": "DevSecOps (Trivy, CodeQL, Checkov)", "level": 88 },
+      { "name": "IAM Hardening / RBAC / Least-Privilege", "level": 90 },
+      { "name": "NetworkPolicies / Pod Security Standards", "level": 88 },
+      { "name": "Cloudflare Zero Trust / WAF / Azure VPN", "level": 88 },
+      { "name": "VPN Networking (Third-Party Integrations)", "level": 85 },
+      { "name": "Prometheus / Grafana / Loki / OpenCost", "level": 90 },
+      { "name": "ELK Stack", "level": 85 },
+      { "name": "Incident Response / Runbooks", "level": 90 },
+      { "name": "SLO-Driven Monitoring", "level": 88 },
+      { "name": "Cloud Cost Optimization / FinOps", "level": 88 },
+      { "name": "Python / Bash / HCL", "level": 88 },
+      { "name": "Ansible", "level": 85 },
+      { "name": "PCI DSS / ISO 27001 / SOC 2", "level": 82 },
+      { "name": "Jira / Agile Workflows", "level": 88 }
     ],
 
 
@@ -388,24 +322,24 @@
     "tools": [
       "Terraform",
       "Kubernetes",
+      "EKS", "GKE", "AKS", "Huawei CCE",
+      "ECS Fargate", "Cloud Run",
       "Docker",
+      "Helm", "Kustomize",
       "GitHub Actions",
-      "Azure DevOps",
-      "Jenkins",
       "Argo CD",
-      "Prometheus",
-      "Grafana",
+      "Karpenter",
+      "Prometheus", "Grafana", "Loki", "Alertmanager",
+      "OpenCost",
       "ELK Stack",
+      "AWS Secrets Manager", "Google Secret Manager", "Kubeseal",
       "HashiCorp Vault",
-      "CSI Secrets Store",
+      "External Secrets Operator",
+      "Trivy", "CodeQL", "Checkov", "Terrascan", "TruffleHog",
+      "Cloudflare Zero Trust", "WAF", "Azure VPN",
       "Ansible",
-      "Kafka",
-      "SonarQube",
-      "Git",
-      "Bitbucket",
-      "Amazon Athena",
-      "AWS Glue",
-      "Metabase"
+      "Python", "Bash", "HCL",
+      "Jira"
     ]
   },
 
@@ -416,6 +350,24 @@
 
   
   "projects": [
+    {
+      "id": 0,
+      "title": "MiddleDoc — Founder",
+      "description": "Founded and built a SaaS document collection platform — secure link-based uploads with automatic tracking for businesses.",
+      "longDescription": "MiddleDoc is a SaaS platform I founded and built to simplify document collection for businesses. Clients receive secure upload links, files are tracked end-to-end, and teams get automated status visibility — removing the back-and-forth of email attachments and manual chasing.",
+      "technologies": [
+        "SaaS",
+        "Next.js",
+        "AWS",
+        "Terraform",
+        "Kubernetes",
+        "Secure Uploads"
+      ],
+      "image": "/middledoc-logo.png",
+      "liveUrl": "https://middledoc.com",
+      "githubUrl": "",
+      "featured": true
+    },
     {
       "id": 1,
       "title": "GCP Portfolio Project",
@@ -832,7 +784,7 @@
       "id": 3,
       "name": "Adebayo Ogundimu",
       "position": "Product Manager",
-      "company": "Moni Africa",
+      "company": "Rank Africa",
       "content": "Godspower's cost optimization strategies and security implementations helped us achieve compliance standards while reducing operational expenses by 25%. His mentorship of junior team members is equally impressive.",
       "rating": 5
     }

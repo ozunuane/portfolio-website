@@ -1,83 +1,37 @@
-import { getPersonalInfo, getSkills } from '@/lib/content'
+import { getPersonalInfo } from '@/lib/content'
+import SectionHeading from './SectionHeading'
+import { Server, ShieldCheck, GitBranch, Gauge } from 'lucide-react'
+
+const focus = [
+  { icon: Server, title: '24/7 Operations', body: 'High-reliability infrastructure for DeFi protocols and payment-grade fintech where downtime hits users and TVL.' },
+  { icon: GitBranch, title: 'Platform & GitOps', body: 'Kubernetes orchestration, CI/CD, and GitOps workflows that ship safely and scale across clouds.' },
+  { icon: ShieldCheck, title: 'Cloud Security', body: 'Hardened, compliant environments for regulated and high-stakes systems — from IAM to zero-trust.' },
+  { icon: Gauge, title: 'FinOps & Efficiency', body: 'Published research on cloud cost optimization, turning observability into measurable savings.' },
+]
 
 export default function About() {
-  const personalInfo = getPersonalInfo()
-  const skills = getSkills()
+  const personal = getPersonalInfo()
 
   return (
-    <section id="about" className="py-24 sm:py-32">
-      <div className="mx-auto max-w-7xl px-6 lg:px-8">
-        <div className="mx-auto max-w-2xl lg:mx-0">
-          <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
-            About Me
-          </h2>
-          <p className="mt-6 text-lg leading-8 text-gray-700">
-            {personalInfo.bio || personalInfo.summary}
-          </p>
-        </div>
-        
-        <div className="mx-auto mt-16 max-w-2xl sm:mt-20 lg:mt-24 lg:max-w-none">
-          <dl className="grid max-w-xl grid-cols-1 gap-x-8 gap-y-16 lg:max-w-none lg:grid-cols-3">
-            <div className="flex flex-col">
-              <dt className="flex items-center gap-x-3 text-base font-semibold leading-7 text-gray-900">
-                <div className="h-5 w-5 flex-none rounded-full bg-blue-600"></div>
-                Technical Skills
-              </dt>
-              <dd className="mt-4 flex flex-auto flex-col text-base leading-7 text-gray-700">
-                <div className="space-y-2">
-                  {skills.technical.slice(0, 6).map((skill) => (
-                    <div key={skill.name} className="flex items-center justify-between">
-                      <span className="text-sm">{skill.name}</span>
-                      <div className="w-20 bg-gray-200 rounded-full h-2">
-                        <div 
-                          className="bg-blue-600 h-2 rounded-full transition-all duration-1000 ease-out"
-                          style={{ width: `${skill.level}%` }}
-                        ></div>
-                      </div>
-                    </div>
-                  ))}
+    <section id="about" className="scroll-mt-20 py-24 sm:py-32">
+      <div className="mx-auto max-w-6xl px-5 sm:px-6 lg:px-8">
+        <div className="grid grid-cols-1 gap-12 lg:grid-cols-12 lg:gap-16">
+          <div className="lg:col-span-5">
+            <SectionHeading eyebrow="About" title="Engineering reliability where it matters most" />
+            <p className="mt-6 text-base leading-relaxed text-muted sm:text-lg">{personal.bio}</p>
+          </div>
+
+          <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:col-span-7">
+            {focus.map(({ icon: Icon, title, body }) => (
+              <div key={title} className="card-surface p-6">
+                <div className="grid h-11 w-11 place-items-center rounded-lg bg-accent/12 text-accent ring-1 ring-inset ring-accent/25">
+                  <Icon className="h-5 w-5" />
                 </div>
-              </dd>
-            </div>
-            
-            <div className="flex flex-col">
-              <dt className="flex items-center gap-x-3 text-base font-semibold leading-7 text-gray-900">
-                <div className="h-5 w-5 flex-none rounded-full bg-green-600"></div>
-                Soft Skills
-              </dt>
-              <dd className="mt-4 flex flex-auto flex-col text-base leading-7 text-gray-700">
-                <div className="flex flex-wrap gap-2">
-                  {skills.soft?.map((skill) => (
-                    <span 
-                      key={skill}
-                      className="inline-flex items-center rounded-md bg-green-50 px-2 py-1 text-xs font-medium text-green-700 ring-1 ring-inset ring-green-600/20"
-                    >
-                      {skill}
-                    </span>
-                  )) || <span className="text-gray-700">No soft skills available</span>}
-                </div>
-              </dd>
-            </div>
-            
-            <div className="flex flex-col">
-              <dt className="flex items-center gap-x-3 text-base font-semibold leading-7 text-gray-900">
-                <div className="h-5 w-5 flex-none rounded-full bg-purple-600"></div>
-                Tools & Technologies
-              </dt>
-              <dd className="mt-4 flex flex-auto flex-col text-base leading-7 text-gray-700">
-                <div className="flex flex-wrap gap-2">
-                  {skills.tools?.map((tool) => (
-                    <span 
-                      key={tool}
-                      className="inline-flex items-center rounded-md bg-purple-50 px-2 py-1 text-xs font-medium text-purple-700 ring-1 ring-inset ring-purple-600/20"
-                    >
-                      {tool}
-                    </span>
-                  )) || <span className="text-gray-700">No tools available</span>}
-                </div>
-              </dd>
-            </div>
-          </dl>
+                <h3 className="mt-4 text-base font-semibold text-fg">{title}</h3>
+                <p className="mt-2 text-sm leading-relaxed text-muted">{body}</p>
+              </div>
+            ))}
+          </div>
         </div>
       </div>
     </section>

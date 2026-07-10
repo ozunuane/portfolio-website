@@ -1,162 +1,96 @@
 import { getJournals } from '@/lib/content'
-import { Calendar, Clock, Tag } from 'lucide-react'
+import SectionHeading from './SectionHeading'
+import { Calendar, Clock, ArrowUpRight } from 'lucide-react'
 import Image from 'next/image'
+
+function formatDate(dateString: string) {
+  if (!dateString) return ''
+  const date = new Date(dateString)
+  if (isNaN(date.getTime())) return ''
+  return date.toLocaleDateString('en-US', { year: 'numeric', month: 'short', day: 'numeric' })
+}
 
 export default function Journals() {
   const journals = getJournals()
 
-  const formatDate = (dateString: string) => {
-    if (!dateString) return 'Date not available'
-    
-    try {
-      const date = new Date(dateString)
-      if (isNaN(date.getTime())) return 'Invalid date'
-      
-      return date.toLocaleDateString('en-US', {
-        year: 'numeric',
-        month: 'long',
-        day: 'numeric'
-      })
-    } catch (error) {
-      console.error('Date formatting error:', error)
-      return 'Date not available'
-    }
-  }
-
   return (
-    <section id="journals" className="py-24 sm:py-32">
-      <div className="mx-auto max-w-7xl px-6 lg:px-8">
-        <div className="mx-auto max-w-2xl lg:mx-0">
-          <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
-            Technical Journals
-          </h2>
-          <p className="mt-6 text-lg leading-8 text-gray-700">
-            Insights, experiences, and lessons learned from architecting and managing cloud infrastructure at scale.
-          </p>
-        </div>
+    <section id="journals" className="scroll-mt-20 py-24 sm:py-32">
+      <div className="mx-auto max-w-6xl px-5 sm:px-6 lg:px-8">
+        <SectionHeading
+          eyebrow="Writing"
+          title="Technical journals"
+          description="Insights and lessons from architecting and running cloud infrastructure at scale."
+        />
 
-        <div className="mx-auto mt-16 grid max-w-2xl grid-cols-1 gap-x-8 gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-3">
-          {journals.map((journal) => (
-            <article key={journal.id} className="flex flex-col items-start">
-              <div className="relative w-full">
-                <div className="aspect-[16/9] w-full rounded-2xl bg-gray-100 overflow-hidden">
+        <div className="mt-14 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
+          {journals.map((journal) => {
+            const Wrapper = journal.url ? 'a' : 'div'
+            return (
+              <Wrapper
+                key={journal.id}
+                {...(journal.url ? { href: journal.url, target: '_blank', rel: 'noopener noreferrer' } : {})}
+                className="card-surface group flex flex-col overflow-hidden"
+              >
+                <div className="relative aspect-[16/10] w-full overflow-hidden">
                   <Image
                     src={journal.image}
                     alt={journal.title}
                     fill
-                    className="object-cover hover:scale-105 transition-transform duration-300"
+                    sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                    className="object-cover transition-transform duration-500 group-hover:scale-105"
                   />
-                </div>
-                <div className="absolute inset-0 rounded-2xl ring-1 ring-inset ring-gray-900/10" />
-                {journal.featured && (
-                  <div className="absolute top-4 left-4">
-                    <span className="inline-flex items-center rounded-full bg-blue-600 px-3 py-1 text-xs font-medium text-white">
+                  <div className="absolute inset-0 bg-gradient-to-t from-bg via-bg/10 to-transparent" />
+                  {journal.featured && (
+                    <span className="absolute left-4 top-4 rounded-full bg-accent px-2.5 py-1 text-[11px] font-semibold text-bg">
                       Featured
-                    </span>
-                  </div>
-                )}
-              </div>
-
-              <div className="max-w-xl">
-                <div className="mt-8 flex items-center gap-x-4 text-xs">
-                  <div className="flex items-center gap-1 text-gray-700">
-                    <Calendar className="h-4 w-4" />
-                    <time dateTime={journal.publishedDate}>
-                      {formatDate(journal.publishedDate)}
-                    </time>
-                  </div>
-                  <div className="flex items-center gap-1 text-gray-700">
-                    <Clock className="h-4 w-4" />
-                    <span>{journal.readTime}</span>
-                  </div>
-                </div>
-
-                <div className="group relative">
-                  <h3 className="mt-3 text-lg font-semibold leading-6 text-gray-900 group-hover:text-gray-700">
-                    {journal.url ? (
-                      <a href={journal.url} target="_blank" rel="noopener noreferrer">
-                        <span className="absolute inset-0" />
-                        {journal.title}
-                      </a>
-                    ) : (
-                      <span>{journal.title}</span>
-                    )}
-                  </h3>
-                  <p className="mt-5 line-clamp-3 text-sm leading-6 text-gray-800">
-                    {journal.excerpt}
-                  </p>
-                </div>
-
-                <div className="mt-6 flex flex-wrap gap-2">
-                  {journal.tags.map((tag) => (
-                    <span
-                      key={tag}
-                      className="inline-flex items-center gap-1 rounded-full bg-gray-100 px-3 py-1 text-xs font-medium text-gray-800 hover:bg-gray-200 transition-colors"
-                    >
-                      <Tag className="h-3 w-3" />
-                      {tag}
-                    </span>
-                  ))}
-                </div>
-
-                <div className="mt-6">
-                  {journal.url ? (
-                    <a
-                      href={journal.url}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="inline-flex items-center text-sm font-medium text-blue-600 hover:text-blue-500 transition-colors"
-                    >
-                      Read full article
-                      <svg
-                        className="ml-1 h-4 w-4"
-                        fill="none"
-                        stroke="currentColor"
-                        viewBox="0 0 24 24"
-                      >
-                        <path
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                          strokeWidth={2}
-                          d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"
-                        />
-                      </svg>
-                    </a>
-                  ) : (
-                    <span className="inline-flex items-center text-sm font-medium text-gray-400">
-                      Coming soon
                     </span>
                   )}
                 </div>
-              </div>
-            </article>
-          ))}
+
+                <div className="flex flex-1 flex-col p-6">
+                  <div className="flex items-center gap-4 font-mono text-[11px] text-subtle">
+                    <span className="inline-flex items-center gap-1.5">
+                      <Calendar className="h-3.5 w-3.5" />
+                      {formatDate(journal.publishedDate)}
+                    </span>
+                    <span className="inline-flex items-center gap-1.5">
+                      <Clock className="h-3.5 w-3.5" />
+                      {journal.readTime}
+                    </span>
+                  </div>
+
+                  <h3 className="mt-3 text-lg font-semibold leading-snug text-fg transition-colors group-hover:text-accent">
+                    {journal.title}
+                  </h3>
+                  <p className="mt-2 line-clamp-3 flex-1 text-sm leading-relaxed text-muted">{journal.excerpt}</p>
+
+                  <div className="mt-4 flex flex-wrap gap-1.5">
+                    {journal.tags.slice(0, 3).map((tag) => (
+                      <span key={tag} className="rounded-md border border-line bg-white/5 px-2 py-0.5 font-mono text-[11px] text-subtle">
+                        {tag}
+                      </span>
+                    ))}
+                  </div>
+
+                  <span className="mt-5 inline-flex items-center gap-1 border-t border-line pt-4 text-sm font-medium text-accent">
+                    {journal.url ? 'Read article' : 'Coming soon'}
+                    {journal.url && <ArrowUpRight className="h-4 w-4 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />}
+                  </span>
+                </div>
+              </Wrapper>
+            )
+          })}
         </div>
 
-        <div className="mt-16 text-center">
-          <p className="text-sm text-gray-700 mb-4">
-            Want to read more technical insights and DevOps experiences?
-          </p>
+        <div className="mt-14 text-center">
           <a
             href="https://medium.com/@ozidevops"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center rounded-md bg-blue-600 px-6 py-3 text-sm font-medium text-white shadow-sm hover:bg-blue-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-600 transition-colors"
+            className="inline-flex items-center gap-2 rounded-full border border-line-strong bg-white/5 px-6 py-3 text-sm font-semibold text-fg transition-colors hover:border-accent/50 hover:text-accent"
           >
-            Visit My Medium Blog
-            <svg
-              className="ml-2 h-4 w-4"
-              fill="none"
-              stroke="currentColor"
-              viewBox="0 0 24 24"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth={2}
-                d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"
-              />
-            </svg>
+            Visit my Medium blog
+            <ArrowUpRight className="h-4 w-4" />
           </a>
         </div>
       </div>

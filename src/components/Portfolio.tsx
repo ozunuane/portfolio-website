@@ -1,4 +1,5 @@
 import { getFeaturedProjects } from '@/lib/content'
+import SectionHeading from './SectionHeading'
 import { ExternalLink, Github } from 'lucide-react'
 import Image from 'next/image'
 
@@ -6,83 +7,75 @@ export default function Portfolio() {
   const projects = getFeaturedProjects()
 
   return (
-    <section id="portfolio" className="py-24 sm:py-32">
-      <div className="mx-auto max-w-7xl px-6 lg:px-8">
-        <div className="mx-auto max-w-2xl lg:mx-0">
-          <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
-            Featured Projects
-          </h2>
-          <p className="mt-6 text-lg leading-8 text-gray-700">
-            A showcase of my recent work, highlighting technical skills, problem-solving abilities, and creative solutions.
-          </p>
-        </div>
-        
-        <div className="mx-auto mt-16 grid max-w-2xl grid-cols-1 gap-x-8 gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-3">
-          {projects.map((project) => (
-            <article key={project.id} className="flex flex-col items-start">
-              <div className="relative w-full">
-                <div className="aspect-[16/9] w-full rounded-2xl bg-gray-100 overflow-hidden">
+    <section id="portfolio" className="scroll-mt-20 py-24 sm:py-32">
+      <div className="mx-auto max-w-6xl px-5 sm:px-6 lg:px-8">
+        <SectionHeading
+          eyebrow="Selected work"
+          title="Featured projects"
+          description="Infrastructure, automation, and platform work — highlighting technical depth and real-world impact."
+        />
+
+        {projects.length === 0 ? (
+          <p className="mt-14 text-center text-muted">No projects available yet. Check back soon.</p>
+        ) : (
+          <div className="mt-14 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
+            {projects.map((project) => (
+              <article key={project.id} className="card-surface group flex flex-col overflow-hidden">
+                <div className="relative aspect-[16/10] w-full overflow-hidden">
                   <Image
                     src={project.image}
                     alt={project.title}
                     fill
-                    className="object-cover hover:scale-105 transition-transform duration-300"
+                    sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                    className="object-cover transition-transform duration-500 group-hover:scale-105"
                   />
+                  <div className="absolute inset-0 bg-gradient-to-t from-bg via-bg/10 to-transparent" />
                 </div>
-                <div className="absolute inset-0 rounded-2xl ring-1 ring-inset ring-gray-900/10"></div>
-              </div>
-              
-              <div className="max-w-xl">
-                <div className="mt-8 flex items-center gap-x-4 text-xs">
-                  <div className="text-gray-700">
-                    {project.technologies.join(' • ')}
+
+                <div className="flex flex-1 flex-col p-6">
+                  <div className="flex flex-wrap items-center gap-x-2 gap-y-1 font-mono text-[11px] uppercase tracking-wider">
+                    {project.technologies.slice(0, 3).map((tech, i) => (
+                      <span key={tech} className="flex items-center gap-2">
+                        {i > 0 && <span className="text-subtle">·</span>}
+                        <span className="text-accent">{tech}</span>
+                      </span>
+                    ))}
                   </div>
-                </div>
-                
-                <div className="group relative">
-                  <h3 className="mt-3 text-lg font-semibold leading-6 text-gray-900 group-hover:text-gray-700">
-                    <a href={project.liveUrl} target="_blank" rel="noopener noreferrer">
-                      <span className="absolute inset-0"></span>
-                      {project.title}
-                    </a>
+
+                  <h3 className="mt-3 text-lg font-semibold text-fg transition-colors group-hover:text-accent">
+                    {project.title}
                   </h3>
-                  <p className="mt-5 line-clamp-3 text-sm leading-6 text-gray-800">
+                  <p className="mt-2 line-clamp-3 flex-1 text-sm leading-relaxed text-muted">
                     {project.description}
                   </p>
+
+                  <div className="mt-5 flex items-center gap-4 border-t border-line pt-4">
+                    {project.liveUrl && (
+                      <a
+                        href={project.liveUrl}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="inline-flex items-center gap-1.5 text-sm font-medium text-fg transition-colors hover:text-accent"
+                      >
+                        <ExternalLink className="h-4 w-4" />
+                        Live
+                      </a>
+                    )}
+                    {project.githubUrl && (
+                      <a
+                        href={project.githubUrl}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="inline-flex items-center gap-1.5 text-sm font-medium text-muted transition-colors hover:text-fg"
+                      >
+                        <Github className="h-4 w-4" />
+                        Source
+                      </a>
+                    )}
+                  </div>
                 </div>
-                
-                <div className="mt-6 flex items-center gap-x-4">
-                  {project.liveUrl && (
-                    <a
-                      href={project.liveUrl}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="inline-flex items-center gap-2 text-sm font-medium text-blue-600 hover:text-blue-500"
-                    >
-                      <ExternalLink className="h-4 w-4" />
-                      Live Demo
-                    </a>
-                  )}
-                  {project.githubUrl && (
-                    <a
-                      href={project.githubUrl}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="inline-flex items-center gap-2 text-sm font-medium text-gray-700 hover:text-gray-900"
-                    >
-                      <Github className="h-4 w-4" />
-                      Source Code
-                    </a>
-                  )}
-                </div>
-              </div>
-            </article>
-          ))}
-        </div>
-        
-        {projects.length === 0 && (
-          <div className="text-center py-12">
-            <p className="text-gray-500">No projects available yet. Check back soon!</p>
+              </article>
+            ))}
           </div>
         )}
       </div>

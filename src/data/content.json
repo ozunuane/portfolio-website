@@ -28,6 +28,7 @@
       "achievements": [
         "Architected a GitOps delivery model evolving from Terraform-only toward Argo CD–driven deployments, including PriorityClasses, drift awareness, and audit-friendly change paths across DeFi and Web3 workloads",
         "Implemented production EKS autoscaling with Karpenter: EC2NodeClass and node lifecycle policies, with a 70% image garbage collection threshold to optimize cost while meeting SLA expectations",
+        "Designed queue-depth-based autoscaling for a financial-data parse fleet: Redis/BullMQ-triggered KEDA scaling (scale-from-zero) feeding a tainted, spot-first Karpenter NodePool — compute cost scales to zero between workloads.",
         "Built the observability stack: Prometheus, Grafana, and Alertmanager; Uptime Kuma for incident-style monitoring with Slack notifications and Argo CD deployment status integration",
         "Designed data and analytics on EKS: Metabase with persistent storage, Amazon Athena for S3-based analytics, automated pg_dump cron backups to S3, and isolated dev with PV/PVC boundaries; plain manifests and External Secrets, aligned with IRSA and Terraform in aws/athena (Athena workgroup, Glue catalog, crawlers, remote state, GitHub Actions plan/apply)",
         "Established reliability patterns: Pod Disruption Budgets for production and Argo CD, HPA and startup/readiness probes for slow-starting services, and PriorityClass protection for monitoring and observability stacks",
@@ -421,7 +422,7 @@
     },
     {
       "id": 2,
-      "title": "AWS ECS Microservices Platform - Comyno",
+      "title": "AWS ECS Microservices Platform - Combyno",
       "description": "A comprehensive AWS ECS-based microservices platform built with Terraform implementing scalable, secure, and highly available architecture for expense management.",
       "longDescription": "Production-ready microservices platform featuring AWS ECS Fargate for serverless container orchestration, multi-tier load balancing with ALB/NLB, AWS Cloud Map service discovery, Apache Pulsar message broker, and Jenkins CI/CD integration. Includes comprehensive monitoring with CloudWatch, Grafana, and Loki across multi-AZ deployment in VPC with optimized subnet architecture.",
       "technologies": [

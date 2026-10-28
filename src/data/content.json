@@ -505,6 +505,31 @@
       "liveUrl": "",
       "githubUrl": "",
       "featured": true
+    },
+    {
+      "id": 6,
+      "title": "Production EKS Platform with GitOps & Multi-Region DR",
+      "description": "A production-grade AWS EKS platform built entirely in Terraform — EKS Auto Mode, Argo CD GitOps, Karpenter autoscaling, Multi-AZ RDS with a cross-region read replica, and a standby DR cluster.",
+      "longDescription": "An end-to-end production Kubernetes platform on AWS, defined as modular Terraform across dev, staging and prod. EKS Auto Mode runs in a multi-AZ VPC with public, private and database subnet tiers; Argo CD drives GitOps delivery with an app-of-apps pattern and automated sync. Karpenter handles node autoscaling with spot and mixed instance types, the AWS Load Balancer Controller fronts workloads via the Gateway API, and platform add-ons (Metrics Server, External Secrets Operator, Prometheus, Grafana) are installed as Helm releases. Data runs on Multi-AZ RDS PostgreSQL with automatic failover and a cross-region read replica. Security is built in — IRSA for fine-grained pod permissions, KMS encryption at rest, AWS Secrets Manager via External Secrets, least-privilege IAM and private-subnet workloads. A separate Terraform workspace provisions a cost-optimized standby EKS cluster in a second region for complete application-tier disaster recovery, and the whole stack deploys through GitHub Actions: develop to dev, main to staging and prod, DR following prod automatically.",
+      "technologies": [
+        "AWS EKS",
+        "Terraform",
+        "Argo CD",
+        "GitOps",
+        "Karpenter",
+        "Helm",
+        "Amazon RDS",
+        "External Secrets Operator",
+        "Prometheus",
+        "Grafana",
+        "GitHub Actions",
+        "Gateway API",
+        "Disaster Recovery"
+      ],
+      "image": "/project-eks-gitops.svg",
+      "liveUrl": "",
+      "githubUrl": "https://github.com/ozunuane/aws-infra-iac",
+      "featured": true
     }
   ],
 

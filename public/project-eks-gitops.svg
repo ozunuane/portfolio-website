@@ -1,0 +1,119 @@
+<svg width="800" height="600" viewBox="0 0 800 600" fill="none" xmlns="http://www.w3.org/2000/svg" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="800" y2="600" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#0f172a"/>
+      <stop offset="1" stop-color="#1e293b"/>
+    </linearGradient>
+    <linearGradient id="prod" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#1d4ed8"/>
+      <stop offset="1" stop-color="#1e40af"/>
+    </linearGradient>
+    <linearGradient id="dr" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#7c3aed"/>
+      <stop offset="1" stop-color="#6d28d9"/>
+    </linearGradient>
+    <style>
+      .t{fill:#e2e8f0}.m{fill:#94a3b8}.w{fill:#f8fafc}.o{fill:#fb923c}
+    </style>
+  </defs>
+
+  <rect width="800" height="600" fill="url(#bg)"/>
+
+  <!-- header -->
+  <text x="40" y="58" class="w" font-size="30" font-weight="700">Production EKS Platform</text>
+  <text x="40" y="88" class="o" font-size="18" font-weight="600">GitOps · Karpenter · Multi-Region DR</text>
+  <rect x="40" y="104" width="118" height="3" fill="#fb923c"/>
+
+  <!-- GitOps delivery bar -->
+  <g>
+    <rect x="40" y="134" width="720" height="64" rx="10" fill="#0b1220" stroke="#334155" stroke-width="1.5"/>
+    <text x="60" y="160" class="m" font-size="13" font-weight="600">DELIVERY</text>
+    <g transform="translate(60,170)">
+      <rect x="0" y="0" width="118" height="18" rx="4" fill="#111827" stroke="#475569"/>
+      <text x="59" y="13" class="t" font-size="11" text-anchor="middle">GitHub Actions</text>
+    </g>
+    <text x="190" y="183" class="o" font-size="14">→</text>
+    <g transform="translate(206,170)">
+      <rect x="0" y="0" width="90" height="18" rx="4" fill="#111827" stroke="#475569"/>
+      <text x="45" y="13" class="t" font-size="11" text-anchor="middle">Terraform</text>
+    </g>
+    <text x="305" y="183" class="o" font-size="14">→</text>
+    <g transform="translate(321,170)">
+      <rect x="0" y="0" width="74" height="18" rx="4" fill="#111827" stroke="#475569"/>
+      <text x="37" y="13" class="t" font-size="11" text-anchor="middle">Argo CD</text>
+    </g>
+    <text x="640" y="162" class="m" font-size="11" text-anchor="end">develop → dev</text>
+    <text x="640" y="178" class="m" font-size="11" text-anchor="end">main → staging · prod</text>
+    <text x="640" y="194" class="m" font-size="11" text-anchor="end">DR follows prod</text>
+  </g>
+
+  <!-- PROD region -->
+  <g>
+    <rect x="40" y="224" width="430" height="326" rx="12" fill="url(#prod)" opacity="0.14" stroke="#3b82f6" stroke-width="1.5"/>
+    <text x="60" y="252" class="w" font-size="15" font-weight="700">PRIMARY REGION · us-west-2</text>
+
+    <!-- EKS cluster -->
+    <rect x="60" y="268" width="390" height="166" rx="10" fill="#0b1220" stroke="#3b82f6" stroke-width="1.5"/>
+    <text x="78" y="292" class="t" font-size="13" font-weight="700">EKS Auto Mode</text>
+    <text x="432" y="292" class="m" font-size="11" text-anchor="end">Karpenter · spot + on-demand</text>
+
+    <g font-size="11.5">
+      <rect x="78" y="304" width="110" height="34" rx="6" fill="#111827" stroke="#475569"/>
+      <text x="133" y="325" class="t" text-anchor="middle">Argo CD</text>
+      <rect x="196" y="304" width="110" height="34" rx="6" fill="#111827" stroke="#475569"/>
+      <text x="251" y="320" class="t" text-anchor="middle">LB Controller</text>
+      <text x="251" y="333" class="m" text-anchor="middle" font-size="9.5">Gateway API</text>
+      <rect x="314" y="304" width="118" height="34" rx="6" fill="#111827" stroke="#475569"/>
+      <text x="373" y="325" class="t" text-anchor="middle">External Secrets</text>
+
+      <rect x="78" y="346" width="110" height="34" rx="6" fill="#111827" stroke="#475569"/>
+      <text x="133" y="367" class="t" text-anchor="middle">Prometheus</text>
+      <rect x="196" y="346" width="110" height="34" rx="6" fill="#111827" stroke="#475569"/>
+      <text x="251" y="367" class="t" text-anchor="middle">Grafana</text>
+      <rect x="314" y="346" width="118" height="34" rx="6" fill="#111827" stroke="#475569"/>
+      <text x="373" y="367" class="t" text-anchor="middle">Metrics Server</text>
+
+      <rect x="78" y="388" width="354" height="34" rx="6" fill="#0d1b2e" stroke="#334155" stroke-dasharray="4 3"/>
+      <text x="255" y="409" class="m" text-anchor="middle">Multi-AZ VPC · public / private / db subnets</text>
+    </g>
+
+    <!-- RDS -->
+    <rect x="60" y="446" width="390" height="86" rx="10" fill="#0b1220" stroke="#3b82f6" stroke-width="1.5"/>
+    <text x="78" y="470" class="t" font-size="13" font-weight="700">RDS PostgreSQL</text>
+    <text x="78" y="490" class="m" font-size="11">Multi-AZ · automatic failover</text>
+    <text x="78" y="508" class="m" font-size="11">IRSA · KMS · Secrets Manager</text>
+    <circle cx="420" cy="468" r="5" fill="#22c55e"/>
+    <text x="432" y="472" class="m" font-size="10.5" text-anchor="end">primary</text>
+  </g>
+
+  <!-- DR region -->
+  <g>
+    <rect x="490" y="224" width="270" height="326" rx="12" fill="url(#dr)" opacity="0.14" stroke="#8b5cf6" stroke-width="1.5"/>
+    <text x="510" y="252" class="w" font-size="15" font-weight="700">DR REGION</text>
+    <text x="740" y="252" class="m" font-size="12" text-anchor="end">us-east-1</text>
+
+    <rect x="510" y="268" width="230" height="166" rx="10" fill="#0b1220" stroke="#8b5cf6" stroke-width="1.5"/>
+    <text x="528" y="292" class="t" font-size="13" font-weight="700">Standby EKS</text>
+    <text x="528" y="312" class="m" font-size="11">Separate TF workspace</text>
+    <text x="528" y="330" class="m" font-size="11">Cost-optimized nodes</text>
+    <text x="528" y="348" class="m" font-size="11">Rapid scale-up on</text>
+    <text x="528" y="364" class="m" font-size="11">DR activation</text>
+    <rect x="528" y="386" width="194" height="34" rx="6" fill="#0d1b2e" stroke="#334155" stroke-dasharray="4 3"/>
+    <text x="625" y="407" class="m" text-anchor="middle" font-size="11">Independent state</text>
+
+    <rect x="510" y="446" width="230" height="86" rx="10" fill="#0b1220" stroke="#8b5cf6" stroke-width="1.5"/>
+    <text x="528" y="470" class="t" font-size="13" font-weight="700">Read Replica</text>
+    <text x="528" y="490" class="m" font-size="11">Cross-region</text>
+    <text x="528" y="508" class="m" font-size="11">5–10s replication lag</text>
+    <circle cx="722" cy="470" r="5" fill="#a78bfa"/>
+  </g>
+
+  <!-- replication arrow prod RDS -> DR replica -->
+  <g stroke="#a78bfa" stroke-width="2" fill="none" stroke-dasharray="6 4">
+    <path d="M450 489 L510 489"/>
+  </g>
+  <text x="480" y="482" class="m" font-size="9.5" text-anchor="middle">async</text>
+
+  <!-- footer tech -->
+  <text x="40" y="582" class="m" font-size="12.5">Terraform · EKS · Argo CD · Karpenter · RDS · External Secrets · Prometheus · Grafana · GitHub Actions</text>
+</svg>

@@ -1,12 +1,12 @@
 {
   "personal": {
     "name": "Unuane Godspower Ozimede",
-    "title": "Senior DevOps Engineer | DeFi · Kubernetes · 24/7 Operations · Cloud Security",
+    "title": "Senior DevOps Engineer | LLM Inference Infrastructure · Kubernetes · DeFi · Cloud Security",
     "email": "godspowerunuane@gmail.com",
     "phone": "+234 815 904 6233",
     "location": "Lagos, Nigeria (EMEA Remote)",
-    "bio": "Senior DevOps Engineer with 8+ years architecting high-reliability infrastructure for DeFi protocols (e.g. CreatorFi) and traditional fintech. Deep expertise in 24/7 operations, container orchestration (Kubernetes), CI/CD, and cloud security. Mission-critical systems where downtime impacts users and TVL. Published research on cloud cost optimization; experience across AWS, Azure, GCP, and Huawei Cloud.",
-    "summary": "Senior DevOps engineer focused on DeFi, payment-grade infrastructure, and always-on operations. Proven in Kubernetes, GitOps, observability, and cloud security for regulated and high-stakes environments. FinOps and cost efficiency with a published research background; strong CI/CD, incident response, and platform reliability."
+    "bio": "Senior DevOps Engineer with 8+ years architecting high-reliability infrastructure for DeFi protocols (e.g. CreatorFi) and traditional fintech, now specialising in LLM inference infrastructure — deploying, autoscaling, and benchmarking vLLM on GPU Kubernetes. Deep expertise in 24/7 operations, container orchestration, CI/CD, and cloud security. Published research on cloud cost optimization; experience across AWS, Azure, GCP, and Huawei Cloud.",
+    "summary": "Senior DevOps engineer focused on LLM inference infrastructure (vLLM, GPU autoscaling, disaggregated serving), DeFi, payment-grade infrastructure, and always-on operations. Proven in Kubernetes, GitOps, observability, and cloud security for regulated and high-stakes environments. FinOps and cost efficiency with a published research background; strong CI/CD, incident response, and platform reliability."
   },
   "social": {
     "github": "https://github.com/ozunuane",
@@ -297,6 +297,9 @@
   
   "skills": {
     "technical": [
+      { "name": "LLM Inference Serving (vLLM, AWQ quantization, benchmarking)", "level": 85 },
+      { "name": "GPU Infrastructure on Kubernetes (Karpenter GPU NodePools, device plugin, DCGM)", "level": 85 },
+      { "name": "KEDA Queue-Based Autoscaling", "level": 88 },
       { "name": "AWS", "level": 95 },
       { "name": "GCP", "level": 92 },
       { "name": "Azure", "level": 92 },
@@ -372,7 +375,8 @@
       "Ansible",
       "Python", "Bash", "HCL",
       "Jira",
-      "Amazon Athena", "AWS Glue", "Metabase"
+      "Amazon Athena", "AWS Glue", "Metabase",
+      "vLLM", "KEDA", "Qdrant", "NVIDIA DCGM"
     ]
   },
 
@@ -383,6 +387,51 @@
 
   
   "projects": [
+    {
+      "id": 7,
+      "title": "GPU LLM Inference Platform on EKS — vLLM, Karpenter, KEDA, LLM-D",
+      "description": "Production-grade LLM serving platform on AWS EKS: vLLM on Karpenter-provisioned GPUs, KEDA autoscaling on queue depth, disaggregated prefill/decode serving with cross-node KV cache transfer, full GitOps and observability.",
+      "longDescription": "An end-to-end GPU inference platform built and benchmarked on EKS. Terraform provisions the cluster with Karpenter GPU NodePools (L4/A10G with instance-type fallbacks); vLLM serves Qwen2.5-7B-Instruct (AWQ) with model weights staged in S3 for fast cold starts. KEDA autoscales replicas on vLLM queue depth (vllm:num_requests_waiting) — proven live: 120 concurrent streams scaled 1→2 GPU nodes in ~90s and consolidated back after cooldown. The finale is LLM-D-style disaggregated serving: prefill and decode on separate GPU nodes with KV cache shipped over NIXL (3.5 MB per transfer at ~200 MB/s, ~15 ms), measuring 3x lower p50 latency at 10-way concurrency versus combined serving. Argo CD app-of-apps drives all workloads and Grafana dashboards; GitHub Actions runs Terraform plans via OIDC with caller-independent state. Benchmarks include AWQ vs BF16 (TTFT 78→29 ms, 2-3x throughput) and a documented catalogue of 21 real production failure modes with fixes.",
+      "technologies": [
+        "vLLM",
+        "AWS EKS",
+        "Karpenter",
+        "KEDA",
+        "Terraform",
+        "Argo CD",
+        "Helm",
+        "Prometheus",
+        "Grafana",
+        "NVIDIA DCGM",
+        "LLM-D / Disaggregated Serving",
+        "GitHub Actions OIDC"
+      ],
+      "image": "/project-vllm-eks.jpg",
+      "liveUrl": "",
+      "githubUrl": "https://github.com/ozunuane/vllm-k8s-benchmark-lab",
+      "featured": true
+    },
+    {
+      "id": 8,
+      "title": "MiddleDock — Self-Hosted RAG Assistant on Kubernetes",
+      "description": "Self-hosted AI policy assistant: Qdrant vector search, RAG agent with chat UI, served by a self-hosted vLLM backend — deployed on EKS through the disaggregated inference platform.",
+      "longDescription": "A complete retrieval-augmented generation stack built to answer company policy questions from ingested documents — no third-party LLM APIs. Qdrant stores document embeddings (sentence-transformers), a Python agent handles retrieval and prompt assembly, and a Gradio chat UI fronts it. The LLM backend is self-hosted vLLM serving Qwen2.5-7B-AWQ, first on rented GPUs (~$0.69/hr) and then on EKS, where the agent talks cross-namespace to the disaggregated prefill/decode backend over ClusterIP. Dockerized with a Docker Hub build-push pipeline (GitHub Actions) and deployed via Argo CD GitOps with an ingestion Job as a sync hook.",
+      "technologies": [
+        "RAG",
+        "Qdrant",
+        "vLLM",
+        "Python",
+        "Gradio",
+        "Docker",
+        "Kubernetes",
+        "Argo CD",
+        "GitHub Actions"
+      ],
+      "image": "/project-middledock-rag.jpg",
+      "liveUrl": "",
+      "githubUrl": "https://github.com/ozunuane/middledock-rag-assistant",
+      "featured": true
+    },
     {
       "id": 0,
       "title": "MiddleDoc — Founder",
@@ -614,6 +663,58 @@
 
   
   "journals": [
+    {
+      "id": 10,
+      "title": "I Built a Production Lab-Grade LLM Serving Platform on EKS — The Model Was the Easy Part",
+      "excerpt": "vLLM on Karpenter-provisioned GPUs, KEDA autoscaling on queue depth, Argo CD GitOps, S3-backed model weights, and disaggregated prefill/decode serving with cross-node KV cache transfer — plus every real production failure mode hit along the way, with fixes and measured numbers.",
+      "content": "The full build log of a GPU inference platform on EKS: 90-second GPU scale-out proven live under 120 concurrent streams, 15ms NIXL KV cache transfers between prefill and decode nodes, 3x lower p50 latency at 10-way concurrency, and the complete catalogue of failures — quota caches, OIDC trust policies, device plugin affinity, autoscaler/quota misalignment — that the tutorials skip.",
+      "publishedDate": "2026-11-21",
+      "url": "https://ozidevops.medium.com/i-built-a-production-lab-grade-llm-serving-platform-on-eks-the-model-was-the-easy-part-acc186037b2a",
+      "readTime": "12 min read",
+      "tags": ["LLM Inference", "EKS", "vLLM", "Karpenter", "KEDA", "GPU Autoscaling", "LLM-D", "Disaggregated Serving", "GitOps"],
+      "featured": true,
+      "image": "/journal-eks-llm-platform.jpg",
+      "active": true
+    },
+    {
+      "id": 7,
+      "title": "Prefill vs Decode: Why LLM Inference Looks Nothing Like Serving a REST API",
+      "excerpt": "LLM inference has two phases with opposite hardware profiles — compute-bound prefill and memory-bandwidth-bound decode. Understanding the split explains why GPUs sit 'idle' while saturated, why TTFT and ITL are separate SLOs, and why disaggregated serving exists.",
+      "content": "A practitioner's walk through transformer inference arithmetic: what happens between sending a prompt and streaming tokens, why decode is HBM-bandwidth-bound, how the KV cache dominates memory, and what PagedAttention changes. Written while building a production vLLM platform.",
+      "publishedDate": "2026-11-12",
+      "url": "https://blog.stackademic.com/prefill-vs-decode-why-llm-inference-looks-nothing-like-serving-a-rest-api-204a4900d772",
+      "readTime": "8 min read",
+      "tags": ["LLM Inference", "vLLM", "GPU", "Prefill", "Decode", "KV Cache", "AI Infrastructure"],
+      "featured": true,
+      "image": "/journal-prefill-decode.jpg",
+      "active": true
+    },
+    {
+      "id": 8,
+      "title": "I Benchmarked Every vLLM Knob So You Don't Have To",
+      "excerpt": "Hands-on benchmarks of vLLM's serving parameters — max-model-len, gpu-memory-utilization, max-num-seqs — plus AWQ vs BF16 quantization (TTFT 78→29ms, 2-3x throughput) and a vLLM vs SGLang comparison, all with real numbers.",
+      "content": "Baseline, tune one knob at a time, measure. Sequential and concurrent load against Qwen2.5-7B on a rented L4-class GPU, with Prometheus metrics for every run. AWQ 4-bit quantization delivered the single biggest win: concurrency capacity 25→66 at the same VRAM.",
+      "publishedDate": "2026-11-16",
+      "url": "https://medium.com/@ozidevops",
+      "readTime": "9 min read",
+      "tags": ["vLLM", "Benchmarking", "AWQ", "Quantization", "SGLang", "LLM Serving", "GPU"],
+      "featured": true,
+      "image": "/journal-vllm-knobs.jpg",
+      "active": true
+    },
+    {
+      "id": 9,
+      "title": "I Built a Self-Hosted AI Policy Assistant for Under $1/Hour",
+      "excerpt": "A complete RAG stack — Qdrant, a retrieval agent, chat UI, and self-hosted vLLM with AWQ quantization on a rented GPU — answering company policy questions with no third-party LLM APIs and no per-token billing.",
+      "content": "Build log for MiddleDock: document ingestion and chunking, vector search with Qdrant, prompt assembly in a Python agent, and an OpenAI-compatible self-hosted vLLM backend. Dockerized end-to-end, later deployed on EKS behind a disaggregated inference backend.",
+      "publishedDate": "2026-11-18",
+      "url": "https://medium.com/@ozidevops",
+      "readTime": "7 min read",
+      "tags": ["RAG", "Qdrant", "vLLM", "Self-Hosting", "AI Agents", "Cost Optimization"],
+      "featured": true,
+      "image": "/journal-middledock-rag.jpg",
+      "active": true
+    },
     {
       "id": 6,
       "title": "Cost Optimization in Cloud Infrastructure: Factors Influencing the Nigerian Market and Organizational Strategies for Effective Management",

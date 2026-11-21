@@ -5,7 +5,7 @@
     "email": "godspowerunuane@gmail.com",
     "phone": "+234 815 904 6233",
     "location": "Lagos, Nigeria (EMEA Remote)",
-    "bio": "Senior DevOps Engineer with 8+ years architecting high-reliability infrastructure for DeFi protocols (e.g. CreatorFi) and traditional fintech. Deep expertise in 24/7 operations, container orchestration (Kubernetes), CI/CD, and cloud security — plus hands-on LLM inference infrastructure: deploying, autoscaling, and benchmarking vLLM on GPU Kubernetes. Published research on cloud cost optimization; experience across AWS, Azure, GCP, and Huawei Cloud.",
+    "bio": "Senior DevOps Engineer with 8+ years architecting high-reliability infrastructure for DeFi protocols and traditional fintech. Deep expertise in 24/7 operations, container orchestration (Kubernetes), CI/CD, and cloud security — plus hands-on LLM inference infrastructure: deploying, autoscaling, and benchmarking vLLM on GPU Kubernetes. Published research on cloud cost optimization; experience across AWS, Azure, GCP, and Huawei Cloud.",
     "summary": "Senior DevOps engineer focused on DeFi, payment-grade infrastructure, and always-on operations. Proven in Kubernetes, GitOps, observability, and cloud security for regulated and high-stakes environments. Also brings production LLM inference infrastructure skills — vLLM, GPU autoscaling, disaggregated serving. FinOps and cost efficiency with a published research background; strong CI/CD, incident response, and platform reliability."
   },
   "social": {

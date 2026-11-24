@@ -18,6 +18,44 @@
 
   "experience": [
     {
+      "id": 7,
+      "company": "Skillhanger (Own Consultancy)",
+      "position": "Founder & Principal Engineer — LLM Inference Infrastructure R&D",
+      "location": "Remote · Self-funded R&D",
+      "startDate": "Oct 2026",
+      "endDate": "Present",
+      "description": "Self-funded R&D for the consultancy's inference infrastructure offering: built and benchmarked a GitOps-managed vLLM and llm-d serving platform on AWS EKS with GPU autoscaling and disaggregated prefill/decode — documented publicly (github.com/ozunuane/vllm-k8s-benchmark-lab).",
+      "achievements": [
+        "Built a GitOps-managed LLM serving platform on EKS with Terraform: Karpenter GPU NodePools across L4, A10G and L40S with capacity fallbacks, NVIDIA device plugin and DCGM, vLLM packaged with Helm, Prometheus and Grafana, Argo CD app-of-apps, and GitHub Actions plan/apply over OIDC with approval-gated production applies.",
+        "Deployed llm-d v1.0 disaggregated serving entirely as code — four sync-waved Argo CD applications (Gateway API Inference Extension CRDs, LeaderWorkerSet operator, EPP router with Envoy, DisaggregatedSet model servers) with pinned versions and cross-node KV-cache transfer over NIXL.",
+        "Benchmarked combined against disaggregated serving with a cache-busted harness: no gain on short prompts (both capped at ~19.5 req/s by one decode GPU), while on 1.4k-token prompts at 60 concurrent requests an L40S-prefill and A10G-decode pair cut p50 latency 50% (21.7s to 10.9s) and raised throughput 56% versus a combined A10G replica.",
+        "Autoscaled vLLM on queue depth with KEDA (vllm:num_requests_waiting): a second replica cut the request queue 71% under 120 concurrent streams, with scale-to-zero and Karpenter node consolidation.",
+        "Reduced model-weight loading to 19 seconds by streaming safetensors from S3 directly into GPU memory with the Run:ai Model Streamer, removing Hugging Face and node-disk staging from the cold-start path.",
+        "Tuned vLLM serving (AWQ 4-bit: time-to-first-token 78 to 29 ms, concurrency 25 to 66; vLLM vs SGLang), ran a self-hosted RAG assistant on the platform, and documented 29 GPU-on-Kubernetes failure modes, at under $25/week GPU spend."
+      ],
+      "technologies": [
+        "AWS EKS",
+        "EC2 GPU (g5, g6, g6e)",
+        "S3",
+        "Terraform",
+        "Karpenter",
+        "KEDA",
+        "Argo CD",
+        "Helm",
+        "vLLM",
+        "llm-d",
+        "LeaderWorkerSet",
+        "NIXL",
+        "SGLang",
+        "Prometheus",
+        "Grafana",
+        "DCGM",
+        "Qdrant",
+        "GitHub Actions (OIDC)",
+        "Python"
+      ]
+    },
+    {
       "id": 0,
       "company": "CreatorFi",
       "position": "Senior Platform / DevOps Engineer",
@@ -259,8 +297,8 @@
     },
     {
       "id": 6,
-      "company": "Skillhanger",
-      "position": "DevOps Engineer",
+      "company": "Skillhanger (Own Consultancy)",
+      "position": "Founder & Principal Engineer",
       "location": "Remote",
       "startDate": "2020",
       "endDate": "2022",
@@ -406,8 +444,8 @@
         "LLM-D / Disaggregated Serving",
         "GitHub Actions OIDC"
       ],
-      "image": "/project-vllm-eks.jpg",
-      "liveUrl": "",
+      "image": "/project-vllm-eks.png",
+      "liveUrl": "https://ozidevops.medium.com/i-built-a-production-lab-grade-llm-serving-platform-on-eks-the-model-was-the-easy-part-acc186037b2a",
       "githubUrl": "https://github.com/ozunuane/vllm-k8s-benchmark-lab",
       "featured": true
     },

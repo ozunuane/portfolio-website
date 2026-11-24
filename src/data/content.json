@@ -711,7 +711,7 @@
       "readTime": "12 min read",
       "tags": ["LLM Inference", "EKS", "vLLM", "Karpenter", "KEDA", "GPU Autoscaling", "LLM-D", "Disaggregated Serving", "GitOps"],
       "featured": true,
-      "image": "/journal-eks-llm-platform.jpg",
+      "image": "/journal-eks-llm-platform.png",
       "active": true
     },
     {
@@ -724,7 +724,7 @@
       "readTime": "8 min read",
       "tags": ["LLM Inference", "vLLM", "GPU", "Prefill", "Decode", "KV Cache", "AI Infrastructure"],
       "featured": true,
-      "image": "/journal-prefill-decode.jpg",
+      "image": "/journal-prefill-decode.png",
       "active": true
     },
     {
@@ -737,7 +737,7 @@
       "readTime": "9 min read",
       "tags": ["vLLM", "Benchmarking", "AWQ", "Quantization", "SGLang", "LLM Serving", "GPU"],
       "featured": true,
-      "image": "/journal-vllm-knobs.jpg",
+      "image": "/journal-vllm-knobs.png",
       "active": true
     },
     {
@@ -750,7 +750,7 @@
       "readTime": "7 min read",
       "tags": ["RAG", "Qdrant", "vLLM", "Self-Hosting", "AI Agents", "Cost Optimization"],
       "featured": true,
-      "image": "/journal-middledock-rag.jpg",
+      "image": "/journal-middledock-rag.png",
       "active": true
     },
     {
